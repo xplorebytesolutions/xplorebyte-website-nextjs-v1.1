@@ -5,7 +5,6 @@ import Footer from "../../components/Footer";
 import {
   Code,
   BookOpen,
-  Terminal,
   CheckCircle,
   ArrowRight,
   Copy,
@@ -103,7 +102,7 @@ export default function ApiDocumentation() {
                   Send Your First Message
                 </h2>
                 <p className="text-lg text-gray-600 mb-8">
-                  Here's a simple example to get you started with our WhatsApp API.
+                  Here&apos;s a simple example to get you started with our WhatsApp API.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">

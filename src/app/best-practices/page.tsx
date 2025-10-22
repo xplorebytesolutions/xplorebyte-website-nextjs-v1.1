@@ -169,7 +169,7 @@ export default function BestPractices() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Do's and Don'ts
+                Do&apos;s and Don&apos;ts
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                 Essential guidelines to follow and common mistakes to avoid.
@@ -183,7 +183,7 @@ export default function BestPractices() {
                   <div className="w-12 h-12 bg-[#11A944] rounded-lg flex items-center justify-center">
                     <CheckCircle className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Do's</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">Do&apos;s</h3>
                 </div>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
@@ -236,35 +236,35 @@ export default function BestPractices() {
                   <li className="flex items-start gap-3">
                     <AlertTriangle className="w-5 h-5 text-[#EA1752] mt-1 flex-shrink-0" />
                     <span className="text-gray-700">
-                      <strong>Don't spam</strong> - Avoid sending too many
+                      <strong>Don&apos;t spam</strong> - Avoid sending too many
                       messages to the same customer
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <AlertTriangle className="w-5 h-5 text-[#EA1752] mt-1 flex-shrink-0" />
                     <span className="text-gray-700">
-                      <strong>Don't ignore timing</strong> - Avoid sending
+                      <strong>Don&apos;t ignore timing</strong> - Avoid sending
                       messages outside business hours
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <AlertTriangle className="w-5 h-5 text-[#EA1752] mt-1 flex-shrink-0" />
                     <span className="text-gray-700">
-                      <strong>Don't use generic content</strong> - Avoid
+                      <strong>Don&apos;t use generic content</strong> - Avoid
                       one-size-fits-all messages
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <AlertTriangle className="w-5 h-5 text-[#EA1752] mt-1 flex-shrink-0" />
                     <span className="text-gray-700">
-                      <strong>Don't neglect compliance</strong> - Always follow
+                      <strong>Don&apos;t neglect compliance</strong> - Always follow
                       WhatsApp policies and regulations
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <AlertTriangle className="w-5 h-5 text-[#EA1752] mt-1 flex-shrink-0" />
                     <span className="text-gray-700">
-                      <strong>Don't ignore feedback</strong> - Listen to
+                      <strong>Don&apos;t ignore feedback</strong> - Listen to
                       customer responses and adjust accordingly
                     </span>
                   </li>

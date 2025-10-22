@@ -37,7 +37,6 @@ const LandingPage = () => {
   const [showExitIntent, setShowExitIntent] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  const [modalCooldown, setModalCooldown] = useState(false);
 
   // Carousel navigation functions
   const nextSlide = () => {

@@ -22,7 +22,7 @@ export default function ComingSoon() {
                 Coming
               </h1>
               <p className="text-xl text-white/80 max-w-3xl mx-auto mb-8">
-                We're working hard to bring you revolutionary WhatsApp Business
+                We&apos;re working hard to bring you revolutionary WhatsApp Business
                 features that will transform your customer engagement.
               </p>
               <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 max-w-2xl mx-auto">
@@ -57,10 +57,10 @@ export default function ComingSoon() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                What's Coming
+                What&apos;s Coming
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Get a sneak peek at the exciting features we're developing for
+                Get a sneak peek at the exciting features we&apos;re developing for
                 you.
               </p>
             </div>
@@ -247,7 +247,7 @@ export default function ComingSoon() {
         <section className="py-20 bg-gradient-to-r from-[#0A0E23] to-[#181B32]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Don't Wait - Start Today
+              Don&apos;t Wait - Start Today
             </h2>
             <p className="text-lg text-white/80 mb-8">
               Get started with our current features while we prepare the next

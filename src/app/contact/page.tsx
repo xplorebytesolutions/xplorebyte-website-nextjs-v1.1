@@ -25,7 +25,7 @@ export default function Contact() {
                 Get in <span className="text-[#11A944]">Touch</span>
               </h1>
               <p className="text-xl text-white/80 max-w-3xl mx-auto">
-                Ready to transform your business? Let's discuss how we can help
+                Ready to transform your business? Let&apos;s discuss how we can help
                 you achieve your goals.
               </p>
             </div>
