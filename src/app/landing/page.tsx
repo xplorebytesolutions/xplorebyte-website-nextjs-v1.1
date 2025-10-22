@@ -50,7 +50,6 @@ const LandingPage = () => {
   // Modal cooldown functionality
   const handleModalClose = () => {
     setShowExitIntent(false);
-    setModalCooldown(true);
     // Store cooldown timestamp in localStorage
     localStorage.setItem("modalCooldown", Date.now().toString());
   };

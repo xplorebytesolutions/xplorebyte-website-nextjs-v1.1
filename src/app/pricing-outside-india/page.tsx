@@ -390,19 +390,19 @@ export default function PricingOutsideIndia() {
       icon: <Megaphone className="w-6 h-6 text-purple-600" />,
       title: "Marketing messages",
       description:
-        &quot;Promotional messages, offers, and product updates. WhatsApp charges separately based on the user&apos;s country.&quot;,
+        "Promotional messages, offers, and product updates. WhatsApp charges separately based on the user's country.",
     },
     {
       icon: <ShoppingCart className="w-6 h-6 text-orange-600" />,
       title: "Utility messages",
       description:
-        &quot;Transactional messages like delivery updates, receipts, and reminders. WhatsApp charges separately based on the user&apos;s country, but free if delivered within a customer service window.&quot;,
+        "Transactional messages like delivery updates, receipts, and reminders. WhatsApp charges separately based on the user's country, but free if delivered within a customer service window.",
     },
     {
       icon: <Lock className="w-6 h-6 text-red-600" />,
       title: "Authentication messages",
       description:
-        &quot;Messages for verification purposes (OTP, account registration, recovery). WhatsApp charges separately based on the user&apos;s country.&quot;,
+        "Messages for verification purposes (OTP, account registration, recovery). WhatsApp charges separately based on the user's country.",
     },
     {
       icon: <HelpCircle className="w-6 h-6 text-indigo-600" />,

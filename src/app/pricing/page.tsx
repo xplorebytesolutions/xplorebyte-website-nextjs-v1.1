@@ -25,7 +25,7 @@ export default function Pricing() {
   const router = useRouter();
   const [billingCycle, setBillingCycle] = useState("yearly");
   const [region, setRegion] = useState("india");
-  const [addonBilling, setAddonBilling] = useState({
+  const [addonBilling, setAddonBilling] = useState<Record<string, string>>({
     virtualNumber: "monthly",
     chatbot: "monthly",
   });
