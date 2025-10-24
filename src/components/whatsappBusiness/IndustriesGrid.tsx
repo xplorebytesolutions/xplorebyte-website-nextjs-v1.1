@@ -547,7 +547,14 @@ const IndustriesGrid: React.FC = () => {
   return (
     <section className="py-14 md:py-20 bg-gradient-to-br from-white via-slate-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-3 md:px-8">
-        <h2 className="text-2xl md:text-4xl font-bold text-slate-900 text-center mb-6 md:mb-8">
+        <h2
+          className="font-bold text-slate-900 text-center mb-6 md:mb-8"
+          style={{
+            fontFamily: "Montserrat, sans-serif",
+            fontSize: "2.5rem",
+            lineHeight: "1.2",
+          }}
+        >
           All-in-One{" "}
           <span className="text-emerald-500">WhatsApp Business Solutions</span>{" "}
           for Growing Brands

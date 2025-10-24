@@ -130,28 +130,60 @@ const Hero: FC = () => {
             </span>
           </motion.div>
 
-          {/* Main Headline */}
-          <motion.h1
-            className="text-balance sm:text-4xl lg:text-5xl text-3xl font-extrabold tracking-tight text-gray-900 mb-4 font-manrope leading-tight"
+          {/* Breadcrumbs */}
+          <motion.div
+            className="text-xs font-medium uppercase tracking-widest text-gray-600 mb-4"
+            style={{
+              fontFamily: "Montserrat, sans-serif",
+              letterSpacing: "1.5px",
+            }}
             variants={fadeUp}
           >
-            Grow 20x Faster with
-            <span className="text-[#11A944] font-manrope">
-              {" "}
-              AI-Powered
-            </span>{" "}
-            <span className="text-[#25D366]">WhatsApp Business API</span>{" "}
-            Automation
+            WhatsApp Business API
+          </motion.div>
+
+          {/* Main Headline */}
+          <motion.h1
+            className="font-bold text-gray-900 mb-6"
+            style={{
+              fontFamily: "Montserrat, sans-serif",
+              fontSize: "2.5rem",
+              lineHeight: "1.2",
+            }}
+            variants={fadeUp}
+          >
+            Elevate experiences with <br />
+            <span style={{ color: "#25D366" }}>WhatsApp Business API</span>
           </motion.h1>
 
           {/* Description */}
           <motion.p
-            className="sm:text-lg leading-relaxed text-base text-gray-600 mb-6 font-sans"
+            className="text-gray-700 mb-8"
+            style={{
+              fontFamily: "Montserrat, sans-serif",
+              fontSize: "1rem",
+              lineHeight: "1.6",
+              maxWidth: "55ch",
+            }}
             variants={fadeUp}
           >
-            Scale your customer communication, boost engagement, and drive sales
-            with our enterprise-grade WhatsApp Business API platform. Start your
-            free trial today.
+            Send notifications, customer service messages, and essential
+            information your customers need on WhatsApp — even through a
+            WhatsApp chatbot.
+          </motion.p>
+
+          <motion.p
+            className="text-gray-700 mb-8"
+            style={{
+              fontFamily: "Montserrat, sans-serif",
+              fontSize: "1rem",
+              lineHeight: "1.6",
+              maxWidth: "55ch",
+            }}
+            variants={fadeUp}
+          >
+            XploreByte APIs hide the complexity of hosting and scaling WhatsApp
+            software so that you can focus on elevating customer experiences.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -161,50 +193,38 @@ const Hero: FC = () => {
           >
             <button
               onClick={() => setIsDemoModalOpen(true)}
-              className="inline-flex items-center px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl bg-[#1E3A8A] text-white hover:bg-[#1E40AF] transition duration-200 group"
-              aria-label="Start Free Trial"
+              className="inline-flex items-center px-6 py-3 rounded-md font-semibold border-2 border-black bg-black text-white hover:bg-gray-800 hover:border-gray-800 transition duration-200 group"
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                fontSize: "1rem",
+                fontWeight: "600",
+              }}
+              aria-label="Book Demo"
             >
               <ArrowRight
                 size={20}
                 weight="bold"
                 className="mr-2 group-hover:translate-x-1 transition-transform"
               />
-              Start Free Trial
+              Book Demo
             </button>
             <button
               onClick={() => setIsDemoModalOpen(true)}
-              className="inline-flex items-center px-6 py-3 rounded-lg font-semibold border-2 border-[#1E3A8A] text-[#1E3A8A] hover:bg-[#1E3A8A] hover:text-white transition duration-200 group"
-              aria-label="Watch Demo"
+              className="inline-flex items-center px-6 py-3 rounded-md font-semibold border-2 border-black text-black hover:bg-gray-100 transition duration-200 group"
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                fontSize: "1rem",
+                fontWeight: "600",
+              }}
+              aria-label="Talk to expert"
             >
               <Play
                 size={20}
                 weight="bold"
                 className="mr-2 group-hover:scale-110 transition-transform"
               />
-              Watch Demo
+              Talk to expert
             </button>
-          </motion.div>
-
-          {/* Social Proof */}
-          <motion.div
-            className="flex items-center gap-4 mb-8"
-            variants={fadeUp}
-          >
-            <div className="flex items-center gap-1">
-              <svg
-                className="w-5 h-5 text-yellow-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
-              </svg>
-              <span className="text-sm font-semibold text-gray-700">
-                ★★★★★ 4.9/5
-              </span>
-            </div>
-            <div className="text-sm text-[#11A944] font-semibold">
-              10,000+ businesses
-            </div>
           </motion.div>
 
           {/* Feature Cards removed as requested */}
@@ -231,31 +251,17 @@ const Hero: FC = () => {
           </motion.div>
 
           {/* Main Image Container */}
-          <div className="relative max-w-[380px] md:max-w-[420px] mx-auto">
+          <div className="relative max-w-[300px] mx-auto">
             <Image
-              src="/herosection.png"
+              src="/New_Design/mobile-wrapper.avif"
               alt="WhatsApp Business Automation Dashboard"
-              width={420}
-              height={280}
-              className="w-full h-auto"
+              width={300}
+              height={400}
+              className="w-full h-auto max-w-[300px] mx-auto"
               priority
             />
 
             {/* Floating Elements */}
-            <motion.div
-              className="absolute top-4 left-4 w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center shadow-lg"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 1.0 }}
-            >
-              <svg
-                className="w-4 h-4 text-white"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
-              </svg>
-            </motion.div>
 
             <motion.div
               className="absolute top-8 right-8 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center shadow-lg"
@@ -273,30 +279,6 @@ const Hero: FC = () => {
                   d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   clipRule="evenodd"
                 />
-              </svg>
-            </motion.div>
-
-            <motion.div
-              className="absolute bottom-8 left-8 w-8 h-8 bg-purple-500 rounded-lg flex items-center justify-center shadow-lg"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 1.4 }}
-            >
-              <span className="text-white font-bold text-sm">%</span>
-            </motion.div>
-
-            <motion.div
-              className="absolute bottom-8 right-8 w-8 h-8 bg-yellow-500 rounded-lg flex items-center justify-center shadow-lg"
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 1.6 }}
-            >
-              <svg
-                className="w-4 h-4 text-white"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </motion.div>
           </div>

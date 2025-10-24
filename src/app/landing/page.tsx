@@ -1136,7 +1136,15 @@ const LandingPage = () => {
                                 >
                                   Industry
                                 </span>
-                                <h3 className="text-xl md:text-2xl font-bold text-slate-900">
+                                <h3
+                                  className="text-xl md:text-2xl text-slate-900"
+                                  style={{
+                                    fontFamily: "Montserrat, sans-serif",
+                                    fontSize: "2.5rem",
+                                    lineHeight: "1.2",
+                                    fontWeight: "normal",
+                                  }}
+                                >
                                   {ind.title}
                                 </h3>
                               </div>
@@ -1177,7 +1185,15 @@ const LandingPage = () => {
                                         </span>
                                       </div>
                                     ) : (
-                                      <span className="text-slate-700 font-bold text-lg md:text-xl">
+                                      <span
+                                        className="text-slate-700 text-lg md:text-xl"
+                                        style={{
+                                          fontFamily: "Montserrat, sans-serif",
+                                          fontSize: "2.5rem",
+                                          lineHeight: "1.2",
+                                          fontWeight: "normal",
+                                        }}
+                                      >
                                         {line}
                                       </span>
                                     )}
@@ -1249,7 +1265,7 @@ const LandingPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section 1: The "Problem & Promise" Hero */}
           <div className="text-center mb-20">
-            <h2 className="text-4xl font-bold text-[#1E3A8A] mb-6">
+            <h2 className="text-4xl font-bold text-black mb-6">
               Why Your Business Can&apos;t Afford to Ignore WhatsApp
             </h2>
             <p className="text-xl text-[#333] mb-12 max-w-4xl mx-auto">
@@ -2042,7 +2058,7 @@ const LandingPage = () => {
               className="inline-flex items-center justify-center px-6 py-3 bg-white text-[#10B981] font-bold rounded-lg hover:bg-gray-100 transition-colors duration-200 group text-base min-w-[180px]"
             >
               <Rocket className="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" />
-              Get Started Free
+              Book Demo
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </button>
             <button
@@ -2750,24 +2766,6 @@ const LandingPage = () => {
                   </a>
                 </li>
               </ul>
-            </div>
-          </div>
-
-          {/* Book Demo CTA Section */}
-          <div className="border-t border-[#F9FAFB]/20 mt-8 pt-8">
-            <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold text-white mb-2">
-                Ready to Transform Your Business?
-              </h3>
-              <p className="text-[#F9FAFB] mb-6">
-                See how our WhatsApp Business solution can help you grow
-              </p>
-              <button
-                onClick={() => setIsDemoModalOpen(true)}
-                className="bg-[#10B981] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#059669] transition-all duration-300 transform hover:scale-105 shadow-lg"
-              >
-                Book Demo
-              </button>
             </div>
           </div>
 

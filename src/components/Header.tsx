@@ -17,6 +17,15 @@ import {
   FileText,
   BookOpen,
   ToggleLeft,
+  Building2,
+  Heart,
+  Home,
+  Car,
+  GraduationCap,
+  Utensils,
+  Headphones,
+  TrendingUp,
+  MessageSquare,
 } from "lucide-react";
 import DemoModal from "./DemoModal";
 import ProductSpotlightCarousel from "./ProductSpotlightCarousel";
@@ -36,6 +45,9 @@ const Header: FC = () => {
   const [productDropdownOpen, setProductDropdownOpen] = useState(false);
   const [featuresDropdownOpen, setFeaturesDropdownOpen] = useState(false);
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
+  const [activeIndustryCategory, setActiveIndustryCategory] = useState<
+    string | null
+  >(null);
 
   // Close mobile menu on window resize > lg
   useEffect(() => {
@@ -119,208 +131,147 @@ const Header: FC = () => {
 
                     {/* Industries Mega Dropdown Menu */}
                     {solutionsDropdownOpen && (
-                      <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[900px] max-w-[90vw] bg-white rounded-2xl shadow-2xl border border-gray-200 p-8 z-50">
+                      <div
+                        className="absolute top-full mt-2 w-[1100px] max-w-[90vw] bg-white rounded-2xl shadow-2xl border border-gray-200 p-6 z-50"
+                        style={{ left: "60%", transform: "translateX(-50%)" }}
+                      >
                         {/* Pointing Arrow */}
                         <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white border-l border-t border-gray-200 rotate-45"></div>
-                        <div className="grid grid-cols-3 gap-8">
-                          {/* Left Column - HEALTHCARE & BEAUTY */}
-                          <div>
-                            <h3 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4">
-                              HEALTHCARE & BEAUTY
-                            </h3>
-                            <div className="space-y-4">
-                              <Link
-                                href="/industries/healthcare"
-                                className="flex items-start gap-3 group cursor-pointer"
-                              >
-                                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
-                                  <Bot className="w-5 h-5 text-blue-600" />
-                                </div>
-                                <div>
-                                  <h4 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
-                                    Healthcare
-                                  </h4>
-                                  <p className="text-sm text-gray-800">
-                                    Patient care & appointment management
-                                  </p>
-                                </div>
-                              </Link>
-
-                              <Link
-                                href="/industries/beauty-cosmetics"
-                                className="flex items-start gap-3 group cursor-pointer"
-                              >
-                                <div className="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-200 transition-colors">
-                                  <Zap className="w-5 h-5 text-pink-600" />
-                                </div>
-                                <div>
-                                  <h4 className="font-semibold text-gray-900 group-hover:text-pink-600 transition-colors">
-                                    Beauty & Cosmetics
-                                  </h4>
-                                  <p className="text-sm text-gray-800">
-                                    Appointment booking & product catalogs
-                                  </p>
-                                </div>
-                              </Link>
-
-                              <Link
-                                href="/industries/spa"
-                                className="flex items-start gap-3 group cursor-pointer"
-                              >
-                                <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors">
-                                  <Settings className="w-5 h-5 text-purple-600" />
-                                </div>
-                                <div>
-                                  <h4 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors">
-                                    Spa & Salons
-                                  </h4>
-                                  <p className="text-sm text-gray-800">
-                                    Service booking & customer care
-                                  </p>
-                                </div>
-                              </Link>
-                            </div>
-                          </div>
-
-                          {/* Middle Column - BUSINESS & SERVICES */}
-                          <div>
-                            <h3 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4">
-                              BUSINESS & SERVICES
-                            </h3>
-                            <div className="space-y-4">
-                              <Link
-                                href="/industries/real-estate"
-                                className="flex items-start gap-3 group cursor-pointer"
-                              >
-                                <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center group-hover:bg-emerald-200 transition-colors">
-                                  <BarChart3 className="w-5 h-5 text-emerald-600" />
-                                </div>
-                                <div>
-                                  <h4 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors">
-                                    Real Estate
-                                  </h4>
-                                  <p className="text-sm text-gray-800">
-                                    Property management & lead nurturing
-                                  </p>
-                                </div>
-                              </Link>
-
-                              <Link
-                                href="/industries/freelancer"
-                                className="flex items-start gap-3 group cursor-pointer"
-                              >
-                                <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center group-hover:bg-orange-200 transition-colors">
-                                  <Code className="w-5 h-5 text-orange-600" />
-                                </div>
-                                <div>
-                                  <h4 className="font-semibold text-gray-900 group-hover:text-orange-600 transition-colors">
-                                    Freelancers
-                                  </h4>
-                                  <p className="text-sm text-gray-800">
-                                    Client communication & project updates
-                                  </p>
-                                </div>
-                              </Link>
-
-                              <Link
-                                href="/industries/education"
-                                className="flex items-start gap-3 group cursor-pointer"
-                              >
-                                <div className="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center group-hover:bg-indigo-200 transition-colors">
-                                  <BookOpen className="w-5 h-5 text-indigo-600" />
-                                </div>
-                                <div>
-                                  <h4 className="font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors">
-                                    Education
-                                  </h4>
-                                  <p className="text-sm text-gray-800">
-                                    Student engagement & parent communication
-                                  </p>
-                                </div>
-                              </Link>
-                            </div>
-                          </div>
-
-                          {/* Right Column - LIFESTYLE & TRAVEL */}
-                          <div>
-                            <h3 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4">
-                              LIFESTYLE & TRAVEL
-                            </h3>
-                            <div className="space-y-4">
-                              <Link
-                                href="/industries/automotive"
-                                className="flex items-start gap-3 group cursor-pointer"
-                              >
-                                <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-gray-200 transition-colors">
-                                  <HelpCircle className="w-5 h-5 text-gray-600" />
-                                </div>
-                                <div>
-                                  <h4 className="font-semibold text-gray-900 group-hover:text-gray-600 transition-colors">
-                                    Automotive
-                                  </h4>
-                                  <p className="text-sm text-gray-800">
-                                    Service booking & maintenance alerts
-                                  </p>
-                                </div>
-                              </Link>
-
-                              <Link
-                                href="/industries/travel"
-                                className="flex items-start gap-3 group cursor-pointer"
-                              >
-                                <div className="w-10 h-10 bg-sky-100 rounded-lg flex items-center justify-center group-hover:bg-sky-200 transition-colors">
-                                  <MessageCircle className="w-5 h-5 text-sky-600" />
-                                </div>
-                                <div>
-                                  <h4 className="font-semibold text-gray-900 group-hover:text-sky-600 transition-colors">
-                                    Travel & Tourism
-                                  </h4>
-                                  <p className="text-sm text-gray-800">
-                                    Booking confirmations & travel updates
-                                  </p>
-                                </div>
-                              </Link>
-
-                              <Link
-                                href="/industries/food"
-                                className="flex items-start gap-3 group cursor-pointer"
-                              >
-                                <div className="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center group-hover:bg-yellow-200 transition-colors">
-                                  <Megaphone className="w-5 h-5 text-yellow-600" />
-                                </div>
-                                <div>
-                                  <h4 className="font-semibold text-gray-900 group-hover:text-yellow-600 transition-colors">
-                                    Food & Restaurants
-                                  </h4>
-                                  <p className="text-sm text-gray-800">
-                                    Order management & delivery tracking
-                                  </p>
-                                </div>
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
-
-                        {/* Bottom Section */}
-                        <div className="mt-8 pt-6 border-t border-gray-200">
-                          <div className="flex items-center justify-between">
-                            <div>
-                              <h4 className="font-semibold text-gray-900">
-                                Ready to get started?
-                              </h4>
-                              <p className="text-sm text-gray-800">
-                                Start your free 14-day trial today
-                              </p>
-                            </div>
+                        <div className="grid grid-cols-4 gap-6">
+                          {/* Left Section - Solutions Overview */}
+                          <div className="col-span-1 pr-4">
+                            <h2 className="text-xl font-bold text-slate-800 mb-3 leading-tight">
+                              Solutions That Drive Business Outcomes
+                            </h2>
+                            <p className="text-slate-600 mb-4 leading-normal text-sm">
+                              Transform your customer communication with
+                              WhatsApp Business API. Join 10,000+ businesses
+                              using our platform to move from cold communication
+                              to warm conversation — and that&apos;s where
+                              revenue lives.
+                            </p>
                             <button
                               onClick={() => setIsDemoModalOpen(true)}
-                              className="flex items-center gap-2 bg-emerald-500 text-white px-4 py-2 rounded-lg hover:bg-emerald-600 transition-colors"
+                              className="border-2 border-emerald-500 text-emerald-600 bg-white px-6 py-3 rounded-lg hover:bg-emerald-50 transition-colors font-medium text-sm"
                             >
-                              <span className="text-sm font-medium">
-                                Book a Demo
-                              </span>
-                              <ArrowRight className="w-4 h-4" />
+                              Request a Demo
                             </button>
+                          </div>
+
+                          {/* Middle-Left Section - By Industry */}
+                          <div>
+                            <h3 className="text-sm font-bold text-slate-800 uppercase tracking-wider mb-4">
+                              BY INDUSTRY
+                            </h3>
+                            <div className="space-y-3">
+                              <Link
+                                href="/industries/healthcare"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group"
+                              >
+                                <Heart className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                Healthcare
+                              </Link>
+                              <Link
+                                href="/industries/education"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group"
+                              >
+                                <GraduationCap className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                Education
+                              </Link>
+                              <Link
+                                href="/industries/retail-ecommerce"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group"
+                              >
+                                <Building2 className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                Retail & Ecommerce
+                              </Link>
+                              <Link
+                                href="/industries/finance"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group"
+                              >
+                                <BarChart3 className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                Finance
+                              </Link>
+                              <Link
+                                href="/industries/transportation-logistics"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group"
+                              >
+                                <Car className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                Transportation and Logistics
+                              </Link>
+                              <Link
+                                href="/industries/manufacturing"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group"
+                              >
+                                <Settings className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                Manufacturing
+                              </Link>
+                              <Link
+                                href="/industries/public-sector"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group"
+                              >
+                                <Building2 className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                Public Sector
+                              </Link>
+                            </div>
+                          </div>
+
+                          {/* Middle-Right Section - By Function */}
+                          <div>
+                            <h3 className="text-sm font-bold text-slate-800 uppercase tracking-wider mb-4">
+                              BY FUNCTION
+                            </h3>
+                            <div className="space-y-3">
+                              <Link
+                                href="/features/ai-chatbots-flows"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group"
+                              >
+                                <Headphones className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                Customer Support
+                              </Link>
+                              <Link
+                                href="/features/sales-ecommerce-tools"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group"
+                              >
+                                <TrendingUp className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                Sales & Lead Conversion
+                              </Link>
+                              <Link
+                                href="/features/campaigns-broadcasting"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group"
+                              >
+                                <MessageSquare className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                Marketing
+                              </Link>
+                              <Link
+                                href="/features/analytics-reporting"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group"
+                              >
+                                <BarChart3 className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                Analytics & Reporting
+                              </Link>
+                            </div>
+                          </div>
+
+                          {/* Right Section - Featured Content */}
+                          <div className="bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-xl p-6">
+                            <div className="text-center">
+                              <span className="text-xs font-semibold text-cyan-600 uppercase tracking-wider mb-3 block">
+                                EBOOK
+                              </span>
+                              <h3 className="text-lg font-bold text-slate-800 mb-4">
+                                Delivering a 360° Customer Experience
+                              </h3>
+                              <div className="w-20 h-20 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <MessageCircle className="w-10 h-10 text-cyan-600" />
+                              </div>
+                              <button
+                                onClick={() => setIsDemoModalOpen(true)}
+                                className="w-full bg-cyan-500 text-white px-4 py-2 rounded-lg hover:bg-cyan-600 transition-colors text-sm font-medium"
+                              >
+                                Read Now
+                              </button>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -355,207 +306,126 @@ const Header: FC = () => {
 
                     {/* Features Mega Dropdown Menu */}
                     {productDropdownOpen && (
-                      <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[1000px] max-w-[90vw] bg-white rounded-2xl shadow-2xl border border-gray-200 p-8 z-50">
+                      <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[1100px] max-w-[90vw] bg-white rounded-2xl shadow-2xl border border-gray-200 p-6 z-50">
                         {/* Pointing Arrow */}
                         <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white border-l border-t border-gray-200 rotate-45"></div>
-                        <div className="grid grid-cols-3 gap-8">
-                          {/* Column 1 - CORE FEATURES */}
+                        <div className="grid grid-cols-4 gap-6">
+                          {/* Left Section - Features Overview */}
+                          <div className="col-span-1 pr-4">
+                            <h2 className="text-xl font-bold text-slate-800 mb-3 leading-tight">
+                              Powerful Features for Business Growth
+                            </h2>
+                            <p className="text-slate-600 mb-4 leading-normal text-sm">
+                              Discover our comprehensive suite of WhatsApp
+                              Business API features designed to streamline your
+                              communication, boost engagement, and drive revenue
+                              growth.
+                            </p>
+                            <button
+                              onClick={() => setIsDemoModalOpen(true)}
+                              className="border-2 border-emerald-500 text-emerald-600 bg-white px-6 py-3 rounded-lg hover:bg-emerald-50 transition-colors font-medium text-sm"
+                            >
+                              Request a Demo
+                            </button>
+                          </div>
+
+                          {/* Middle-Left Section - CORE FEATURES */}
                           <div>
-                            <h3 className="text-base font-bold text-gray-700 uppercase tracking-wider mb-4">
-                              PLATFORM FEATURES
+                            <h3 className="text-sm font-bold text-slate-800 uppercase tracking-wider mb-4">
+                              CORE FEATURES
                             </h3>
-                            <div className="space-y-4">
+                            <div className="space-y-3">
                               <Link
                                 href="/features/ai-chatbots-flows"
-                                className="flex items-start gap-3 group cursor-pointer"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group"
                               >
-                                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
-                                  <Bot className="w-5 h-5 text-blue-600" />
-                                </div>
-                                <div>
-                                  <h4 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
-                                    AI Chatbots & Flows
-                                  </h4>
-                                  <p className="text-sm text-gray-800">
-                                    No-code bots & interactive flows.
-                                  </p>
-                                </div>
+                                <Bot className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                AI Chatbots & Flows
                               </Link>
-
                               <Link
                                 href="/features/campaigns-broadcasting"
-                                className="flex items-start gap-3 group cursor-pointer"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group"
                               >
-                                <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center group-hover:bg-emerald-200 transition-colors">
-                                  <Megaphone className="w-5 h-5 text-emerald-600" />
-                                </div>
-                                <div>
-                                  <h4 className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors">
-                                    Campaigns & Broadcasting
-                                  </h4>
-                                  <p className="text-sm text-gray-800">
-                                    Bulk messaging & retargeting campaigns.
-                                  </p>
-                                </div>
+                                <Megaphone className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                Campaigns & Broadcasting
                               </Link>
-
                               <Link
                                 href="/features/sales-ecommerce-tools"
-                                className="flex items-start gap-3 group cursor-pointer"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group"
                               >
-                                <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors">
-                                  <BarChart3 className="w-5 h-5 text-purple-600" />
-                                </div>
-                                <div>
-                                  <h4 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors">
-                                    Sales & E-commerce Tools
-                                  </h4>
-                                  <p className="text-sm text-gray-800">
-                                    Team management & in-chat catalogs.
-                                  </p>
-                                </div>
+                                <BarChart3 className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                Sales & E-commerce Tools
                               </Link>
-
                               <Link
                                 href="/features/integrations-hub"
-                                className="flex items-start gap-3 group cursor-pointer"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group"
                               >
-                                <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center group-hover:bg-orange-200 transition-colors">
-                                  <Settings className="w-5 h-5 text-orange-600" />
-                                </div>
-                                <div>
-                                  <h4 className="font-semibold text-gray-900 group-hover:text-orange-600 transition-colors">
-                                    Integrations Hub
-                                  </h4>
-                                  <p className="text-sm text-gray-800">
-                                    CRM, Excel & third-party integrations.
-                                  </p>
-                                </div>
+                                <Settings className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                Integrations Hub
                               </Link>
-
                               <Link
                                 href="/features/analytics-reporting"
-                                className="flex items-start gap-3 group cursor-pointer"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group"
                               >
-                                <div className="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center group-hover:bg-cyan-200 transition-colors">
-                                  <BarChart3 className="w-5 h-5 text-cyan-600" />
-                                </div>
-                                <div>
-                                  <h4 className="font-semibold text-gray-900 group-hover:text-cyan-600 transition-colors">
-                                    Analytics & Reporting
-                                  </h4>
-                                  <p className="text-sm text-gray-800">
-                                    Real-time ROI & performance tracking.
-                                  </p>
-                                </div>
+                                <BarChart3 className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                Analytics & Reporting
                               </Link>
                             </div>
                           </div>
 
-                          {/* Column 2 - RESOURCES */}
+                          {/* Middle-Right Section - RESOURCES */}
                           <div>
-                            <h3 className="text-base font-bold text-gray-700 uppercase tracking-wider mb-4">
+                            <h3 className="text-sm font-bold text-slate-800 uppercase tracking-wider mb-4">
                               RESOURCES
                             </h3>
-                            <div className="space-y-4">
+                            <div className="space-y-3">
                               <Link
                                 href="/api-documentation"
-                                className="flex items-start gap-3 group cursor-pointer"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group"
                               >
-                                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
-                                  <Code className="w-5 h-5 text-blue-600" />
-                                </div>
-                                <div>
-                                  <h4 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
-                                    Developer Docs
-                                  </h4>
-                                  <p className="text-sm text-gray-800">
-                                    Integration guides
-                                  </p>
-                                </div>
+                                <Code className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                Developer Docs
                               </Link>
-
                               <Link
                                 href="/support-center"
-                                className="flex items-start gap-3 group cursor-pointer"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group"
                               >
-                                <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-gray-200 transition-colors">
-                                  <HelpCircle className="w-5 h-5 text-gray-600" />
-                                </div>
-                                <div>
-                                  <h4 className="font-semibold text-gray-900 group-hover:text-gray-600 transition-colors">
-                                    Help Center
-                                  </h4>
-                                  <p className="text-sm text-gray-800">
-                                    Usage guides & tutorials
-                                  </p>
-                                </div>
+                                <HelpCircle className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                Help Center
                               </Link>
-
                               <Link
                                 href="/product-updates"
-                                className="flex items-start gap-3 group cursor-pointer"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group"
                               >
-                                <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors">
-                                  <Megaphone className="w-5 h-5 text-green-600" />
-                                </div>
-                                <div>
-                                  <h4 className="font-semibold text-gray-900 group-hover:text-green-600 transition-colors">
-                                    Product Updates
-                                  </h4>
-                                  <p className="text-sm text-gray-800">
-                                    Latest feature updates
-                                  </p>
-                                </div>
+                                <Megaphone className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                Product Updates
                               </Link>
-
                               <Link
                                 href="/user-community"
-                                className="flex items-start gap-3 group cursor-pointer"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group"
                               >
-                                <div className="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center group-hover:bg-cyan-200 transition-colors">
-                                  <MessageCircle className="w-5 h-5 text-cyan-600" />
-                                </div>
-                                <div>
-                                  <h4 className="font-semibold text-gray-900 group-hover:text-cyan-600 transition-colors">
-                                    User Community
-                                  </h4>
-                                  <p className="text-sm text-gray-800">
-                                    Community tips & support
-                                  </p>
-                                </div>
+                                <MessageCircle className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                User Community
                               </Link>
                             </div>
                           </div>
 
-                          {/* Column 3 - PRODUCT SPOTLIGHT */}
-                          <div>
-                            <h3 className="text-base font-bold text-gray-700 uppercase tracking-wider mb-4">
-                              PRODUCT SPOTLIGHT
+                          {/* Right Section - Featured Content */}
+                          <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-xl p-6">
+                            <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-2 block">
+                              EBOOK
+                            </span>
+                            <h3 className="text-lg font-bold text-slate-800 mb-4">
+                              WhatsApp Business API Guide
                             </h3>
-                            <ProductSpotlightCarousel />
-                          </div>
-                        </div>
-
-                        {/* Bottom Section */}
-                        <div className="mt-8 pt-6 border-t border-gray-200">
-                          <div className="flex items-center justify-between">
-                            <div>
-                              <h4 className="font-semibold text-gray-900">
-                                See the platform in action?
-                              </h4>
-                              <p className="text-sm text-gray-800">
-                                Get a live, 1-on-1 walkthrough with our team.
-                              </p>
+                            <div className="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                              <FileText className="w-10 h-10 text-emerald-600" />
                             </div>
                             <button
                               onClick={() => setIsDemoModalOpen(true)}
-                              className="flex items-center gap-2 bg-emerald-500 text-white px-4 py-2 rounded-lg hover:bg-emerald-600 transition-colors"
+                              className="w-full bg-emerald-500 text-white px-4 py-2 rounded-lg hover:bg-emerald-600 transition-colors text-sm font-medium"
                             >
-                              <span className="text-sm font-medium">
-                                Book a Free Demo
-                              </span>
-                              <ArrowRight className="w-4 h-4" />
+                              Download Now
                             </button>
                           </div>
                         </div>
@@ -591,15 +461,34 @@ const Header: FC = () => {
 
                     {/* Features Mega Dropdown Menu */}
                     {featuresDropdownOpen && (
-                      <div className="absolute top-full left-0 mt-2 w-[800px] bg-white rounded-2xl shadow-2xl border border-gray-200 p-8 z-50">
+                      <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[1100px] max-w-[90vw] bg-white rounded-2xl shadow-2xl border border-gray-200 p-6 z-50">
                         {/* Pointing Arrow */}
-                        <div className="absolute -top-2 left-8 w-4 h-4 bg-white border-l border-t border-gray-200 transform rotate-45"></div>
+                        <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white border-l border-t border-gray-200 rotate-45"></div>
 
-                        <div className="grid grid-cols-2 gap-8">
-                          {/* Left Column - WHATSAPP FEATURES */}
+                        <div className="grid grid-cols-4 gap-6">
+                          {/* Left Section - Features Overview */}
+                          <div className="col-span-1 pr-4">
+                            <h2 className="text-xl font-bold text-slate-800 mb-3 leading-tight">
+                              Powerful Features for Business Growth
+                            </h2>
+                            <p className="text-slate-600 mb-4 leading-normal text-sm">
+                              Discover our comprehensive suite of WhatsApp
+                              Business API features designed to streamline your
+                              communication, boost engagement, and drive revenue
+                              growth.
+                            </p>
+                            <button
+                              onClick={() => setIsDemoModalOpen(true)}
+                              className="border-2 border-emerald-500 text-emerald-600 bg-white px-6 py-3 rounded-lg hover:bg-emerald-50 transition-colors font-medium text-sm"
+                            >
+                              Request a Demo
+                            </button>
+                          </div>
+
+                          {/* Middle-Left Section - CORE FEATURES */}
                           <div>
-                            <h3 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4">
-                              WHATSAPP FEATURES
+                            <h3 className="text-sm font-bold text-slate-800 uppercase tracking-wider mb-4">
+                              CORE FEATURES
                             </h3>
                             <div className="space-y-4">
                               <div className="flex items-start gap-3 group cursor-pointer">
@@ -724,26 +613,6 @@ const Header: FC = () => {
                             </div>
                           </div>
                         </div>
-
-                        {/* Bottom Section */}
-                        <div className="mt-8 pt-6 border-t border-gray-200">
-                          <div className="flex items-center justify-between">
-                            <div>
-                              <h4 className="font-semibold text-gray-900">
-                                Explore All Features
-                              </h4>
-                              <p className="text-sm text-gray-800">
-                                Discover powerful WhatsApp automation tools
-                              </p>
-                            </div>
-                            <button className="flex items-center gap-2 bg-emerald-500 text-white px-4 py-2 rounded-lg hover:bg-emerald-600 transition-colors">
-                              <span className="text-sm font-medium">
-                                View All Features
-                              </span>
-                              <ArrowRight className="w-4 h-4" />
-                            </button>
-                          </div>
-                        </div>
                       </div>
                     )}
                   </div>
@@ -804,12 +673,12 @@ const Header: FC = () => {
               Login
             </Link>
 
-            {/* Book a Demo Button */}
+            {/* Book Demo Button */}
             <button
               onClick={() => setIsDemoModalOpen(true)}
-              className="hidden sm:inline-flex items-center px-4 py-2 rounded-lg bg-emerald-500 text-black font-semibold font-sans text-sm shadow-lg hover:bg-emerald-600 transition duration-200"
+              className="hidden sm:inline-flex items-center px-4 py-2 rounded-lg bg-[#1E3A8A] text-white font-semibold font-sans text-sm shadow-lg hover:bg-[#1E40AF] transition duration-200"
             >
-              Book a Demo
+              Book Demo
             </button>
           </div>
         </div>
@@ -842,15 +711,15 @@ const Header: FC = () => {
               Login
             </Link>
 
-            {/* Mobile Book a Demo */}
+            {/* Mobile Book Demo */}
             <button
               onClick={() => {
                 setIsDemoModalOpen(true);
                 setMobileMenuOpen(false);
               }}
-              className="block mt-3 px-4 py-2 rounded-lg bg-emerald-500 text-black font-semibold text-center font-sans shadow-lg hover:bg-emerald-600 transition duration-200 w-full"
+              className="block mt-3 px-4 py-2 rounded-lg bg-[#1E3A8A] text-white font-semibold text-center font-sans shadow-lg hover:bg-[#1E40AF] transition duration-200 w-full"
             >
-              Book a Demo
+              Book Demo
             </button>
           </div>
         </nav>
