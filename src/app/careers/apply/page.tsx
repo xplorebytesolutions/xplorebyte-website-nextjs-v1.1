@@ -63,7 +63,7 @@ export default function JobApplication() {
     jobId: jobId || "",
   });
 
-  const [cvFile, setCvFile] = useState(null);
+  const [cvFile, setCvFile] = useState<File | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"success" | "error" | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
