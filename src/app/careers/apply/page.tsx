@@ -128,7 +128,7 @@ export default function JobApplication() {
   };
 
   const validateForm = () => {
-    const newErrors = {};
+    const newErrors: Record<string, string> = {};
 
     if (!formData.jobId) newErrors.jobId = "Please select a position";
     if (!formData.firstName.trim())
