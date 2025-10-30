@@ -225,7 +225,7 @@ export default function JobApplication() {
                   Application Submitted Successfully!
                 </h3>
                 <p className="text-green-700">
-                  Thank you for your interest. We'll review your application and
+                  Thank you for your interest. We&#39;ll review your application and
                   get back to you soon.
                 </p>
               </div>
