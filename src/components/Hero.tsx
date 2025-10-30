@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 import { ArrowRight, Play } from "@phosphor-icons/react";
 import DemoModal from "./DemoModal";
+import SalesModal from "./SalesModal";
 
 const trustedCompanies = [
   { name: "Marketing", icon: "megaphone" },
@@ -100,6 +101,7 @@ const fadeUp: Variants = {
 
 const Hero: FC = () => {
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
+  const [isSalesModalOpen, setIsSalesModalOpen] = useState(false);
 
   return (
     <section className="relative bg-white pt-8 md:pt-12 pb-8 overflow-hidden">
@@ -113,8 +115,8 @@ const Hero: FC = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-8 items-center">
         {/* Left Content */}
         <motion.div initial="hidden" animate="visible" variants={stagger}>
-          {/* Trust Badge */}
-          <motion.div
+          {/* Trust Badge - Hidden until client logos are available */}
+          {/* <motion.div
             className="inline-flex items-center gap-2 bg-[#11A944]/10 border border-[#11A944]/20 rounded-full px-4 py-2 mb-4"
             variants={fadeUp}
           >
@@ -128,7 +130,7 @@ const Hero: FC = () => {
             <span className="text-sm font-semibold text-[#11A944]">
               Trusted by 10,000+ Businesses Worldwide
             </span>
-          </motion.div>
+          </motion.div> */}
 
           {/* Breadcrumbs */}
           <motion.div
@@ -142,7 +144,7 @@ const Hero: FC = () => {
             WhatsApp Business API
           </motion.div>
 
-          {/* Main Headline */}
+          {/* Main Headline - MARKETING TEAM: Update this headline as needed */}
           <motion.h1
             className="font-bold text-gray-900 mb-6"
             style={{
@@ -161,7 +163,7 @@ const Hero: FC = () => {
             className="text-gray-700 mb-8"
             style={{
               fontFamily: "Montserrat, sans-serif",
-              fontSize: "1rem",
+              fontSize: "1.1rem",
               lineHeight: "1.6",
               maxWidth: "55ch",
             }}
@@ -176,7 +178,7 @@ const Hero: FC = () => {
             className="text-gray-700 mb-8"
             style={{
               fontFamily: "Montserrat, sans-serif",
-              fontSize: "1rem",
+              fontSize: "1.1rem",
               lineHeight: "1.6",
               maxWidth: "55ch",
             }}
@@ -209,7 +211,7 @@ const Hero: FC = () => {
               Book Demo
             </button>
             <button
-              onClick={() => setIsDemoModalOpen(true)}
+              onClick={() => setIsSalesModalOpen(true)}
               className="inline-flex items-center px-6 py-3 rounded-md font-semibold border-2 border-black text-black hover:bg-gray-100 transition duration-200 group"
               style={{
                 fontFamily: "Montserrat, sans-serif",
@@ -296,6 +298,12 @@ const Hero: FC = () => {
       <DemoModal
         isOpen={isDemoModalOpen}
         onClose={() => setIsDemoModalOpen(false)}
+      />
+
+      {/* Sales Modal */}
+      <SalesModal
+        isOpen={isSalesModalOpen}
+        onClose={() => setIsSalesModalOpen(false)}
       />
     </section>
   );

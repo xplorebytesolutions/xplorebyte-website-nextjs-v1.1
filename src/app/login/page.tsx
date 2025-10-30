@@ -124,7 +124,10 @@ export default function Login() {
                     Remember me
                   </label>
                 </div>
-                <a href="#" className="text-sm text-[#11A944] hover:underline">
+                <a
+                  href="/contact"
+                  className="text-sm text-[#11A944] hover:underline"
+                >
                   Forgot password?
                 </a>
               </div>

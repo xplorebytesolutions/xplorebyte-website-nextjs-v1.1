@@ -64,7 +64,7 @@ export default function Product() {
                   <div className="grid grid-cols-2 gap-4">
                     <div className="text-center">
                       <div className="text-3xl font-bold text-[#11A944]">
-                        500+
+                        10K+
                       </div>
                       <div className="text-white/80 text-sm">
                         Active Clients

@@ -25,10 +25,17 @@ export default function AIChatbotsFlows() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6">
+                <h1
+                  className="font-extrabold text-white mb-6"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "2.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
                   AI <span className="text-[#11A944]">Chatbots & Flows</span>
                 </h1>
-                <p className="text-xl text-white/80 mb-8">
+                <p className="text-lg text-white/80 mb-8">
                   No-code bots & interactive flows. Build intelligent
                   conversations that engage and convert your customers.
                 </p>
@@ -64,10 +71,17 @@ export default function AIChatbotsFlows() {
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <h2
+                className="font-bold text-gray-900 mb-4"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "2rem",
+                  lineHeight: "1.2",
+                }}
+              >
                 Build Smarter Conversations
               </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              <p className="text-base text-gray-600 max-w-3xl mx-auto">
                 Create intelligent chatbots and interactive flows without any
                 coding knowledge.
               </p>
@@ -78,10 +92,10 @@ export default function AIChatbotsFlows() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#11A944] to-[#0296FE] rounded-full mx-auto mb-4 flex items-center justify-center">
                   <Code className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   No-Code Builder
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-base text-gray-600">
                   Visual drag-and-drop interface to create complex conversation
                   flows without programming.
                 </p>
@@ -91,10 +105,10 @@ export default function AIChatbotsFlows() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#FFB800] to-[#EA1752] rounded-full mx-auto mb-4 flex items-center justify-center">
                   <Zap className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Smart Automation
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-base text-gray-600">
                   AI-powered responses that understand context and provide
                   relevant answers to customers.
                 </p>
@@ -104,10 +118,10 @@ export default function AIChatbotsFlows() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#0296FE] to-[#7D47C4] rounded-full mx-auto mb-4 flex items-center justify-center">
                   <MessageCircle className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Interactive Flows
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-base text-gray-600">
                   Create engaging multi-step conversations with buttons, quick
                   replies, and rich media.
                 </p>
@@ -121,7 +135,14 @@ export default function AIChatbotsFlows() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                <h2
+                  className="font-bold text-gray-900 mb-6"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "2rem",
+                    lineHeight: "1.2",
+                  }}
+                >
                   Why Choose Our AI Chatbots?
                 </h2>
                 <div className="space-y-6">
@@ -130,10 +151,10 @@ export default function AIChatbotsFlows() {
                       <CheckCircle className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      <h3 className="text-base font-semibold text-gray-900 mb-2">
                         24/7 Availability
                       </h3>
-                      <p className="text-gray-600">
+                      <p className="text-base text-gray-600">
                         Your customers get instant responses anytime, anywhere,
                         improving satisfaction and engagement.
                       </p>
@@ -145,10 +166,10 @@ export default function AIChatbotsFlows() {
                       <CheckCircle className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      <h3 className="text-base font-semibold text-gray-900 mb-2">
                         Lead Qualification
                       </h3>
-                      <p className="text-gray-600">
+                      <p className="text-base text-gray-600">
                         Automatically qualify leads and route them to the right
                         team members for faster conversions.
                       </p>
@@ -160,10 +181,10 @@ export default function AIChatbotsFlows() {
                       <CheckCircle className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      <h3 className="text-base font-semibold text-gray-900 mb-2">
                         Scalable Solutions
                       </h3>
-                      <p className="text-gray-600">
+                      <p className="text-base text-gray-600">
                         Handle thousands of conversations simultaneously without
                         compromising quality or speed.
                       </p>
@@ -186,10 +207,17 @@ export default function AIChatbotsFlows() {
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-r from-[#0A0E23] to-[#181B32]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2
+              className="font-bold text-white mb-6"
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                fontSize: "2rem",
+                lineHeight: "1.2",
+              }}
+            >
               Ready to Build Your First AI Chatbot?
             </h2>
-            <p className="text-lg text-white/80 mb-8">
+            <p className="text-base text-white/80 mb-8">
               Start creating intelligent conversations that engage and convert
               your customers.
             </p>

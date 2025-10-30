@@ -410,12 +410,6 @@ export default function SuccessStories() {
                 Start Your Success Story
                 <ArrowRight className="w-5 h-5 ml-2" />
               </a>
-              <a
-                href="/whatsapp-business"
-                className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition-colors"
-              >
-                View Our Solutions
-              </a>
             </div>
           </div>
         </section>

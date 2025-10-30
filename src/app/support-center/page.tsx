@@ -23,10 +23,17 @@ export default function SupportCenter() {
         <section className="bg-gradient-to-br from-[#0A0E23] via-[#202748] to-[#11A944]/40 py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6">
+              <h1
+                className="font-extrabold text-white mb-6"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "2.5rem",
+                  lineHeight: "1.2",
+                }}
+              >
                 <span className="text-[#11A944]">Help</span> Center
               </h1>
-              <p className="text-xl text-white/80 max-w-3xl mx-auto mb-8">
+              <p className="text-lg text-white/80 max-w-3xl mx-auto mb-8">
                 Usage guides & tutorials. Find answers to your questions and
                 learn how to get the most out of XploreByte.
               </p>
@@ -48,10 +55,17 @@ export default function SupportCenter() {
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <h2
+                className="font-bold text-gray-900 mb-4"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "2rem",
+                  lineHeight: "1.2",
+                }}
+              >
                 Browse by Category
               </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              <p className="text-base text-gray-600 max-w-3xl mx-auto">
                 Find the help you need organized by topic and feature.
               </p>
             </div>
@@ -61,10 +75,10 @@ export default function SupportCenter() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#11A944] to-[#0296FE] rounded-full mx-auto mb-4 flex items-center justify-center">
                   <BookOpen className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Getting Started
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-base text-gray-600">
                   Learn the basics and set up your first WhatsApp campaigns.
                 </p>
               </div>
@@ -73,10 +87,10 @@ export default function SupportCenter() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#FFB800] to-[#EA1752] rounded-full mx-auto mb-4 flex items-center justify-center">
                   <Video className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Video Tutorials
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-base text-gray-600">
                   Watch step-by-step video guides for all major features.
                 </p>
               </div>
@@ -85,10 +99,10 @@ export default function SupportCenter() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#0296FE] to-[#7D47C4] rounded-full mx-auto mb-4 flex items-center justify-center">
                   <FileText className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   API Documentation
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-base text-gray-600">
                   Technical guides for developers and advanced integrations.
                 </p>
               </div>
@@ -100,10 +114,17 @@ export default function SupportCenter() {
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <h2
+                className="font-bold text-gray-900 mb-4"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "2rem",
+                  lineHeight: "1.2",
+                }}
+              >
                 Popular Articles
               </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              <p className="text-base text-gray-600 max-w-3xl mx-auto">
                 Most frequently asked questions and helpful guides.
               </p>
             </div>
@@ -115,15 +136,15 @@ export default function SupportCenter() {
                     <HelpCircle className="w-6 h-6 text-[#11A944]" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    <h3 className="text-base font-semibold text-gray-900 mb-2">
                       How to Set Up Your First Campaign
                     </h3>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-base text-gray-600 mb-4">
                       A complete guide to creating and launching your first
                       WhatsApp marketing campaign.
                     </p>
                     <a
-                      href="#"
+                      href="/contact"
                       className="text-[#11A944] font-medium hover:text-[#0d8a3a] transition-colors"
                     >
                       Read Article →
@@ -138,15 +159,15 @@ export default function SupportCenter() {
                     <MessageCircle className="w-6 h-6 text-[#11A944]" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    <h3 className="text-base font-semibold text-gray-900 mb-2">
                       Understanding Message Templates
                     </h3>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-base text-gray-600 mb-4">
                       Learn about WhatsApp message templates and how to use them
                       effectively.
                     </p>
                     <a
-                      href="#"
+                      href="/contact"
                       className="text-[#11A944] font-medium hover:text-[#0d8a3a] transition-colors"
                     >
                       Read Article →
@@ -161,15 +182,15 @@ export default function SupportCenter() {
                     <BookOpen className="w-6 h-6 text-[#11A944]" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    <h3 className="text-base font-semibold text-gray-900 mb-2">
                       Best Practices for WhatsApp Marketing
                     </h3>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-base text-gray-600 mb-4">
                       Essential tips and strategies to maximize your WhatsApp
                       marketing success.
                     </p>
                     <a
-                      href="#"
+                      href="/contact"
                       className="text-[#11A944] font-medium hover:text-[#0d8a3a] transition-colors"
                     >
                       Read Article →
@@ -184,14 +205,14 @@ export default function SupportCenter() {
                     <FileText className="w-6 h-6 text-[#11A944]" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    <h3 className="text-base font-semibold text-gray-900 mb-2">
                       Troubleshooting Common Issues
                     </h3>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-base text-gray-600 mb-4">
                       Solutions to the most common problems you might encounter.
                     </p>
                     <a
-                      href="#"
+                      href="/contact"
                       className="text-[#11A944] font-medium hover:text-[#0d8a3a] transition-colors"
                     >
                       Read Article →
@@ -206,10 +227,17 @@ export default function SupportCenter() {
         {/* Contact Support Section */}
         <section className="py-20 bg-gradient-to-r from-[#0A0E23] to-[#181B32]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2
+              className="font-bold text-white mb-6"
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                fontSize: "2rem",
+                lineHeight: "1.2",
+              }}
+            >
               Still Need Help?
             </h2>
-            <p className="text-lg text-white/80 mb-8">
+            <p className="text-base text-white/80 mb-8">
               Can&apos;t find what you&apos;re looking for? Our support team is
               here to help.
             </p>

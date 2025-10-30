@@ -559,7 +559,7 @@ const IndustriesGrid: React.FC = () => {
           <span className="text-emerald-500">WhatsApp Business Solutions</span>{" "}
           for Growing Brands
         </h2>
-        <p className="text-lg md:text-xl text-slate-600 text-center mb-8 md:mb-12 max-w-4xl mx-auto leading-relaxed">
+        <p className="text-base md:text-lg text-slate-600 text-center mb-8 md:mb-12 max-w-4xl mx-auto leading-relaxed">
           From AI chatbots and automated campaigns to WhatsApp Flows and
           auto-replies, we provide comprehensive WhatsApp Business API services
           including marketing campaigns, customer support automation, and
@@ -666,7 +666,7 @@ const IndustriesGrid: React.FC = () => {
                           <div className="mb-3">
                             <div className="flex items-center gap-3 mb-2">
                               <span
-                                className={`px-3 py-1 rounded-full text-xs font-semibold ${
+                                className={`px-3 py-1 rounded-full text-xs font-bold ${
                                   ind.bg === "bg-green-50"
                                     ? "bg-green-100 text-green-700"
                                     : ind.bg === "bg-blue-50"
@@ -677,10 +677,21 @@ const IndustriesGrid: React.FC = () => {
                                     ? "bg-teal-100 text-teal-700"
                                     : "bg-emerald-100 text-emerald-700"
                                 }`}
+                                style={{
+                                  fontFamily: "Montserrat, sans-serif",
+                                  fontSize: "0.7rem",
+                                }}
                               >
                                 Industry
                               </span>
-                              <h3 className="text-xl md:text-2xl font-bold text-slate-900">
+                              <h3
+                                className="text-xl md:text-2xl font-bold text-slate-900"
+                                style={{
+                                  fontFamily: "Montserrat, sans-serif",
+                                  fontSize: "1.8rem",
+                                  lineHeight: "1.2",
+                                }}
+                              >
                                 {ind.title}
                               </h3>
                             </div>
@@ -718,12 +729,22 @@ const IndustriesGrid: React.FC = () => {
                                         />
                                       </svg>
                                     </div>
-                                    <span className="text-slate-600 text-sm md:text-base leading-relaxed font-medium">
+                                    <span
+                                      className="text-slate-600 text-xs md:text-sm leading-relaxed font-medium"
+                                      style={{
+                                        fontFamily: "Montserrat, sans-serif",
+                                      }}
+                                    >
                                       {line.substring(1).trim()}
                                     </span>
                                   </div>
                                 ) : (
-                                  <span className="text-slate-700 font-bold text-lg md:text-xl">
+                                  <span
+                                    className="text-slate-700 font-bold text-base md:text-lg"
+                                    style={{
+                                      fontFamily: "Montserrat, sans-serif",
+                                    }}
+                                  >
                                     {line}
                                   </span>
                                 )}

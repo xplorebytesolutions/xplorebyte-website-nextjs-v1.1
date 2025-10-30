@@ -1,10 +1,14 @@
 "use client";
 
+import { useState } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import SalesModal from "../../components/SalesModal";
 import { Clock, Bell, ArrowRight, Zap, Star } from "lucide-react";
 
 export default function ComingSoon() {
+  const [isSalesModalOpen, setIsSalesModalOpen] = useState(false);
+
   return (
     <>
       <Header />
@@ -22,8 +26,8 @@ export default function ComingSoon() {
                 Coming
               </h1>
               <p className="text-xl text-white/80 max-w-3xl mx-auto mb-8">
-                We&apos;re working hard to bring you revolutionary WhatsApp Business
-                features that will transform your customer engagement.
+                We&apos;re working hard to bring you revolutionary WhatsApp
+                Business features that will transform your customer engagement.
               </p>
               <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 max-w-2xl mx-auto">
                 <h2 className="text-2xl font-bold text-white mb-4">
@@ -60,8 +64,8 @@ export default function ComingSoon() {
                 What&apos;s Coming
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Get a sneak peek at the exciting features we&apos;re developing for
-                you.
+                Get a sneak peek at the exciting features we&apos;re developing
+                for you.
               </p>
             </div>
 
@@ -254,13 +258,13 @@ export default function ComingSoon() {
               generation of WhatsApp Business automation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
+              <button
+                onClick={() => setIsSalesModalOpen(true)}
                 className="inline-flex items-center px-8 py-3 bg-[#11A944] text-white font-semibold rounded-lg hover:bg-[#0d8a3a] transition-colors"
               >
-                Get Started Now
+                Talk to Sales
                 <ArrowRight className="w-5 h-5 ml-2" />
-              </a>
+              </button>
               <a
                 href="/whatsapp-business"
                 className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition-colors"
@@ -273,6 +277,12 @@ export default function ComingSoon() {
       </main>
 
       <Footer />
+
+      {/* Sales Modal */}
+      <SalesModal
+        isOpen={isSalesModalOpen}
+        onClose={() => setIsSalesModalOpen(false)}
+      />
     </>
   );
 }

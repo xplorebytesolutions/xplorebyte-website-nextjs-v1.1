@@ -1,7 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
+import SalesModal from "../../../components/SalesModal";
+import DemoModal from "../../../components/DemoModal";
 import {
   Utensils,
   Clock,
@@ -15,6 +18,9 @@ import {
 } from "lucide-react";
 
 export default function Food() {
+  const [isSalesModalOpen, setIsSalesModalOpen] = useState(false);
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
+
   return (
     <>
       <Header />
@@ -34,19 +40,19 @@ export default function Food() {
                   Streamline orders, delivery tracking, and customer engagement.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <a
-                    href="/contact"
+                  <button
+                    onClick={() => setIsSalesModalOpen(true)}
                     className="inline-flex items-center px-6 py-3 bg-[#11A944] text-white font-semibold rounded-lg hover:bg-[#0d8a3a] transition-colors"
                   >
-                    Get Started
+                    Talk to Sales
                     <ArrowRight className="w-5 h-5 ml-2" />
-                  </a>
-                  <a
-                    href="/whatsapp-business"
+                  </button>
+                  <button
+                    onClick={() => setIsDemoModalOpen(true)}
                     className="inline-flex items-center px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition-colors"
                   >
-                    View Demo
-                  </a>
+                    Book Demo
+                  </button>
                 </div>
               </div>
               <div className="relative">
@@ -342,25 +348,37 @@ export default function Food() {
               automation to enhance customer experience.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
+              <button
+                onClick={() => setIsSalesModalOpen(true)}
                 className="inline-flex items-center px-8 py-3 bg-[#11A944] text-white font-semibold rounded-lg hover:bg-[#0d8a3a] transition-colors"
               >
-                Get Started Today
+                Talk to Sales
                 <ArrowRight className="w-5 h-5 ml-2" />
-              </a>
-              <a
-                href="/whatsapp-business"
+              </button>
+              <button
+                onClick={() => setIsDemoModalOpen(true)}
                 className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition-colors"
               >
-                View Demo
-              </a>
+                Book Demo
+              </button>
             </div>
           </div>
         </section>
       </main>
 
       <Footer />
+
+      {/* Sales Modal */}
+      <SalesModal
+        isOpen={isSalesModalOpen}
+        onClose={() => setIsSalesModalOpen(false)}
+      />
+
+      {/* Demo Modal */}
+      <DemoModal
+        isOpen={isDemoModalOpen}
+        onClose={() => setIsDemoModalOpen(false)}
+      />
     </>
   );
 }

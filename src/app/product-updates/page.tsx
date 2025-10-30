@@ -22,10 +22,17 @@ export default function ProductUpdates() {
         <section className="bg-gradient-to-br from-[#0A0E23] via-[#202748] to-[#11A944]/40 py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6">
+              <h1
+                className="font-extrabold text-white mb-6"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "2.5rem",
+                  lineHeight: "1.2",
+                }}
+              >
                 <span className="text-[#11A944]">Product</span> Updates
               </h1>
-              <p className="text-xl text-white/80 max-w-3xl mx-auto mb-8">
+              <p className="text-lg text-white/80 max-w-3xl mx-auto mb-8">
                 Latest feature updates. Stay informed about new features,
                 improvements, and enhancements to XploreByte.
               </p>
@@ -46,10 +53,17 @@ export default function ProductUpdates() {
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <h2
+                className="font-bold text-gray-900 mb-4"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "2rem",
+                  lineHeight: "1.2",
+                }}
+              >
                 Latest Updates
               </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              <p className="text-base text-gray-600 max-w-3xl mx-auto">
                 Discover what&apos;s new in XploreByte and how it can improve
                 your WhatsApp marketing.
               </p>
@@ -71,10 +85,10 @@ export default function ProductUpdates() {
                         December 15, 2024
                       </span>
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
                       Advanced Analytics Dashboard
                     </h3>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-base text-gray-600 mb-4">
                       We&apos;ve launched a comprehensive analytics dashboard
                       that provides deeper insights into your WhatsApp
                       campaigns, including real-time metrics, conversion
@@ -82,7 +96,7 @@ export default function ProductUpdates() {
                     </p>
                     <div className="flex items-center gap-4">
                       <a
-                        href="#"
+                        href="/contact"
                         className="text-[#11A944] font-medium hover:text-[#0d8a3a] transition-colors"
                       >
                         Learn More →
@@ -110,17 +124,17 @@ export default function ProductUpdates() {
                         December 10, 2024
                       </span>
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
                       Improved Message Templates
                     </h3>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-base text-gray-600 mb-4">
                       Enhanced message template management with better approval
                       workflows, template versioning, and automated compliance
                       checking.
                     </p>
                     <div className="flex items-center gap-4">
                       <a
-                        href="#"
+                        href="/contact"
                         className="text-[#11A944] font-medium hover:text-[#0d8a3a] transition-colors"
                       >
                         Learn More →
@@ -148,17 +162,17 @@ export default function ProductUpdates() {
                         December 5, 2024
                       </span>
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
                       Enhanced API Performance
                     </h3>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-base text-gray-600 mb-4">
                       Significant improvements to API response times and
                       reliability, with 99.9% uptime guarantee and faster
                       message delivery.
                     </p>
                     <div className="flex items-center gap-4">
                       <a
-                        href="#"
+                        href="/contact"
                         className="text-[#11A944] font-medium hover:text-[#0d8a3a] transition-colors"
                       >
                         Learn More →
@@ -178,10 +192,17 @@ export default function ProductUpdates() {
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <h2
+                className="font-bold text-gray-900 mb-4"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "2rem",
+                  lineHeight: "1.2",
+                }}
+              >
                 What&apos;s Coming Next
               </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              <p className="text-base text-gray-600 max-w-3xl mx-auto">
                 Get a sneak peek at upcoming features and improvements
                 we&apos;re working on.
               </p>
@@ -192,10 +213,10 @@ export default function ProductUpdates() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#11A944] to-[#0296FE] rounded-full mx-auto mb-4 flex items-center justify-center">
                   <Calendar className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Q1 2025
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-base text-gray-600">
                   AI-powered message optimization and advanced automation
                   workflows.
                 </p>
@@ -205,10 +226,10 @@ export default function ProductUpdates() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#FFB800] to-[#EA1752] rounded-full mx-auto mb-4 flex items-center justify-center">
                   <Megaphone className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Q2 2025
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-base text-gray-600">
                   Multi-channel messaging support and enhanced team
                   collaboration tools.
                 </p>
@@ -218,10 +239,10 @@ export default function ProductUpdates() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#0296FE] to-[#7D47C4] rounded-full mx-auto mb-4 flex items-center justify-center">
                   <Zap className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Q3 2025
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-base text-gray-600">
                   Advanced reporting suite and enterprise-grade security
                   features.
                 </p>
@@ -233,10 +254,17 @@ export default function ProductUpdates() {
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-r from-[#0A0E23] to-[#181B32]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2
+              className="font-bold text-white mb-6"
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                fontSize: "2rem",
+                lineHeight: "1.2",
+              }}
+            >
               Stay Updated
             </h2>
-            <p className="text-lg text-white/80 mb-8">
+            <p className="text-base text-white/80 mb-8">
               Subscribe to our newsletter and be the first to know about new
               features and updates.
             </p>

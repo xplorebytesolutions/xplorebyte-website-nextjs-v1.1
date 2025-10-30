@@ -297,7 +297,7 @@ const LandingPage = () => {
               </div>
 
               {/* Social Proof */}
-              <div className="flex items-center gap-6">
+              <div className="flex items-center gap-6 pt-4">
                 <div className="flex items-center gap-1">
                   <div className="flex">
                     {[...Array(5)].map((_, i) => (
@@ -354,7 +354,7 @@ const LandingPage = () => {
       <section className="py-12 bg-[#F9FAFB]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-center text-gray-600 mb-8 text-lg">
-            Trusted by 500+ businesses including:
+            Trusted by 10,000+ businesses including:
           </p>
 
           {/* Scrolling Logo Carousel */}
@@ -913,14 +913,14 @@ const LandingPage = () => {
       {/* All-in-One WhatsApp Business Solutions Section */}
       <section className="py-14 md:py-20 bg-gradient-to-br from-white via-slate-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-3 md:px-8">
-          <h2 className="text-2xl md:text-4xl font-bold text-slate-900 text-center mb-6 md:mb-8">
+          <h2 className="text-2xl md:text-4xl font-bold text-slate-900 text-center mb-3 md:mb-4">
             All-in-One{" "}
             <span className="text-emerald-500">
               WhatsApp Business Solutions
             </span>{" "}
             for Growing Brands
           </h2>
-          <p className="text-lg md:text-xl text-slate-600 text-center mb-8 md:mb-12 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base md:text-lg text-slate-600 text-center mb-6 md:mb-8 max-w-4xl mx-auto leading-relaxed">
             From AI chatbots and automated campaigns to WhatsApp Flows and
             auto-replies, we provide comprehensive WhatsApp Business API
             services including marketing campaigns, customer support automation,
@@ -1088,7 +1088,7 @@ const LandingPage = () => {
                           group relative shadow-lg flex flex-row items-center px-4 py-6 md:px-6 md:py-8 ${ind.bg}
                           transition hover:scale-[1.02] hover:shadow-2xl hover:z-20 duration-300
                           border border-white/70 hover:border-emerald-400/60
-                          min-h-[160px] md:min-h-[180px]
+                          min-h-[120px] md:min-h-[140px]
                           overflow-visible block cursor-pointer
                         `}
                       >
@@ -1105,11 +1105,11 @@ const LandingPage = () => {
                               }}
                             />
                             {/* IMAGE */}
-                            <div className="relative z-10 w-full h-full">
+                            <div className="relative z-10 w-full h-full flex items-center justify-center">
                               <img
                                 src={ind.image}
                                 alt={ind.title}
-                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
                                 onError={e => {
                                   e.currentTarget.src =
                                     "/images/industry-placeholder.png";
@@ -1126,23 +1126,25 @@ const LandingPage = () => {
                             <div className="mb-3">
                               <div className="flex items-center gap-3 mb-2">
                                 <span
-                                  className={`px-3 py-1 rounded-full text-xs font-semibold ${
+                                  className={`px-3 py-1 rounded-full text-xs font-bold ${
                                     ind.bg === "bg-green-50"
                                       ? "bg-green-100 text-green-700"
                                       : ind.bg === "bg-blue-50"
                                       ? "bg-blue-100 text-blue-700"
                                       : "bg-emerald-100 text-emerald-700"
                                   }`}
+                                  style={{
+                                    fontFamily: "Montserrat, sans-serif",
+                                  }}
                                 >
                                   Industry
                                 </span>
                                 <h3
-                                  className="text-xl md:text-2xl text-slate-900"
+                                  className="text-xl md:text-2xl text-slate-900 font-bold"
                                   style={{
                                     fontFamily: "Montserrat, sans-serif",
                                     fontSize: "2.5rem",
                                     lineHeight: "1.2",
-                                    fontWeight: "normal",
                                   }}
                                 >
                                   {ind.title}
@@ -1265,23 +1267,26 @@ const LandingPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section 1: The "Problem & Promise" Hero */}
           <div className="text-center mb-20">
-            <h2 className="text-4xl font-bold text-black mb-6">
-              Why Your Business Can&apos;t Afford to Ignore WhatsApp
-            </h2>
-            <p className="text-xl text-[#333] mb-12 max-w-4xl mx-auto">
-              While your competitors are still using outdated email and phone
-              systems, smart businesses are already winning customers with
-              WhatsApp&apos;s 98% open rate and instant engagement.
-            </p>
+            {/* Why Your Business Can't Afford to Ignore WhatsApp Section */}
+            <div className="text-center py-8">
+              <h2 className="text-4xl font-bold text-black mb-6">
+                Why WhatsApp is Essential for Your Business
+              </h2>
+              <p className="text-lg text-[#333] mb-12 max-w-4xl mx-auto">
+                While your competitors are still using outdated email and phone
+                systems, smart businesses are already winning customers with
+                WhatsApp&apos;s 98% open rate and instant engagement.
+              </p>
 
-            {/* Visual Element - Strip Banner */}
-            <div className="max-w-4xl mx-auto relative">
-              <div className="rounded-2xl overflow-hidden w-full h-32 sm:h-40 md:h-48 lg:h-56 bg-gray-50 border border-gray-200">
-                <img
-                  src="/landing-page/why_api.webp"
-                  alt="Why WhatsApp API for Business - Growth and Communication Solutions"
-                  className="w-full h-full object-cover"
-                />
+              {/* Visual Element - Strip Banner */}
+              <div className="max-w-4xl mx-auto relative">
+                <div className="rounded-xl overflow-hidden w-full h-32 sm:h-40 md:h-48 lg:h-56 bg-gray-50 border border-gray-200 shadow-lg">
+                  <img
+                    src="/landing-page/why_api.webp"
+                    alt="Why WhatsApp API for Business - Growth and Communication Solutions"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -1292,7 +1297,7 @@ const LandingPage = () => {
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
                 All the features you need, all in one place
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                 Everything you need to turn WhatsApp into your most powerful
                 business tool. From intelligent campaigns to automated
                 conversations.
@@ -1600,7 +1605,7 @@ const LandingPage = () => {
             <h2 className="text-4xl font-bold text-center text-[#1E3A8A] mb-6">
               Transform Your Business with WhatsApp API
             </h2>
-            <p className="text-xl text-gray-600 text-center max-w-4xl mx-auto mb-16">
+            <p className="text-lg text-gray-600 text-center max-w-4xl mx-auto mb-16">
               Three powerful ways to revolutionize your customer engagement,
               boost revenue, and scale operations
             </p>
@@ -1608,7 +1613,7 @@ const LandingPage = () => {
             {/* Featurette 1: Marketing & Sales */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
               <div>
-                <h3 className="text-3xl font-bold text-[#1E3A8A] mb-4">
+                <h3 className="text-2xl font-bold text-[#1E3A8A] mb-4">
                   1. Drive Revenue & Boost Sales
                 </h3>
                 <p className="text-lg text-[#333] mb-6">
@@ -1622,7 +1627,7 @@ const LandingPage = () => {
                       <ShoppingCart className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-[#1E3A8A] mb-1">
+                      <h4 className="font-semibold text-black mb-1">
                         Drive More Sales
                       </h4>
                       <p className="text-[#333]">
@@ -1637,7 +1642,7 @@ const LandingPage = () => {
                       <Rocket className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-[#1E3A8A] mb-1">
+                      <h4 className="font-semibold text-black mb-1">
                         Launch Campaigns
                       </h4>
                       <p className="text-[#333]">
@@ -1652,7 +1657,7 @@ const LandingPage = () => {
                       <Building2 className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-[#1E3A8A] mb-1">
+                      <h4 className="font-semibold text-black mb-1">
                         Build Your Brand
                       </h4>
                       <p className="text-[#333]">
@@ -1692,7 +1697,7 @@ const LandingPage = () => {
               </div>
 
               <div className="flex flex-col justify-center h-80">
-                <h3 className="text-3xl font-bold text-[#1E3A8A] mb-4">
+                <h3 className="text-2xl font-bold text-[#1E3A8A] mb-4">
                   2. Deliver Exceptional Customer Support
                 </h3>
                 <p className="text-lg text-[#333] mb-6">
@@ -1706,7 +1711,7 @@ const LandingPage = () => {
                       <Bot className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-[#1E3A8A] mb-1">
+                      <h4 className="font-semibold text-black mb-1">
                         Resolve Queries Instantly
                       </h4>
                       <p className="text-[#333]">
@@ -1720,7 +1725,7 @@ const LandingPage = () => {
                       <Clock className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-[#1E3A8A] mb-1">
+                      <h4 className="font-semibold text-black mb-1">
                         Eliminate Wait Times
                       </h4>
                       <p className="text-[#333]">
@@ -1734,7 +1739,7 @@ const LandingPage = () => {
                       <Users className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-[#1E3A8A] mb-1">
+                      <h4 className="font-semibold text-black mb-1">
                         Empower Your Agents
                       </h4>
                       <p className="text-[#333]">
@@ -1749,7 +1754,7 @@ const LandingPage = () => {
             {/* Featurette 3: Automation & Scale */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
               <div className="flex flex-col justify-center h-80">
-                <h3 className="text-3xl font-bold text-[#1E3A8A] mb-4">
+                <h3 className="text-2xl font-bold text-[#1E3A8A] mb-4">
                   3. Automate & Scale Seamlessly
                 </h3>
                 <p className="text-lg text-[#333] mb-6">
@@ -1763,7 +1768,7 @@ const LandingPage = () => {
                       <Settings className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-[#1E3A8A] mb-1">
+                      <h4 className="font-semibold text-black mb-1">
                         Automate Everything
                       </h4>
                       <p className="text-[#333]">
@@ -1777,7 +1782,7 @@ const LandingPage = () => {
                       <Link className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-[#1E3A8A] mb-1">
+                      <h4 className="font-semibold text-black mb-1">
                         Integrate Your Stack
                       </h4>
                       <p className="text-[#333]">
@@ -1791,7 +1796,7 @@ const LandingPage = () => {
                       <Infinity className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-[#1E3A8A] mb-1">
+                      <h4 className="font-semibold text-black mb-1">
                         Grow Without Limits
                       </h4>
                       <p className="text-[#333]">
@@ -2126,7 +2131,7 @@ const LandingPage = () => {
 
           <div className="text-center">
             <p className="text-white/70 text-sm mb-2">
-              Trusted by 500+ businesses worldwide
+              Trusted by 10,000+ businesses worldwide
             </p>
             <div className="flex items-center justify-center gap-6 opacity-60">
               <div className="text-xs font-medium">✓ Enterprise Security</div>
@@ -2696,22 +2701,34 @@ const LandingPage = () => {
               <h4 className="font-semibold mb-4 text-white">Product</h4>
               <ul className="space-y-2 text-[#F9FAFB]">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="/features"
+                    className="hover:text-white transition-colors"
+                  >
                     Features
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="/pricing"
+                    className="hover:text-white transition-colors"
+                  >
                     Pricing
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="/api-documentation"
+                    className="hover:text-white transition-colors"
+                  >
                     API
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="/features/integrations-hub"
+                    className="hover:text-white transition-colors"
+                  >
                     Integrations
                   </a>
                 </li>
@@ -2721,22 +2738,26 @@ const LandingPage = () => {
               <h4 className="font-semibold mb-4 text-white">Company</h4>
               <ul className="space-y-2 text-[#F9FAFB]">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="/about-us"
+                    className="hover:text-white transition-colors"
+                  >
                     About
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="/careers"
+                    className="hover:text-white transition-colors"
+                  >
                     Careers
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="/contact"
+                    className="hover:text-white transition-colors"
+                  >
                     Contact
                   </a>
                 </li>
@@ -2746,22 +2767,26 @@ const LandingPage = () => {
               <h4 className="font-semibold mb-4 text-white">Support</h4>
               <ul className="space-y-2 text-[#F9FAFB]">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="/support-center"
+                    className="hover:text-white transition-colors"
+                  >
                     Help Center
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="/api-documentation"
+                    className="hover:text-white transition-colors"
+                  >
                     Documentation
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Status
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="/user-community"
+                    className="hover:text-white transition-colors"
+                  >
                     Community
                   </a>
                 </li>

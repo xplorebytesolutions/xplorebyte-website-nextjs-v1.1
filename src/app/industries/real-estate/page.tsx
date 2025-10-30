@@ -28,11 +28,17 @@ export default function RealEstatePage() {
                 services.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors">
-                  Get Started
+                <button
+                  onClick={() => setIsSalesModalOpen(true)}
+                  className="bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors"
+                >
+                  Talk to Sales
                 </button>
-                <button className="border border-emerald-600 text-emerald-600 px-8 py-3 rounded-lg font-semibold hover:bg-emerald-50 transition-colors">
-                  View Demo
+                <button
+                  onClick={() => setIsDemoModalOpen(true)}
+                  className="border border-emerald-600 text-emerald-600 px-8 py-3 rounded-lg font-semibold hover:bg-emerald-50 transition-colors"
+                >
+                  Book Demo
                 </button>
               </div>
             </div>

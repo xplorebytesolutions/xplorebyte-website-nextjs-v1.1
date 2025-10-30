@@ -6,9 +6,17 @@ import {
   FileText,
   Shield,
   AlertTriangle,
-  CheckCircle,
   Users,
   Lock,
+  CreditCard,
+  Globe,
+  Scale,
+  Mail,
+  Clock,
+  UserCheck,
+  Eye,
+  Database,
+  Zap,
 } from "lucide-react";
 
 export default function TermsOfService() {
@@ -21,12 +29,20 @@ export default function TermsOfService() {
         <section className="bg-gradient-to-br from-[#0A0E23] via-[#202748] to-[#11A944]/40 py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6">
-                Terms of <span className="text-[#11A944]">Service</span>
+              <h1
+                className="font-bold text-white mb-6"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "2.5rem",
+                  lineHeight: "1.2",
+                }}
+              >
+                Terms of <span className="text-[#11A944]">Use</span>
               </h1>
               <p className="text-xl text-white/80 max-w-3xl mx-auto">
-                Please read these terms carefully before using our services. By
-                using our platform, you agree to be bound by these terms.
+                This Terms of Use is a binding legal agreement between you and
+                XploreByte Solutions. Please read these terms carefully before
+                using our services.
               </p>
             </div>
           </div>
@@ -39,344 +55,732 @@ export default function TermsOfService() {
               <div className="flex items-center gap-3">
                 <AlertTriangle className="w-6 h-6 text-[#11A944]" />
                 <p className="text-gray-700">
-                  <strong>Last Updated:</strong> January 15, 2025
+                  <strong>Effective Date:</strong> October 27, 2025
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Terms Overview */}
-        <section className="py-20 bg-white">
+        {/* Terms Introduction */}
+        <section className="py-8 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Service Agreement
-              </h2>
-              <p className="text-lg text-gray-600">
-                These terms govern your use of our WhatsApp Business automation
-                platform and services.
+            <div className="bg-gray-50 rounded-lg p-6 shadow-sm border border-gray-200">
+              <div className="flex items-center gap-3 mb-4">
+                <Shield className="w-6 h-6 text-[#11A944]" />
+                <h2
+                  className="font-semibold text-gray-900"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
+                  Agreement Overview
+                </h2>
+              </div>
+              <p className="text-gray-700 leading-relaxed mb-4 text-base">
+                This Terms of Use ("Terms") is a binding legal agreement between
+                you, the user ("User," "you," or "your") and XploreByte
+                Solutions ("Company," "we," "us," or "our"), a company based in
+                Haryana, India.
               </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
-                <div className="w-16 h-16 bg-[#11A944] rounded-lg flex items-center justify-center mb-4">
-                  <FileText className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  Service Terms
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  Clear terms for using our platform and services.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
-                <div className="w-16 h-16 bg-[#0296FE] rounded-lg flex items-center justify-center mb-4">
-                  <Shield className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  User Rights
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  Your rights and responsibilities as a user of our platform.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
-                <div className="w-16 h-16 bg-[#FFB800] rounded-lg flex items-center justify-center mb-4">
-                  <Lock className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  Data Protection
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  How we protect your data and ensure compliance.
-                </p>
-              </div>
+              <p className="text-gray-700 leading-relaxed mb-4 text-base">
+                This agreement governs your access to and use of the XploreByte
+                software-as-a-service platform, our website, and any related
+                services (collectively, the "Service").
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4 text-base">
+                These Terms are an electronic record in terms of the Information
+                Technology Act, 2000, and the rules thereunder. This electronic
+                record is generated by a computer system and does not require
+                any physical or digital signatures.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4 text-base">
+                By accessing, registering for, or using the Service, you (a)
+                acknowledge that you have read and understood these Terms; (b)
+                represent that you are of legal age to enter into a binding
+                agreement; and (c) accept these Terms and agree that you are
+                legally bound by them.
+              </p>
+              <p className="text-gray-700 leading-relaxed font-semibold">
+                If you do not agree to these Terms, do not use the Service.
+              </p>
             </div>
           </div>
         </section>
 
         {/* Terms Content */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="space-y-12">
-              {/* Acceptance of Terms */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 bg-[#11A944] rounded-lg flex items-center justify-center">
-                    <CheckCircle className="w-6 h-6 text-white" />
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-900">
-                    Acceptance of Terms
-                  </h2>
-                </div>
-                <div className="space-y-4 text-gray-700">
-                  <p className="text-sm">
-                    By accessing and using our services, you accept and agree to
-                    be bound by the terms and provision of this agreement.
-                  </p>
-                  <ul className="list-disc list-inside space-y-2 text-sm">
-                    <li>
-                      You must be at least 18 years old to use our services
-                    </li>
-                    <li>
-                      You agree to provide accurate and complete information
-                    </li>
-                    <li>
-                      You are responsible for maintaining account security
-                    </li>
-                    <li>
-                      You will not use our services for illegal activities
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              {/* Service Description */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 bg-[#0296FE] rounded-lg flex items-center justify-center">
-                    <FileText className="w-6 h-6 text-white" />
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-900">
-                    Service Description
-                  </h2>
-                </div>
-                <div className="space-y-4 text-gray-700">
-                  <p className="text-sm">
-                    Our platform provides WhatsApp Business automation services
-                    including but not limited to:
-                  </p>
-                  <ul className="list-disc list-inside space-y-2 text-sm">
-                    <li>Automated message sending and responses</li>
-                    <li>Customer engagement and support tools</li>
-                    <li>Analytics and reporting features</li>
-                    <li>Integration with third-party services</li>
-                    <li>Template management and customization</li>
-                    <li>User management and access controls</li>
-                  </ul>
-                </div>
-              </div>
-
-              {/* User Responsibilities */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 bg-[#FFB800] rounded-lg flex items-center justify-center">
-                    <Users className="w-6 h-6 text-white" />
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-900">
-                    User Responsibilities
-                  </h2>
-                </div>
-                <div className="space-y-4 text-gray-700">
-                  <p className="text-sm">
-                    As a user of our services, you agree to:
-                  </p>
-                  <ul className="list-disc list-inside space-y-2 text-sm">
-                    <li>Comply with all applicable laws and regulations</li>
-                    <li>
-                      Respect WhatsApp&apos;s terms of service and policies
-                    </li>
-                    <li>Not send spam or unsolicited messages</li>
-                    <li>
-                      Obtain proper consent before sending marketing messages
-                    </li>
-                    <li>Maintain the security of your account credentials</li>
-                    <li>Report any security breaches or suspicious activity</li>
-                    <li>
-                      Use the service only for legitimate business purposes
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              {/* Prohibited Uses */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 bg-[#EA1752] rounded-lg flex items-center justify-center">
-                    <AlertTriangle className="w-6 h-6 text-white" />
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-900">
-                    Prohibited Uses
-                  </h2>
-                </div>
-                <div className="space-y-4 text-gray-700">
-                  <p className="text-sm">You may not use our services for:</p>
-                  <ul className="list-disc list-inside space-y-2 text-sm">
-                    <li>Illegal activities or violation of any laws</li>
-                    <li>Sending spam, phishing, or malicious content</li>
-                    <li>Harassment, abuse, or threatening behavior</li>
-                    <li>Violation of intellectual property rights</li>
-                    <li>
-                      Attempting to gain unauthorized access to our systems
-                    </li>
-                    <li>
-                      Interfering with the proper functioning of our services
-                    </li>
-                    <li>Collecting personal information without consent</li>
-                  </ul>
-                </div>
-              </div>
-
-              {/* Payment Terms */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  Payment Terms
+            <div className="prose prose-lg max-w-none">
+              {/* Section 1: Definitions */}
+              <div className="mb-12">
+                <h2
+                  className="font-semibold text-gray-900 mb-6 flex items-center"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
+                  <FileText className="w-8 h-8 text-[#11A944] mr-3" />
+                  1. Definitions
                 </h2>
-                <div className="space-y-4 text-gray-700">
+                <div className="space-y-4 text-gray-700 text-base">
+                  <p>
+                    <strong>"Service"</strong> refers to the XploreByte
+                    software-as-a-service platform, our website, and all related
+                    content, features, and services.
+                  </p>
+                  <p>
+                    <strong>"User"</strong> means the individual or legal entity
+                    registering for or using the Service.
+                  </p>
+                  <p>
+                    <strong>"User Content"</strong> means all information, data,
+                    text, or other materials submitted, posted, or displayed by
+                    you on or through the Service.
+                  </p>
+                  <p>
+                    <strong>"Intellectual Property Rights"</strong> means all
+                    patents, copyrights, trademarks, trade secrets, and other
+                    proprietary rights.
+                  </p>
+                  <p>
+                    <strong>"Third-Party Services"</strong> means any services,
+                    software, or content provided by a third party that is
+                    integrated with or accessible through the Service.
+                  </p>
+                </div>
+              </div>
+
+              {/* Section 2: Grant of License */}
+              <div className="mb-12">
+                <h2
+                  className="font-semibold text-gray-900 mb-6 flex items-center"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
+                  <Lock className="w-8 h-8 text-[#11A944] mr-3" />
+                  2. Grant of License
+                </h2>
+                <p className="text-gray-700 leading-relaxed text-base">
+                  Subject to your full and timely compliance with these Terms,
+                  we grant you a limited, non-exclusive, non-transferable,
+                  non-sublicensable, and revocable license to access and use the
+                  Service during the Term for your internal business operations.
+                </p>
+              </div>
+
+              {/* Section 3: User Accounts & Obligations */}
+              <div className="mb-12">
+                <h2
+                  className="font-semibold text-gray-900 mb-6 flex items-center"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
+                  <Users className="w-8 h-8 text-[#11A944] mr-3" />
+                  3. User Accounts & Obligations
+                </h2>
+                <div className="space-y-6 text-gray-700 text-base">
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                      Subscription Fees
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                      Account Registration
                     </h3>
-                    <ul className="list-disc list-inside space-y-1 text-sm">
-                      <li>Subscription fees are billed in advance</li>
-                      <li>
-                        All fees are non-refundable unless otherwise stated
-                      </li>
-                      <li>Prices may change with 30 days notice</li>
-                      <li>Late payments may result in service suspension</li>
-                    </ul>
+                    <p>
+                      You must register for an account to use the Service. You
+                      agree to provide accurate, current, and complete
+                      information during the registration process and to update
+                      such information to keep it accurate.
+                    </p>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                      Cancellation
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                      Account Security
                     </h3>
-                    <ul className="list-disc list-inside space-y-1 text-sm">
-                      <li>You may cancel your subscription at any time</li>
+                    <p>
+                      You are responsible for safeguarding your password and any
+                      other credentials used to access your account. You, not
+                      XploreByte Solutions, are responsible for all activities
+                      that occur under your account. You must notify us
+                      immediately of any unauthorized use at{" "}
+                      <a
+                        href="mailto:support@xplorebyte.com"
+                        className="text-[#11A944] hover:underline"
+                      >
+                        support@xplorebyte.com
+                      </a>
+                      .
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                      Your Obligations
+                    </h3>
+                    <p>You agree to:</p>
+                    <ul className="list-disc list-inside space-y-2 ml-4">
                       <li>
-                        Cancellation takes effect at the end of the billing
-                        period
+                        Use the Service in compliance with all applicable local,
+                        state, national, and international laws (including
+                        Indian law).
                       </li>
-                      <li>No refunds for partial months of service</li>
                       <li>
-                        Data will be retained for 30 days after cancellation
+                        Be solely responsible for all User Content, including
+                        its legality, reliability, and appropriateness.
+                      </li>
+                      <li>
+                        Cooperate with us if we require any information or
+                        assistance to provide the Service.
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              {/* Limitation of Liability */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  Limitation of Liability
+              {/* Section 4: Acceptable Use & Restrictions */}
+              <div className="mb-12">
+                <h2
+                  className="font-semibold text-gray-900 mb-6 flex items-center"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
+                  <AlertTriangle className="w-8 h-8 text-[#11A944] mr-3" />
+                  4. Acceptable Use & Restrictions
                 </h2>
-                <div className="space-y-4 text-gray-700">
-                  <p className="text-sm">
-                    To the maximum extent permitted by law, XploreByte shall not
-                    be liable for any indirect, incidental, special,
-                    consequential, or punitive damages, including but not
-                    limited to:
+                <p className="text-gray-700 leading-relaxed mb-4 text-base">
+                  You agree that you will not (and will not permit any third
+                  party to):
+                </p>
+                <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4 text-base">
+                  <li>
+                    License, sublicense, sell, resell, rent, lease, transfer, or
+                    otherwise commercially exploit the Service.
+                  </li>
+                  <li>
+                    Reverse engineer, decompile, or disassemble any part of the
+                    Service.
+                  </li>
+                  <li>
+                    Use the Service to build a competitive product or service.
+                  </li>
+                  <li>
+                    Circumvent or disable any security or technical features of
+                    the Service.
+                  </li>
+                  <li>
+                    Use the Service to send spam, unsolicited messages, or any
+                    content that is illegal, harmful, threatening, or
+                    infringing.
+                  </li>
+                  <li>
+                    Upload any User Content that you do not have the right to
+                    transmit or that infringes on any party's Intellectual
+                    Property Rights.
+                  </li>
+                  <li>
+                    Use any automated system (e.g., "bots" or "scrapers") to
+                    access the Service in a manner that sends more request
+                    messages to our servers than a human can reasonably produce.
+                  </li>
+                </ul>
+              </div>
+
+              {/* Section 5: Fees and Payment */}
+              <div className="mb-12">
+                <h2
+                  className="font-semibold text-gray-900 mb-6 flex items-center"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
+                  <CreditCard className="w-8 h-8 text-[#11A944] mr-3" />
+                  5. Fees and Payment
+                </h2>
+                <div className="space-y-4 text-gray-700 text-base">
+                  <p>
+                    <strong>Subscription Fees:</strong> You agree to pay all
+                    fees associated with your subscription plan ("Subscription
+                    Fees") as set forth on our pricing page or in a separate
+                    order form. All fees are non-refundable except as expressly
+                    stated in these Terms.
                   </p>
-                  <ul className="list-disc list-inside space-y-1 text-sm">
-                    <li>Loss of profits, data, or business opportunities</li>
-                    <li>Service interruptions or downtime</li>
-                    <li>Third-party actions or content</li>
-                    <li>User-generated content or communications</li>
-                    <li>Force majeure events beyond our control</li>
-                  </ul>
+                  <p>
+                    <strong>Payment:</strong> We use third-party payment
+                    processors (e.g., Stripe, Razorpay, PayPal) to bill you. The
+                    processing of payments is subject to the terms and privacy
+                    policies of those processors. We do not store your full
+                    credit card or debit card information.
+                  </p>
+                  <p>
+                    <strong>Billing:</strong> You authorize us and our payment
+                    processors to charge your chosen payment method for all
+                    applicable fees.
+                  </p>
+                  <p>
+                    <strong>Taxes:</strong> All fees are exclusive of applicable
+                    taxes (like GST), which you are responsible for paying.
+                  </p>
+                  <p>
+                    <strong>Late Payments:</strong> We reserve the right to
+                    charge interest on any overdue amounts at a rate of 2% per
+                    month (24% annually) or the maximum rate permitted by law,
+                    whichever is lower. We may also suspend your access to the
+                    Service for non-payment.
+                  </p>
                 </div>
               </div>
 
-              {/* Termination */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  Termination
+              {/* Section 6: Free Trial */}
+              <div className="mb-12">
+                <h2
+                  className="font-semibold text-gray-900 mb-6 flex items-center"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
+                  <Clock className="w-8 h-8 text-[#11A944] mr-3" />
+                  6. Free Trial
                 </h2>
-                <div className="space-y-4 text-gray-700">
-                  <p className="text-sm">
-                    Either party may terminate this agreement at any time:
-                  </p>
-                  <ul className="list-disc list-inside space-y-1 text-sm">
-                    <li>Users may cancel their subscription at any time</li>
-                    <li>We may suspend or terminate accounts for violations</li>
-                    <li>Termination does not affect accrued obligations</li>
-                    <li>
-                      Data will be retained according to our data retention
-                      policy
-                    </li>
-                  </ul>
-                </div>
+                <p className="text-gray-700 leading-relaxed text-base">
+                  We may, at our discretion, offer a free trial for the Service.
+                  Your use of the Service during a trial period is subject to
+                  these Terms. We reserve the right to modify or terminate the
+                  free trial at any time.
+                </p>
               </div>
 
-              {/* Governing Law */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  Governing Law
+              {/* Section 7: Third-Party Services */}
+              <div className="mb-12">
+                <h2
+                  className="font-semibold text-gray-900 mb-6 flex items-center"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
+                  <Globe className="w-8 h-8 text-[#11A944] mr-3" />
+                  7. Third-Party Services
                 </h2>
-                <div className="space-y-4 text-gray-700">
-                  <p className="text-sm">
-                    These terms shall be governed by and construed in accordance
-                    with the laws of the jurisdiction in which XploreByte
-                    operates, without regard to conflict of law principles.
-                  </p>
-                  <ul className="list-disc list-inside space-y-1 text-sm">
-                    <li>
-                      Any disputes shall be resolved through binding arbitration
-                    </li>
-                    <li>
-                      Class action waivers apply where legally permissible
-                    </li>
-                    <li>Severability clause for invalid provisions</li>
-                    <li>Entire agreement supersedes prior agreements</li>
-                  </ul>
-                </div>
+                <p className="text-gray-700 leading-relaxed text-base">
+                  The Service may integrate with or provide links to Third-Party
+                  Services (such as payment processors or social media logins).
+                  Your use of such Third-Party Services is at your own risk and
+                  is governed by the terms and conditions of those third
+                  parties. We are not responsible for the operation, content, or
+                  privacy practices of any Third-Party Service.
+                </p>
               </div>
 
-              {/* Contact Information */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  Contact Information
+              {/* Section 8: Data Protection & Privacy */}
+              <div className="mb-12">
+                <h2
+                  className="font-semibold text-gray-900 mb-6 flex items-center"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
+                  <Database className="w-8 h-8 text-[#11A944] mr-3" />
+                  8. Data Protection & Privacy
                 </h2>
-                <div className="space-y-4 text-gray-700">
-                  <p className="text-sm">
-                    If you have any questions about these Terms of Service,
-                    please contact us:
-                  </p>
-                  <div className="bg-gray-50 rounded-lg p-4">
-                    <p className="text-sm">
-                      <strong>Email:</strong> legal@xplorebyte.com
+                <p className="text-gray-700 leading-relaxed text-base">
+                  Your use of the Service is also governed by our Privacy
+                  Policy, which is incorporated into these Terms by reference.
+                  You agree that we may collect, use, and disclose your
+                  information (including User Content) as described in our
+                  Privacy Policy. You warrant that you have all necessary rights
+                  and consents to provide User Content to us and to allow us to
+                  process it as contemplated by these Terms.
+                </p>
+              </div>
+
+              {/* Section 9: Intellectual Property */}
+              <div className="mb-12">
+                <h2
+                  className="font-semibold text-gray-900 mb-6 flex items-center"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
+                  <Eye className="w-8 h-8 text-[#11A944] mr-3" />
+                  9. Intellectual Property
+                </h2>
+                <div className="space-y-4 text-gray-700 text-base">
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                      Our IP
+                    </h3>
+                    <p>
+                      We (XploreByte Solutions) own all rights, title, and
+                      interest in and to the Service, including all underlying
+                      software, technology, and Intellectual Property Rights.
+                      These Terms do not grant you any ownership rights.
                     </p>
-                    <p className="text-sm">
-                      <strong>Phone:</strong> +1 (555) 123-4567
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                      Your IP (User Content)
+                    </h3>
+                    <p>
+                      You retain all ownership rights to your User Content. You
+                      grant us a worldwide, non-exclusive, royalty-free license
+                      to use, host, store, reproduce, modify, and display your
+                      User Content solely for the purpose of operating,
+                      providing, and improving the Service for you.
                     </p>
-                    <p className="text-sm">
-                      <strong>Address:</strong> 123 Business Street, Suite 100,
-                      City, State 12345
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                      Feedback
+                    </h3>
+                    <p>
+                      If you provide any feedback or suggestions, you grant us
+                      an unlimited, irrevocable, royalty-free right to use such
+                      feedback for any purpose.
                     </p>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
 
-        {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-r from-[#0A0E23] to-[#181B32]">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Questions About Our Terms?
-            </h2>
-            <p className="text-lg text-white/80 mb-8">
-              Our legal team is available to answer any questions about these
-              terms and conditions.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
-                className="inline-flex items-center px-8 py-3 bg-[#11A944] text-white font-semibold rounded-lg hover:bg-[#0d8a3a] transition-colors"
-              >
-                Contact Legal Team
-              </a>
-              <a
-                href="/privacy-policy"
-                className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition-colors"
-              >
-                View Privacy Policy
-              </a>
+              {/* Section 10: Confidentiality */}
+              <div className="mb-12">
+                <h2
+                  className="font-semibold text-gray-900 mb-6 flex items-center"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
+                  <Shield className="w-8 h-8 text-[#11A944] mr-3" />
+                  10. Confidentiality
+                </h2>
+                <p className="text-gray-700 leading-relaxed text-base">
+                  Both parties agree not to disclose the other's Confidential
+                  Information (any non-public information) except to employees
+                  or agents who need to know it and are bound by confidentiality
+                  obligations. This obligation survives the termination of these
+                  Terms.
+                </p>
+              </div>
+
+              {/* Section 11: Suspension and Termination */}
+              <div className="mb-12">
+                <h2
+                  className="font-semibold text-gray-900 mb-6 flex items-center"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
+                  <UserCheck className="w-8 h-8 text-[#11A944] mr-3" />
+                  11. Suspension and Termination
+                </h2>
+                <div className="space-y-4 text-gray-700 text-base">
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                      Termination by You
+                    </h3>
+                    <p>
+                      You may terminate these Terms at any time by closing your
+                      account and ceasing all use of the Service.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                      Suspension or Termination by Us
+                    </h3>
+                    <p>
+                      We may suspend or terminate your access to the Service at
+                      any time, with or without notice, if you:
+                    </p>
+                    <ul className="list-disc list-inside space-y-1 ml-4 mt-2">
+                      <li>Breach these Terms.</li>
+                      <li>Fail to pay applicable fees.</li>
+                      <li>
+                        Your use of the Service poses a security risk to us or
+                        other users.
+                      </li>
+                      <li>We are required to do so by law.</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                      Effect of Termination
+                    </h3>
+                    <p>
+                      Upon termination, your license to use the Service ceases
+                      immediately. We will have no obligation to maintain your
+                      User Content and may delete it. All sections of these
+                      Terms that by their nature should survive termination will
+                      survive (e.g., IP, Confidentiality, Disclaimers,
+                      Liability, etc.).
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Section 12: Disclaimer of Warranties */}
+              <div className="mb-12">
+                <h2
+                  className="font-semibold text-gray-900 mb-6 flex items-center"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
+                  <AlertTriangle className="w-8 h-8 text-[#11A944] mr-3" />
+                  12. Disclaimer of Warranties
+                </h2>
+                <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                  <p className="text-gray-700 leading-relaxed font-semibold mb-4 text-base">
+                    THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT
+                    ANY WARRANTIES OF ANY KIND, EITHER EXPRESS, IMPLIED, OR
+                    STATUTORY. WE EXPRESSLY DISCLAIM ALL WARRANTIES, INCLUDING,
+                    BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY,
+                    FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed font-semibold text-base">
+                    WE DO NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED,
+                    ERROR-FREE, OR SECURE.
+                  </p>
+                </div>
+              </div>
+
+              {/* Section 13: Limitation of Liability */}
+              <div className="mb-12">
+                <h2
+                  className="font-semibold text-gray-900 mb-6 flex items-center"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
+                  <Scale className="w-8 h-8 text-[#11A944] mr-3" />
+                  13. Limitation of Liability
+                </h2>
+                <div className="bg-red-50 border border-red-200 rounded-lg p-6">
+                  <p className="text-gray-700 leading-relaxed font-semibold mb-4 text-base">
+                    TO THE FULLEST EXTENT PERMITTED BY LAW, IN NO EVENT WILL
+                    XPLOREBYTE SOLUTIONS, ITS AFFILIATES, OR ITS OFFICERS BE
+                    LIABLE FOR:
+                  </p>
+                  <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4 text-base">
+                    <li>
+                      ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR
+                      PUNITIVE DAMAGES (INCLUDING LOSS OF PROFITS, DATA, OR
+                      GOODWILL);
+                    </li>
+                    <li>
+                      ANY DAMAGES, LOSSES, OR LIABILITIES IN AGGREGATE EXCEEDING
+                      THE AMOUNT YOU PAID TO US IN THE TWELVE (12) MONTHS
+                      PRECEDING THE EVENT GIVING RISE TO THE CLAIM.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Section 14: Indemnification */}
+              <div className="mb-12">
+                <h2
+                  className="font-semibold text-gray-900 mb-6 flex items-center"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
+                  <Shield className="w-8 h-8 text-[#11A944] mr-3" />
+                  14. Indemnification
+                </h2>
+                <p className="text-gray-700 leading-relaxed text-base">
+                  You agree to defend, indemnify, and hold harmless XploreByte
+                  Solutions and its officers, directors, and employees from and
+                  against any claims, damages, liabilities, and expenses
+                  (including legal fees) arising out of or related to (a) your
+                  breach of these Terms, (b) your User Content, or (c) your
+                  violation of any law or the rights of a third party.
+                </p>
+              </div>
+
+              {/* Section 15: Publicity */}
+              <div className="mb-12">
+                <h2
+                  className="font-semibold text-gray-900 mb-6 flex items-center"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
+                  <Zap className="w-8 h-8 text-[#11A944] mr-3" />
+                  15. Publicity
+                </h2>
+                <p className="text-gray-700 leading-relaxed text-base">
+                  You grant us the right to use your company name and logo as a
+                  reference for marketing or promotional purposes on our website
+                  and in other public communications, subject to your standard
+                  trademark usage guidelines.
+                </p>
+              </div>
+
+              {/* Section 16: Governing Law and Dispute Resolution */}
+              <div className="mb-12">
+                <h2
+                  className="font-semibold text-gray-900 mb-6 flex items-center"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
+                  <Scale className="w-8 h-8 text-[#11A944] mr-3" />
+                  16. Governing Law and Dispute Resolution
+                </h2>
+                <div className="space-y-4 text-gray-700 text-base">
+                  <p>
+                    These Terms shall be governed by and construed in accordance
+                    with the laws of India, without regard to its conflict of
+                    law principles.
+                  </p>
+                  <p>
+                    Any dispute arising out of or in connection with these Terms
+                    shall be referred to and finally resolved by arbitration in
+                    accordance with the Arbitration and Conciliation Act, 1996.
+                    The arbitration shall be conducted by a sole arbitrator
+                    mutually appointed by both parties. The seat and venue of
+                    the arbitration shall be New Delhi, India. The language of
+                    the arbitration shall be English.
+                  </p>
+                  <p>
+                    Subject to the above, the courts at Sonipat, Haryana, India,
+                    shall have exclusive jurisdiction.
+                  </p>
+                </div>
+              </div>
+
+              {/* Section 17: Miscellaneous */}
+              <div className="mb-12">
+                <h2
+                  className="font-semibold text-gray-900 mb-6 flex items-center"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
+                  <FileText className="w-8 h-8 text-[#11A944] mr-3" />
+                  17. Miscellaneous
+                </h2>
+                <div className="space-y-4 text-gray-700 text-base">
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                      Changes to Terms
+                    </h3>
+                    <p>
+                      We reserve the right to modify these Terms at any time. We
+                      will provide notice of material changes by (a) posting the
+                      updated Terms on our website and (b) updating the
+                      "Effective Date" at the top. Your continued use of the
+                      Service after such changes constitutes your acceptance of
+                      the new Terms.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                      Force Majeure
+                    </h3>
+                    <p>
+                      Neither party shall be liable for any failure or delay in
+                      performance due to causes beyond its reasonable control
+                      (e.g., acts of God, war, strikes, or government acts).
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                      Assignment
+                    </h3>
+                    <p>
+                      You may not assign these Terms without our prior written
+                      consent. We may assign these Terms without restriction.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                      Severability
+                    </h3>
+                    <p>
+                      If any provision of these Terms is found to be invalid or
+                      unenforceable, the remaining provisions will remain in
+                      full force and effect.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                      Entire Agreement
+                    </h3>
+                    <p>
+                      These Terms (along with the Privacy Policy) constitute the
+                      entire agreement between you and XploreByte Solutions
+                      regarding the Service.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Section 18: Contact Information */}
+              <div className="mb-12">
+                <h2
+                  className="font-semibold text-gray-900 mb-6 flex items-center"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
+                  <Mail className="w-8 h-8 text-[#11A944] mr-3" />
+                  18. Contact Information
+                </h2>
+                <p className="text-gray-700 leading-relaxed mb-4 text-base">
+                  If you have any questions about these Terms, please contact us
+                  at:
+                </p>
+                <div className="space-y-2">
+                  <p className="text-gray-700 font-semibold text-base">
+                    XploreByte Solutions
+                  </p>
+                  <div className="flex items-center gap-3">
+                    <Mail className="w-5 h-5 text-[#11A944]" />
+                    <a
+                      href="mailto:support@xplorebyte.com"
+                      className="text-[#11A944] hover:underline font-medium"
+                    >
+                      support@xplorebyte.com
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>

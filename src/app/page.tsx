@@ -875,6 +875,7 @@
 // //   );
 // // }
 "use client";
+import { useState } from "react";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import HeroFeatureStrip from "../components/HeroFeatureStrip";
@@ -883,6 +884,7 @@ import WhyWhatsAppSection from "../components/WhyWhatsAppSection";
 import Footer from "../components/Footer";
 import StatsSection from "../components/StatsSection";
 import CTASection from "../components/CTASection";
+import SalesModal from "../components/SalesModal";
 import {
   ShoppingCart,
   Rocket,
@@ -898,6 +900,8 @@ import {
 // import DigitalSerenity from "../components/DigitalSerenity";
 
 export default function Home() {
+  const [isSalesModalOpen, setIsSalesModalOpen] = useState(false);
+
   return (
     <>
       <Header />
@@ -909,7 +913,7 @@ export default function Home() {
         <WhyWhatsAppSection />
 
         {/* Features Section */}
-        <section className="py-20 bg-white">
+        <section className="py-8 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2
@@ -922,7 +926,7 @@ export default function Home() {
               >
                 All the features you need, all in one place
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                 Everything you need to turn WhatsApp into your most powerful
                 business tool. From intelligent campaigns to automated
                 conversations.
@@ -1177,11 +1181,10 @@ export default function Home() {
               >
                 Transform Your Business with WhatsApp API
               </h2>
-              <p className="text-xl text-gray-600 text-center max-w-4xl mx-auto mb-16">
+              <p className="text-lg text-gray-600 text-center max-w-4xl mx-auto mb-16">
                 Three powerful ways to revolutionize your customer engagement,
                 boost revenue, and scale operations
               </p>
-
               {/* Featurette 1: Marketing & Sales */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
                 <div>
@@ -1206,7 +1209,7 @@ export default function Home() {
                         <ShoppingCart className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-[#1E3A8A] mb-1">
+                        <h4 className="font-semibold text-black mb-1">
                           Drive More Sales
                         </h4>
                         <p className="text-[#333]">
@@ -1221,7 +1224,7 @@ export default function Home() {
                         <Rocket className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-[#1E3A8A] mb-1">
+                        <h4 className="font-semibold text-black mb-1">
                           Launch Campaigns
                         </h4>
                         <p className="text-[#333]">
@@ -1236,7 +1239,7 @@ export default function Home() {
                         <Building2 className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-[#1E3A8A] mb-1">
+                        <h4 className="font-semibold text-black mb-1">
                           Build Your Brand
                         </h4>
                         <p className="text-[#333]">
@@ -1297,7 +1300,7 @@ export default function Home() {
                         <Bot className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-[#1E3A8A] mb-1">
+                        <h4 className="font-semibold text-black mb-1">
                           Resolve Queries Instantly
                         </h4>
                         <p className="text-[#333]">
@@ -1311,7 +1314,7 @@ export default function Home() {
                         <Clock className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-[#1E3A8A] mb-1">
+                        <h4 className="font-semibold text-black mb-1">
                           Eliminate Wait Times
                         </h4>
                         <p className="text-[#333]">
@@ -1325,7 +1328,7 @@ export default function Home() {
                         <Users className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-[#1E3A8A] mb-1">
+                        <h4 className="font-semibold text-black mb-1">
                           Empower Your Agents
                         </h4>
                         <p className="text-[#333]">
@@ -1362,7 +1365,7 @@ export default function Home() {
                         <Settings className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-[#1E3A8A] mb-1">
+                        <h4 className="font-semibold text-black mb-1">
                           Automate Everything
                         </h4>
                         <p className="text-[#333]">
@@ -1376,7 +1379,7 @@ export default function Home() {
                         <Link className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-[#1E3A8A] mb-1">
+                        <h4 className="font-semibold text-black mb-1">
                           Integrate Your Stack
                         </h4>
                         <p className="text-[#333]">
@@ -1390,7 +1393,7 @@ export default function Home() {
                         <Infinity className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-[#1E3A8A] mb-1">
+                        <h4 className="font-semibold text-black mb-1">
                           Grow Without Limits
                         </h4>
                         <p className="text-[#333]">
@@ -1478,7 +1481,7 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-white">
+        <section className="py-8 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2
               className="font-bold text-gray-900 mb-6"
@@ -1495,11 +1498,11 @@ export default function Home() {
               their digital transformation needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
+              <button
+                onClick={() => setIsSalesModalOpen(true)}
                 className="inline-flex items-center px-8 py-3 bg-[#11A944] text-white font-semibold rounded-lg hover:bg-[#0d8a3a] transition-colors"
               >
-                Get Started Today
+                Talk to Sales
                 <svg
                   className="w-5 h-5 ml-2"
                   fill="none"
@@ -1513,7 +1516,7 @@ export default function Home() {
                     d="M17 8l4 4m0 0l-4 4m4-4H3"
                   />
                 </svg>
-              </a>
+              </button>
               <a
                 href="/whatsapp-business"
                 className="inline-flex items-center px-8 py-3 border-2 border-[#11A944] text-[#11A944] font-semibold rounded-lg hover:bg-[#11A944] hover:text-white transition-colors"
@@ -1527,6 +1530,12 @@ export default function Home() {
         {/* <DigitalSerenity /> */}
       </main>
       <Footer />
+
+      {/* Sales Modal */}
+      <SalesModal
+        isOpen={isSalesModalOpen}
+        onClose={() => setIsSalesModalOpen(false)}
+      />
     </>
   );
 }

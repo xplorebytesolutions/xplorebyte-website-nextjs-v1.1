@@ -408,7 +408,7 @@ export default function PricingOutsideIndia() {
       icon: <HelpCircle className="w-6 h-6 text-indigo-600" />,
       title: "Service messages",
       description:
-        "User-initiated messages related to customer support, chatbot support, and queries. FREE for all businesses using AiSensy.",
+        "User-initiated messages related to customer support, chatbot support, and queries. FREE for all businesses using XploreByte.",
     },
   ];
 

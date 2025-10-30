@@ -1,7 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import SalesModal from "../../components/SalesModal";
 import {
   Code,
   BookOpen,
@@ -13,6 +15,8 @@ import {
 } from "lucide-react";
 
 export default function ApiDocumentation() {
+  const [isSalesModalOpen, setIsSalesModalOpen] = useState(false);
+
   return (
     <>
       <Header />
@@ -26,11 +30,15 @@ export default function ApiDocumentation() {
                 <span className="text-[#11A944]">Developer</span> Docs
               </h1>
               <p className="text-xl text-white/80 max-w-3xl mx-auto mb-8">
-                Integration guides and API documentation to help you build powerful WhatsApp solutions.
+                Integration guides and API documentation to help you build
+                powerful WhatsApp solutions.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="inline-flex items-center px-8 py-4 bg-[#11A944] text-white font-semibold rounded-lg shadow-lg hover:bg-[#0d8a3a] transition-colors">
-                  Get Started
+                <button
+                  onClick={() => setIsSalesModalOpen(true)}
+                  className="inline-flex items-center px-8 py-4 bg-[#11A944] text-white font-semibold rounded-lg shadow-lg hover:bg-[#0d8a3a] transition-colors"
+                >
+                  Talk to Sales
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </button>
                 <button className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition-colors">
@@ -49,7 +57,8 @@ export default function ApiDocumentation() {
                 Quick Start Guide
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Get up and running with our API in minutes with our comprehensive guides and examples.
+                Get up and running with our API in minutes with our
+                comprehensive guides and examples.
               </p>
             </div>
 
@@ -62,7 +71,8 @@ export default function ApiDocumentation() {
                   Quick Setup
                 </h3>
                 <p className="text-gray-600">
-                  Get your API key and start sending messages in under 5 minutes.
+                  Get your API key and start sending messages in under 5
+                  minutes.
                 </p>
               </div>
 
@@ -102,7 +112,8 @@ export default function ApiDocumentation() {
                   Send Your First Message
                 </h2>
                 <p className="text-lg text-gray-600 mb-8">
-                  Here&apos;s a simple example to get you started with our WhatsApp API.
+                  Here&apos;s a simple example to get you started with our
+                  WhatsApp API.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
@@ -111,11 +122,15 @@ export default function ApiDocumentation() {
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-[#11A944]" />
-                    <span className="text-gray-700">Multiple language support</span>
+                    <span className="text-gray-700">
+                      Multiple language support
+                    </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-[#11A944]" />
-                    <span className="text-gray-700">Comprehensive error handling</span>
+                    <span className="text-gray-700">
+                      Comprehensive error handling
+                    </span>
                   </div>
                 </div>
               </div>
@@ -162,7 +177,8 @@ print(response.json())`}</code>
               Ready to Start Building?
             </h2>
             <p className="text-lg text-white/80 mb-8">
-              Access our complete API documentation and start building powerful WhatsApp integrations.
+              Access our complete API documentation and start building powerful
+              WhatsApp integrations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="inline-flex items-center px-8 py-3 bg-[#11A944] text-white font-semibold rounded-lg hover:bg-[#0d8a3a] transition-colors">
@@ -179,6 +195,12 @@ print(response.json())`}</code>
       </main>
 
       <Footer />
+
+      {/* Sales Modal */}
+      <SalesModal
+        isOpen={isSalesModalOpen}
+        onClose={() => setIsSalesModalOpen(false)}
+      />
     </>
   );
 }

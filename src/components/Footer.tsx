@@ -65,7 +65,7 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 text-gray-200 relative overflow-hidden border-t border-slate-700/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-10">
           {/* Brand */}
           <div className="lg:col-span-2 flex flex-col gap-6">
             <div className="flex items-center space-x-3 mb-2">
@@ -74,12 +74,14 @@ const Footer = () => {
                 alt="XploreByte Logo"
                 className="h-10 w-auto"
               />
-              <span className="font-bold text-2xl bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent tracking-tight">
+              <span className="text-gray-200 text-xl font-bold font-[Poppins,Montserrat,sans-serif] tracking-tight">
                 XploreByte{" "}
-                <span className="font-light text-gray-300">Solutions</span>
+                <span className="font-light text-blue-400 text-lg">
+                  Solutions
+                </span>
               </span>
             </div>
-            <p className="max-w-md font-sans text-gray-300 text-lg leading-relaxed">
+            <p className="max-w-md font-sans text-gray-300 text-base leading-relaxed">
               Your trusted partner in digital innovation—empowering your growth
               with next-gen technology, strategy, and talent.
             </p>
@@ -87,26 +89,30 @@ const Footer = () => {
 
           {/* Legal */}
           <div>
-            <h3 className="font-bold mb-6 font-sans tracking-wide text-white text-lg">
-              Legal
-            </h3>
-            <ul className="space-y-3 text-gray-300">
+            <h3 className="font-medium text-white mb-6">Legal</h3>
+            <ul className="space-y-3 text-gray-300 text-base">
               <li>
                 <a
                   href="/terms-of-service"
-                  className="hover:text-emerald-400 transition-colors duration-300 flex items-center group"
+                  className="hover:text-emerald-400 transition-colors duration-300"
                 >
-                  <span className="w-1 h-1 bg-emerald-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Terms and Conditions
                 </a>
               </li>
               <li>
                 <a
                   href="/privacy-policy"
-                  className="hover:text-emerald-400 transition-colors duration-300 flex items-center group"
+                  className="hover:text-emerald-400 transition-colors duration-300"
                 >
-                  <span className="w-1 h-1 bg-emerald-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/refund-policy"
+                  className="hover:text-emerald-400 transition-colors duration-300"
+                >
+                  Refund Policy
                 </a>
               </li>
             </ul>
@@ -114,56 +120,96 @@ const Footer = () => {
 
           {/* Company */}
           <div>
-            <h3 className="font-bold mb-6 font-sans tracking-wide text-white text-lg">
-              Company
-            </h3>
-            <ul className="space-y-3 text-gray-300">
+            <h3 className="font-medium text-white mb-6">Company</h3>
+            <ul className="space-y-3 text-gray-300 text-base">
               <li>
                 <a
                   href="/about-us"
-                  className="hover:text-emerald-400 transition-colors duration-300 flex items-center group"
+                  className="hover:text-emerald-400 transition-colors duration-300"
                 >
-                  <span className="w-1 h-1 bg-emerald-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   About Us
                 </a>
               </li>
               <li>
                 <a
                   href="/success-stories"
-                  className="hover:text-emerald-400 transition-colors duration-300 flex items-center group"
+                  className="hover:text-emerald-400 transition-colors duration-300"
                 >
-                  <span className="w-1 h-1 bg-emerald-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Success Stories
                 </a>
               </li>
               <li>
                 <a
                   href="/careers"
-                  className="hover:text-emerald-400 transition-colors duration-300 flex items-center group"
+                  className="hover:text-emerald-400 transition-colors duration-300"
                 >
-                  <span className="w-1 h-1 bg-emerald-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Careers
                 </a>
               </li>
               <li>
                 <a
-                  href="/blog"
-                  className="hover:text-emerald-400 transition-colors duration-300 flex items-center group"
-                >
-                  <span className="w-1 h-1 bg-emerald-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a
                   href="/contact"
-                  className="hover:text-emerald-400 transition-colors duration-300 flex items-center group"
+                  className="hover:text-emerald-400 transition-colors duration-300"
                 >
-                  <span className="w-1 h-1 bg-emerald-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Contact
                 </a>
               </li>
             </ul>
+          </div>
+
+          {/* Contact Information */}
+          <div>
+            <h3 className="font-medium text-white mb-6">Contact</h3>
+            <div className="space-y-4 text-gray-300 text-base">
+              <div className="flex items-start space-x-3">
+                <svg
+                  className="w-5 h-5 text-emerald-400 mt-0.5 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+                <div>
+                  <p className="font-medium text-white">Email</p>
+                  <a
+                    href="mailto:hello@xplorebyte.com"
+                    className="hover:text-emerald-400 transition-colors duration-300"
+                  >
+                    hello@xplorebyte.com
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <svg
+                  className="w-5 h-5 text-emerald-400 mt-0.5 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                <div>
+                  <p className="font-medium text-white">Phone</p>
+                  <a
+                    href="tel:+918826165727"
+                    className="hover:text-emerald-400 transition-colors duration-300"
+                  >
+                    +91 88261 65727
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 

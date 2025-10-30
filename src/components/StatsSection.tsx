@@ -5,7 +5,7 @@ import { FC } from "react";
 const statsData = [
   {
     label: "Active Users",
-    value: "500+",
+    value: "10K+",
     subtitle: "Businesses",
     icon: (
       <svg

@@ -25,11 +25,18 @@ export default function CampaignsBroadcasting() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6">
+                <h1
+                  className="font-extrabold text-white mb-6"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "2.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
                   <span className="text-[#11A944]">Campaigns</span> &
                   Broadcasting
                 </h1>
-                <p className="text-xl text-white/80 mb-8">
+                <p className="text-lg text-white/80 mb-8">
                   Bulk messaging & retargeting campaigns. Send targeted messages
                   to thousands of customers with precision and personalization.
                 </p>
@@ -59,10 +66,17 @@ export default function CampaignsBroadcasting() {
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <h2
+                className="font-bold text-gray-900 mb-4"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "2rem",
+                  lineHeight: "1.2",
+                }}
+              >
                 Powerful Campaign Tools
               </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              <p className="text-base text-gray-600 max-w-3xl mx-auto">
                 Create, manage, and optimize your WhatsApp marketing campaigns
                 with advanced targeting and analytics.
               </p>
@@ -73,10 +87,10 @@ export default function CampaignsBroadcasting() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#11A944] to-[#0296FE] rounded-full mx-auto mb-4 flex items-center justify-center">
                   <Users className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Bulk Messaging
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-base text-gray-600">
                   Send personalized messages to thousands of contacts with
                   advanced segmentation and scheduling.
                 </p>
@@ -86,10 +100,10 @@ export default function CampaignsBroadcasting() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#FFB800] to-[#EA1752] rounded-full mx-auto mb-4 flex items-center justify-center">
                   <Target className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Smart Targeting
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-base text-gray-600">
                   Advanced audience segmentation based on behavior,
                   demographics, and engagement history.
                 </p>
@@ -99,10 +113,10 @@ export default function CampaignsBroadcasting() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#0296FE] to-[#7D47C4] rounded-full mx-auto mb-4 flex items-center justify-center">
                   <BarChart3 className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Campaign Analytics
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-base text-gray-600">
                   Track delivery rates, open rates, click-through rates, and
                   conversion metrics in real-time.
                 </p>
@@ -116,7 +130,14 @@ export default function CampaignsBroadcasting() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                <h2
+                  className="font-bold text-gray-900 mb-6"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "2rem",
+                    lineHeight: "1.2",
+                  }}
+                >
                   Why Choose Our Campaign Platform?
                 </h2>
                 <div className="space-y-6">
@@ -125,10 +146,10 @@ export default function CampaignsBroadcasting() {
                       <CheckCircle className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      <h3 className="text-base font-semibold text-gray-900 mb-2">
                         High Delivery Rates
                       </h3>
-                      <p className="text-gray-600">
+                      <p className="text-base text-gray-600">
                         Optimized delivery infrastructure ensures your messages
                         reach customers reliably and quickly.
                       </p>
@@ -140,10 +161,10 @@ export default function CampaignsBroadcasting() {
                       <CheckCircle className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      <h3 className="text-base font-semibold text-gray-900 mb-2">
                         Personalization at Scale
                       </h3>
-                      <p className="text-gray-600">
+                      <p className="text-base text-gray-600">
                         Dynamic content and personalized messaging that
                         resonates with each individual customer.
                       </p>
@@ -155,10 +176,10 @@ export default function CampaignsBroadcasting() {
                       <CheckCircle className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      <h3 className="text-base font-semibold text-gray-900 mb-2">
                         Compliance Ready
                       </h3>
-                      <p className="text-gray-600">
+                      <p className="text-base text-gray-600">
                         Built-in compliance tools to ensure your campaigns meet
                         WhatsApp Business API requirements.
                       </p>
@@ -181,10 +202,17 @@ export default function CampaignsBroadcasting() {
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-r from-[#0A0E23] to-[#181B32]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2
+              className="font-bold text-white mb-6"
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                fontSize: "2rem",
+                lineHeight: "1.2",
+              }}
+            >
               Ready to Launch Your First Campaign?
             </h2>
-            <p className="text-lg text-white/80 mb-8">
+            <p className="text-base text-white/80 mb-8">
               Start reaching your customers with targeted, personalized WhatsApp
               messages.
             </p>

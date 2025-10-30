@@ -40,7 +40,7 @@ const DemoCTA: React.FC = () => {
           </a>
         </div>
         <div className="mt-5 text-sm text-slate-500">
-          500+ businesses onboarded • Fast onboarding • No obligation
+          10,000+ businesses onboarded • Fast onboarding • No obligation
         </div>
       </div>
 

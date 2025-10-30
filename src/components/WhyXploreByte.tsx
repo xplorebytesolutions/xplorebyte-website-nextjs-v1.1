@@ -152,7 +152,7 @@ const reasons = [
     color: "#11A944",
   },
   {
-    text: "Trusted by 500+ Indian & Global Businesses",
+    text: "Trusted by 10,000+ Indian & Global Businesses",
     icon: <Star className="w-5 h-5" />,
     color: "#0296FE",
   },
@@ -171,7 +171,7 @@ const reasons = [
 const badges = [
   { label: "ISO Secure", color: "#11A944" },
   { label: "GDPR Compliant", color: "#0296FE" },
-  { label: "500+ Clients", color: "#FFB800" },
+  { label: "10,000+ Clients", color: "#FFB800" },
   { label: "Award-Winning", color: "#EA1752" },
 ];
 

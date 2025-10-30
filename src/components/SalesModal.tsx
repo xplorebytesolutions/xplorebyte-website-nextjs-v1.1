@@ -85,7 +85,7 @@ const SalesModal: React.FC<SalesModalProps> = ({ isOpen, onClose }) => {
       />
 
       {/* Modal */}
-      <div className="relative bg-white rounded-2xl shadow-2xl max-w-4xl w-full mx-4 max-h-[90vh] overflow-hidden">
+      <div className="relative bg-white rounded-2xl shadow-2xl max-w-4xl w-full mx-2 sm:mx-4 max-h-[95vh] sm:max-h-[90vh] overflow-hidden">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -94,13 +94,13 @@ const SalesModal: React.FC<SalesModalProps> = ({ isOpen, onClose }) => {
           <X className="w-5 h-5" />
         </button>
 
-        <div className="flex">
+        <div className="flex flex-col lg:flex-row">
           {/* Left Panel - Contact Information */}
-          <div className="bg-gradient-to-br from-[#1E3A8A] to-[#3B82F6] p-8 text-white w-1/2 flex flex-col justify-center">
+          <div className="bg-gradient-to-br from-[#1E3A8A] to-[#3B82F6] p-6 lg:p-8 text-white w-full lg:w-1/2 flex flex-col justify-center">
             <div className="space-y-6">
               <div>
-                <h2 className="text-3xl font-bold mb-4">Talk to Sales</h2>
-                <p className="text-white/90 text-lg leading-relaxed">
+                <h2 className="text-2xl sm:text-3xl font-bold mb-4">Talk to Sales</h2>
+                <p className="text-white/90 text-base sm:text-lg leading-relaxed">
                   Our experts can help you find the right solution. Fill out the
                   form and let&apos;s discuss how we can help your business
                   grow.
@@ -146,7 +146,7 @@ const SalesModal: React.FC<SalesModalProps> = ({ isOpen, onClose }) => {
           </div>
 
           {/* Right Panel - Form */}
-          <div className="p-8 w-1/2 overflow-y-auto max-h-[90vh]">
+          <div className="p-6 lg:p-8 w-full lg:w-1/2 overflow-y-auto max-h-[90vh]">
             {!isSubmitted ? (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
@@ -160,7 +160,7 @@ const SalesModal: React.FC<SalesModalProps> = ({ isOpen, onClose }) => {
                 </div>
 
                 {/* Personal Information */}
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label
                       htmlFor="firstName"
@@ -199,7 +199,7 @@ const SalesModal: React.FC<SalesModalProps> = ({ isOpen, onClose }) => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label
                       htmlFor="designation"
@@ -280,7 +280,7 @@ const SalesModal: React.FC<SalesModalProps> = ({ isOpen, onClose }) => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label
                       htmlFor="industry"

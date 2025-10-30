@@ -27,11 +27,17 @@ export default function BeautyCosmeticsPage() {
                 streamline operations with personalized beauty consultations.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-pink-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-pink-700 transition-colors">
-                  Get Started
+                <button
+                  onClick={() => setIsSalesModalOpen(true)}
+                  className="bg-pink-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-pink-700 transition-colors"
+                >
+                  Talk to Sales
                 </button>
-                <button className="border border-pink-600 text-pink-600 px-8 py-3 rounded-lg font-semibold hover:bg-pink-50 transition-colors">
-                  View Demo
+                <button
+                  onClick={() => setIsDemoModalOpen(true)}
+                  className="border border-pink-600 text-pink-600 px-8 py-3 rounded-lg font-semibold hover:bg-pink-50 transition-colors"
+                >
+                  Book Demo
                 </button>
               </div>
             </div>

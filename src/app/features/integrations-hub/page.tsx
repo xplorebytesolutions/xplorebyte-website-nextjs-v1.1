@@ -7,7 +7,6 @@ import DemoModal from "../../../components/DemoModal";
 import {
   Settings,
   Database,
-  Zap,
   CheckCircle,
   ArrowRight,
   Code,
@@ -27,10 +26,17 @@ export default function IntegrationsHub() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6">
+                <h1
+                  className="font-extrabold text-white mb-6"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "2.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
                   <span className="text-[#11A944]">Integrations</span> Hub
                 </h1>
-                <p className="text-xl text-white/80 mb-8">
+                <p className="text-lg text-white/80 mb-8">
                   CRM, Excel & third-party integrations. Connect XploreByte to
                   your favorite tools and platforms seamlessly.
                 </p>
@@ -60,10 +66,17 @@ export default function IntegrationsHub() {
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <h2
+                className="font-bold text-gray-900 mb-4"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "2rem",
+                  lineHeight: "1.2",
+                }}
+              >
                 Powerful Integration Features
               </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              <p className="text-base text-gray-600 max-w-3xl mx-auto">
                 Connect with your existing tools and automate your workflows
                 with our comprehensive integration suite.
               </p>
@@ -74,10 +87,10 @@ export default function IntegrationsHub() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#11A944] to-[#0296FE] rounded-full mx-auto mb-4 flex items-center justify-center">
                   <Database className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   CRM Integration
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-base text-gray-600">
                   Sync with Salesforce, HubSpot, and other popular CRM systems
                   automatically.
                 </p>
@@ -87,10 +100,10 @@ export default function IntegrationsHub() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#FFB800] to-[#EA1752] rounded-full mx-auto mb-4 flex items-center justify-center">
                   <Code className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Excel Automation
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-base text-gray-600">
                   Automate data import/export with Excel and Google Sheets
                   integration.
                 </p>
@@ -100,10 +113,10 @@ export default function IntegrationsHub() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#0296FE] to-[#7D47C4] rounded-full mx-auto mb-4 flex items-center justify-center">
                   <Globe className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Third-Party Tools
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-base text-gray-600">
                   Connect with 100+ popular business tools and platforms.
                 </p>
               </div>
@@ -116,7 +129,14 @@ export default function IntegrationsHub() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                <h2
+                  className="font-bold text-gray-900 mb-6"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "2rem",
+                    lineHeight: "1.2",
+                  }}
+                >
                   Why Choose Our Integrations?
                 </h2>
                 <div className="space-y-6">
@@ -125,10 +145,10 @@ export default function IntegrationsHub() {
                       <CheckCircle className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      <h3 className="text-base font-semibold text-gray-900 mb-2">
                         Seamless Data Sync
                       </h3>
-                      <p className="text-gray-600">
+                      <p className="text-base text-gray-600">
                         Keep your data synchronized across all platforms in
                         real-time with our robust integration engine.
                       </p>
@@ -140,10 +160,10 @@ export default function IntegrationsHub() {
                       <CheckCircle className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      <h3 className="text-base font-semibold text-gray-900 mb-2">
                         Easy Setup
                       </h3>
-                      <p className="text-gray-600">
+                      <p className="text-base text-gray-600">
                         Connect your tools in minutes with our simple, guided
                         integration setup process.
                       </p>
@@ -155,10 +175,10 @@ export default function IntegrationsHub() {
                       <CheckCircle className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      <h3 className="text-base font-semibold text-gray-900 mb-2">
                         Custom Workflows
                       </h3>
-                      <p className="text-gray-600">
+                      <p className="text-base text-gray-600">
                         Create custom automation workflows that connect your
                         tools and streamline your processes.
                       </p>
@@ -181,10 +201,17 @@ export default function IntegrationsHub() {
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-r from-[#0A0E23] to-[#181B32]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2
+              className="font-bold text-white mb-6"
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                fontSize: "2rem",
+                lineHeight: "1.2",
+              }}
+            >
               Ready to Connect Your Tools?
             </h2>
-            <p className="text-lg text-white/80 mb-8">
+            <p className="text-base text-white/80 mb-8">
               Start integrating your favorite tools with XploreByte and automate
               your workflows.
             </p>

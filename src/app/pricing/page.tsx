@@ -161,7 +161,7 @@ export default function Pricing() {
       features: [
         "Indian Number (Eg. +9186XXXX1234, +9186XXXX7891)",
         "No Need to maintain SIM Card",
-        "Use this Number to get WhatsApp Business API via AiSensy",
+        "Use this Number to get WhatsApp Business API via XploreByte",
         "Free Onboarding Call",
       ],
       billingOptions: ["monthly", "quarterly"],
@@ -191,7 +191,7 @@ export default function Pricing() {
     {
       title: "Unlimited Free Service messages",
       description:
-        "Free service messages received by AiSensy businesses from users who initiate conversations.",
+        "Free service messages received by XploreByte businesses from users who initiate conversations.",
     },
     {
       title: "Marketing messages",
@@ -211,7 +211,7 @@ export default function Pricing() {
     {
       title: "Service Messages",
       description:
-        "User-initiated support messages. Free for AiSensy businesses.",
+        "User-initiated support messages. Free for XploreByte businesses.",
     },
   ];
 
@@ -224,10 +224,17 @@ export default function Pricing() {
         <section className="bg-gradient-to-br from-[#0A0E23] via-[#202748] to-[#11A944]/40 py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6">
+              <h1
+                className="font-extrabold text-white mb-6"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "2.5rem",
+                  lineHeight: "1.2",
+                }}
+              >
                 XploreByte <span className="text-[#11A944]">Pricing Plans</span>
               </h1>
-              <p className="text-xl text-white/80 max-w-3xl mx-auto">
+              <p className="text-lg text-white/80 max-w-3xl mx-auto">
                 Choose the perfect plan for your business. Transparent pricing
                 with no hidden fees.
               </p>
@@ -239,7 +246,14 @@ export default function Pricing() {
         <section className="py-8 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              <h2
+                className="font-bold text-gray-900 mb-4"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "1.5rem",
+                  lineHeight: "1.2",
+                }}
+              >
                 Monthly / Yearly Subscription | Unlimited Users Plan
               </h2>
               <div className="flex items-center justify-center gap-4">
@@ -351,10 +365,17 @@ export default function Pricing() {
                   )}
 
                   <div className="text-center mb-8">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    <h3
+                      className="font-bold text-gray-900 mb-2"
+                      style={{
+                        fontFamily: "Montserrat, sans-serif",
+                        fontSize: "1.5rem",
+                        lineHeight: "1.2",
+                      }}
+                    >
                       {plan.name}
                     </h3>
-                    <p className="text-gray-600 mb-4 text-sm">
+                    <p className="text-gray-600 mb-4 text-base">
                       {plan.description}
                     </p>
                     <div className="text-4xl font-bold text-gray-900 mb-2">
@@ -365,7 +386,14 @@ export default function Pricing() {
 
                   {/* Message Charges */}
                   <div className="mb-6 p-4 bg-gray-50 rounded-lg">
-                    <h4 className="font-semibold text-gray-900 mb-3">
+                    <h4
+                      className="font-semibold text-gray-900 mb-3"
+                      style={{
+                        fontFamily: "Montserrat, sans-serif",
+                        fontSize: "1rem",
+                        lineHeight: "1.2",
+                      }}
+                    >
                       Per Template Message Charges:
                     </h4>
                     <div className="space-y-2 text-sm">
@@ -428,10 +456,17 @@ export default function Pricing() {
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              <h2
+                className="font-bold text-gray-900 mb-4"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "2rem",
+                  lineHeight: "1.2",
+                }}
+              >
                 Countrywise per WhatsApp message Pricing
               </h2>
-              <p className="text-lg text-gray-600 mb-8">
+              <p className="text-base text-gray-600 mb-8">
                 Messaging costs vary by your user&apos;s country. Check the
                 exact per-message charges for sending WhatsApp messages to users
                 in different regions.
@@ -450,10 +485,17 @@ export default function Pricing() {
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              <h2
+                className="font-bold text-gray-900 mb-4"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "2rem",
+                  lineHeight: "1.2",
+                }}
+              >
                 Add-Ons (Charged separately)
               </h2>
-              <p className="text-lg text-gray-600">
+              <p className="text-base text-gray-600">
                 Get Started with Virtual Number & Drag & Drop Flow Builder
               </p>
             </div>
@@ -465,10 +507,19 @@ export default function Pricing() {
                   className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200"
                 >
                   <div className="mb-6">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    <h3
+                      className="font-bold text-gray-900 mb-2"
+                      style={{
+                        fontFamily: "Montserrat, sans-serif",
+                        fontSize: "1.5rem",
+                        lineHeight: "1.2",
+                      }}
+                    >
                       {addon.name}
                     </h3>
-                    <p className="text-gray-600 mb-4">{addon.description}</p>
+                    <p className="text-gray-600 mb-4 text-base">
+                      {addon.description}
+                    </p>
 
                     {/* Billing Toggle */}
                     <div className="flex items-center gap-4 mb-4">
@@ -526,10 +577,17 @@ export default function Pricing() {
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              <h2
+                className="font-bold text-gray-900 mb-4"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "2rem",
+                  lineHeight: "1.2",
+                }}
+              >
                 Important Pricing Terminologies
               </h2>
-              <p className="text-lg text-gray-600">
+              <p className="text-base text-gray-600">
                 Let&apos;s make WhatsApp API Pricing easy to understand for you!
               </p>
             </div>
@@ -537,10 +595,17 @@ export default function Pricing() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {terminology.map((term, index) => (
                 <div key={index} className="bg-gray-50 rounded-lg p-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  <h3
+                    className="font-semibold text-gray-900 mb-3"
+                    style={{
+                      fontFamily: "Montserrat, sans-serif",
+                      fontSize: "1.125rem",
+                      lineHeight: "1.2",
+                    }}
+                  >
                     {term.title}
                   </h3>
-                  <p className="text-gray-600 text-sm">{term.description}</p>
+                  <p className="text-gray-600 text-base">{term.description}</p>
                 </div>
               ))}
             </div>
@@ -550,10 +615,17 @@ export default function Pricing() {
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-r from-[#0A0E23] to-[#181B32]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2
+              className="font-bold text-white mb-6"
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                fontSize: "2rem",
+                lineHeight: "1.2",
+              }}
+            >
               Ready to Get Started?
             </h2>
-            <p className="text-lg text-white/80 mb-8">
+            <p className="text-base text-white/80 mb-8">
               Join hundreds of businesses already using our WhatsApp API
               platform to transform their business operations.
             </p>

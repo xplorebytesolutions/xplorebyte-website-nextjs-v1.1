@@ -1,9 +1,14 @@
 "use client";
 
+import { useState } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import DemoModal from "../../components/DemoModal";
+import SalesModal from "../../components/SalesModal";
 
 export default function AboutUs() {
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
+  const [isSalesModalOpen, setIsSalesModalOpen] = useState(false);
   return (
     <>
       <Header />
@@ -107,13 +112,13 @@ export default function AboutUs() {
                   <div className="grid grid-cols-2 gap-4">
                     <div className="text-center">
                       <div className="text-3xl font-bold text-[#11A944]">
-                        500+
+                        1 Lac+
                       </div>
                       <div className="text-sm text-gray-600">Happy Clients</div>
                     </div>
                     <div className="text-center">
                       <div className="text-3xl font-bold text-[#0296FE]">
-                        98%
+                        99%
                       </div>
                       <div className="text-sm text-gray-600">Success Rate</div>
                     </div>
@@ -427,7 +432,7 @@ export default function AboutUs() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="text-4xl md:text-5xl font-bold text-[#11A944] mb-2">
-                  500+
+                  1 Lac+
                 </div>
                 <div className="text-white/80 text-lg">Happy Clients</div>
                 <div className="text-white/60 text-sm mt-1">
@@ -437,7 +442,7 @@ export default function AboutUs() {
 
               <div className="text-center">
                 <div className="text-4xl md:text-5xl font-bold text-[#0296FE] mb-2">
-                  98%
+                  99%
                 </div>
                 <div className="text-white/80 text-lg">Success Rate</div>
                 <div className="text-white/60 text-sm mt-1">
@@ -479,11 +484,11 @@ export default function AboutUs() {
               their digital transformation needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
+              <button
+                onClick={() => setIsSalesModalOpen(true)}
                 className="inline-flex items-center px-8 py-3 bg-[#11A944] text-white font-semibold rounded-lg hover:bg-[#0d8a3a] transition-colors"
               >
-                Get Started Today
+                Talk to Sales
                 <svg
                   className="w-5 h-5 ml-2"
                   fill="none"
@@ -497,19 +502,31 @@ export default function AboutUs() {
                     d="M17 8l4 4m0 0l-4 4m4-4H3"
                   />
                 </svg>
-              </a>
-              <a
-                href="/whatsapp-business"
+              </button>
+              <button
+                onClick={() => setIsDemoModalOpen(true)}
                 className="inline-flex items-center px-8 py-3 border-2 border-[#11A944] text-[#11A944] font-semibold rounded-lg hover:bg-[#11A944] hover:text-white transition-colors"
               >
                 Book a Demo
-              </a>
+              </button>
             </div>
           </div>
         </section>
       </main>
 
       <Footer />
+
+      {/* Demo Modal */}
+      <DemoModal
+        isOpen={isDemoModalOpen}
+        onClose={() => setIsDemoModalOpen(false)}
+      />
+
+      {/* Sales Modal */}
+      <SalesModal
+        isOpen={isSalesModalOpen}
+        onClose={() => setIsSalesModalOpen(false)}
+      />
     </>
   );
 }

@@ -90,7 +90,7 @@ const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
       />
 
       {/* Modal */}
-      <div className="relative bg-white rounded-2xl shadow-2xl max-w-4xl w-full mx-4 max-h-[90vh] overflow-hidden">
+      <div className="relative bg-white rounded-2xl shadow-2xl max-w-4xl w-full mx-2 sm:mx-4 max-h-[95vh] sm:max-h-[90vh] overflow-hidden">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -99,13 +99,15 @@ const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
           <X className="w-5 h-5" />
         </button>
 
-        <div className="flex">
+        <div className="flex flex-col lg:flex-row">
           {/* Left Panel - Demo Information */}
-          <div className="bg-[#075E54] p-8 text-white w-1/2 flex flex-col justify-center">
+          <div className="bg-[#075E54] p-6 lg:p-8 text-white w-full lg:w-1/2 flex flex-col justify-center">
             <div className="space-y-6">
               <div>
-                <h2 className="text-3xl font-bold mb-4">Book Your Demo</h2>
-                <p className="text-white/90 text-lg leading-relaxed">
+                <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+                  Book Your Demo
+                </h2>
+                <p className="text-white/90 text-base sm:text-lg leading-relaxed">
                   Get a personalized walkthrough of our WhatsApp Business API
                   platform. See how it can transform your customer
                   communication.
@@ -151,7 +153,7 @@ const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
           </div>
 
           {/* Right Panel - Form */}
-          <div className="p-8 w-1/2 overflow-y-auto max-h-[90vh]">
+          <div className="p-6 lg:p-8 w-full lg:w-1/2 overflow-y-auto max-h-[90vh]">
             {!isSubmitted ? (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
@@ -165,7 +167,7 @@ const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
                 </div>
 
                 {/* Personal Information */}
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label
                       htmlFor="firstName"
@@ -246,7 +248,7 @@ const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label
                       htmlFor="company"
@@ -284,7 +286,7 @@ const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label
                       htmlFor="industry"

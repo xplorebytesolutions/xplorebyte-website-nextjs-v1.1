@@ -7,7 +7,6 @@ import DemoModal from "../../../components/DemoModal";
 import {
   BarChart3,
   TrendingUp,
-  Target,
   CheckCircle,
   ArrowRight,
   PieChart,
@@ -27,10 +26,17 @@ export default function AnalyticsReporting() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6">
+                <h1
+                  className="font-extrabold text-white mb-6"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "2.5rem",
+                    lineHeight: "1.2",
+                  }}
+                >
                   <span className="text-[#11A944]">Analytics</span> & Reporting
                 </h1>
-                <p className="text-xl text-white/80 mb-8">
+                <p className="text-lg text-white/80 mb-8">
                   Real-time ROI & performance tracking. Get deep insights into
                   your WhatsApp campaigns and team performance.
                 </p>
@@ -60,10 +66,17 @@ export default function AnalyticsReporting() {
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <h2
+                className="font-bold text-gray-900 mb-4"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "2rem",
+                  lineHeight: "1.2",
+                }}
+              >
                 Comprehensive Analytics Features
               </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              <p className="text-base text-gray-600 max-w-3xl mx-auto">
                 Track every metric that matters with our powerful analytics and
                 reporting suite.
               </p>
@@ -74,10 +87,10 @@ export default function AnalyticsReporting() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#11A944] to-[#0296FE] rounded-full mx-auto mb-4 flex items-center justify-center">
                   <TrendingUp className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Real-Time Metrics
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-base text-gray-600">
                   Monitor campaign performance, response times, and engagement
                   rates in real-time.
                 </p>
@@ -87,10 +100,10 @@ export default function AnalyticsReporting() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#FFB800] to-[#EA1752] rounded-full mx-auto mb-4 flex items-center justify-center">
                   <PieChart className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   ROI Tracking
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-base text-gray-600">
                   Measure return on investment with detailed
                   cost-per-acquisition and revenue tracking.
                 </p>
@@ -100,10 +113,10 @@ export default function AnalyticsReporting() {
                 <div className="w-16 h-16 bg-gradient-to-br from-[#0296FE] to-[#7D47C4] rounded-full mx-auto mb-4 flex items-center justify-center">
                   <Activity className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Team Performance
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-base text-gray-600">
                   Track agent productivity, response times, and customer
                   satisfaction scores.
                 </p>
@@ -117,7 +130,14 @@ export default function AnalyticsReporting() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                <h2
+                  className="font-bold text-gray-900 mb-6"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "2rem",
+                    lineHeight: "1.2",
+                  }}
+                >
                   Why Choose Our Analytics?
                 </h2>
                 <div className="space-y-6">
@@ -126,10 +146,10 @@ export default function AnalyticsReporting() {
                       <CheckCircle className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      <h3 className="text-base font-semibold text-gray-900 mb-2">
                         Actionable Insights
                       </h3>
-                      <p className="text-gray-600">
+                      <p className="text-base text-gray-600">
                         Get clear, actionable insights that help you optimize
                         your WhatsApp campaigns and improve performance.
                       </p>
@@ -141,10 +161,10 @@ export default function AnalyticsReporting() {
                       <CheckCircle className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      <h3 className="text-base font-semibold text-gray-900 mb-2">
                         Custom Reports
                       </h3>
-                      <p className="text-gray-600">
+                      <p className="text-base text-gray-600">
                         Create custom reports and dashboards tailored to your
                         business needs and KPIs.
                       </p>
@@ -156,10 +176,10 @@ export default function AnalyticsReporting() {
                       <CheckCircle className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      <h3 className="text-base font-semibold text-gray-900 mb-2">
                         Automated Alerts
                       </h3>
-                      <p className="text-gray-600">
+                      <p className="text-base text-gray-600">
                         Set up automated alerts for important metrics and get
                         notified when action is needed.
                       </p>
@@ -182,10 +202,17 @@ export default function AnalyticsReporting() {
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-r from-[#0A0E23] to-[#181B32]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2
+              className="font-bold text-white mb-6"
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                fontSize: "2rem",
+                lineHeight: "1.2",
+              }}
+            >
               Ready to Track Your Success?
             </h2>
-            <p className="text-lg text-white/80 mb-8">
+            <p className="text-base text-white/80 mb-8">
               Start using our powerful analytics to optimize your WhatsApp
               campaigns and drive better results.
             </p>
