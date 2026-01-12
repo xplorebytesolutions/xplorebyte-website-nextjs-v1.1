@@ -234,7 +234,7 @@ export async function POST(request: NextRequest) {
     }
 
     return NextResponse.json(
-      { ok: false, error: "Failed to save your request. Please try again." },
+      { ok: false, error: `Failed to save your request. Please try again. (Debug: ${message})` },
       { status: 500 }
     );
   }

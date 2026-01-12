@@ -66,3 +66,68 @@ Browserslist: browsers data (caniuse-lite) is 6 months old. Please run:
   syscall: 'open',
   path: 'E:\\xplorebyte-website\\.next\\server\\pages-manifest.json'
 }
+ ⨯ [Error: ENOENT: no such file or directory, open 'E:\xplorebyte-website\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'E:\\xplorebyte-website\\.next\\routes-manifest.json',
+  page: '/api/leads'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'E:\xplorebyte-website\.next\server\pages\_document.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'E:\\xplorebyte-website\\.next\\server\\pages\\_document.js'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'E:\xplorebyte-website\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'E:\\xplorebyte-website\\.next\\routes-manifest.json',
+  page: '/api/leads'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'E:\xplorebyte-website\.next\server\pages\_document.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'E:\\xplorebyte-website\\.next\\server\\pages\\_document.js'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'E:\xplorebyte-website\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'E:\\xplorebyte-website\\.next\\routes-manifest.json',
+  page: '/api/leads'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'E:\xplorebyte-website\.next\server\pages\_document.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'E:\\xplorebyte-website\\.next\\server\\pages\\_document.js'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'E:\xplorebyte-website\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'E:\\xplorebyte-website\\.next\\routes-manifest.json',
+  page: '/api/leads'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'E:\xplorebyte-website\.next\server\pages\_document.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'E:\\xplorebyte-website\\.next\\server\\pages\\_document.js'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'E:\xplorebyte-website\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'E:\\xplorebyte-website\\.next\\routes-manifest.json',
+  page: '/api/leads'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'E:\xplorebyte-website\.next\server\pages\_document.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'E:\\xplorebyte-website\\.next\\server\\pages\\_document.js'
+}

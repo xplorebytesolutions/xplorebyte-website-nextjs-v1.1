@@ -34,3 +34,12 @@
  GET / 500 in 119ms
  ✓ Compiled in 2.2s (5393 modules)
  ✓ Compiled in 2.2s (5393 modules)
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 1814ms (108 modules)
+ ○ Compiling /api/leads ...
+ ✓ Compiled /api/leads in 2.7s (284 modules)
+ POST /api/leads 500 in 3441ms
+ POST /api/leads 500 in 361ms
+ POST /api/leads 500 in 295ms
+ POST /api/leads 500 in 215ms
+ POST /api/leads 500 in 182ms
