@@ -39,6 +39,24 @@ function getBoolEnv(name) {
   return value === "1" || value.toLowerCase() === "true";
 }
 
+function getUrlParam(connectionString, name) {
+  const idx = connectionString.indexOf("?");
+  if (idx < 0) return undefined;
+  try {
+    const params = new URLSearchParams(connectionString.slice(idx + 1));
+    const value = params.get(name);
+    return value === null ? undefined : value;
+  } catch {
+    return undefined;
+  }
+}
+
+function getUrlBoolParam(connectionString, name) {
+  const value = getUrlParam(connectionString, name);
+  if (value === undefined) return undefined;
+  return value === "1" || value.toLowerCase() === "true";
+}
+
 function safeDbInfo(databaseUrl) {
   try {
     const url = new URL(databaseUrl);
@@ -72,6 +90,8 @@ async function main() {
 
   const sslEnabled =
     getBoolEnv("DATABASE_SSL") ||
+    getUrlBoolParam(databaseUrl, "ssl") === true ||
+    ["require", "verify-ca", "verify-full"].includes(getUrlParam(databaseUrl, "sslmode")) ||
     ["require", "verify-ca", "verify-full"].includes(
       (process.env.PGSSLMODE || "").toLowerCase()
     );

@@ -39,32 +39,38 @@ function hashIp(ip: string | undefined) {
 }
 
 export async function POST(request: NextRequest) {
-  let body: any;
+  let body: unknown;
   try {
     body = await request.json();
   } catch {
     return NextResponse.json({ ok: false, error: "Invalid JSON body." }, { status: 400 });
   }
 
-  const kind = asString(body.kind) ?? "demo_request";
+  if (typeof body !== "object" || body === null) {
+    return NextResponse.json({ ok: false, error: "Invalid JSON body." }, { status: 400 });
+  }
+
+  const payloadBody = body as Record<string, unknown>;
+
+  const kind = asString(payloadBody.kind) ?? "demo_request";
   if (!allowedKinds.has(kind)) {
     return NextResponse.json({ ok: false, error: "Invalid kind." }, { status: 400 });
   }
 
   // Accept both camelCase and snake_case input.
-  const firstName = clamp(asString(body.firstName ?? body.first_name), 120);
-  const lastName = clamp(asString(body.lastName ?? body.last_name), 120);
-  const email = normalizeEmail(body.email);
-  const phone = clamp(asString(body.phone), 50);
-  const company = clamp(asString(body.company), 200);
-  const industry = clamp(asString(body.industry), 120);
-  const message = clamp(asString(body.message ?? body.additionalInfo), 4000);
-  const preferredDateRaw = asString(body.preferredDate ?? body.preferred_date);
-  const preferredTime = clamp(asString(body.preferredTime ?? body.preferred_time), 80);
-  const sourcePath = clamp(asString(body.sourcePath ?? body.source_path), 300);
-  const utmSource = clamp(asString(body.utmSource ?? body.utm_source), 200);
-  const utmMedium = clamp(asString(body.utmMedium ?? body.utm_medium), 200);
-  const utmCampaign = clamp(asString(body.utmCampaign ?? body.utm_campaign), 200);
+  const firstName = clamp(asString(payloadBody.firstName ?? payloadBody.first_name), 120);
+  const lastName = clamp(asString(payloadBody.lastName ?? payloadBody.last_name), 120);
+  const email = normalizeEmail(payloadBody.email);
+  const phone = clamp(asString(payloadBody.phone), 50);
+  const company = clamp(asString(payloadBody.company), 200);
+  const industry = clamp(asString(payloadBody.industry), 120);
+  const message = clamp(asString(payloadBody.message ?? payloadBody.additionalInfo), 4000);
+  const preferredDateRaw = asString(payloadBody.preferredDate ?? payloadBody.preferred_date);
+  const preferredTime = clamp(asString(payloadBody.preferredTime ?? payloadBody.preferred_time), 80);
+  const sourcePath = clamp(asString(payloadBody.sourcePath ?? payloadBody.source_path), 300);
+  const utmSource = clamp(asString(payloadBody.utmSource ?? payloadBody.utm_source), 200);
+  const utmMedium = clamp(asString(payloadBody.utmMedium ?? payloadBody.utm_medium), 200);
+  const utmCampaign = clamp(asString(payloadBody.utmCampaign ?? payloadBody.utm_campaign), 200);
 
   if (!firstName || !lastName || !email) {
     return NextResponse.json(
@@ -86,9 +92,9 @@ export async function POST(request: NextRequest) {
   const ipHash = hashIp(getClientIp(request));
 
   const payload = {
-    designation: clamp(asString(body.designation), 120),
-    country: clamp(asString(body.country), 120),
-    productInterest: clamp(asString(body.productInterest ?? body.product_interest), 120),
+    designation: clamp(asString(payloadBody.designation), 120),
+    country: clamp(asString(payloadBody.country), 120),
+    productInterest: clamp(asString(payloadBody.productInterest ?? payloadBody.product_interest), 120),
   };
 
   try {
@@ -146,9 +152,11 @@ export async function POST(request: NextRequest) {
 
     const id = result.rows?.[0]?.id;
     return NextResponse.json({ ok: true, id }, { status: 201 });
-  } catch (error: any) {
-    const message = typeof error?.message === "string" ? error.message : "";
-    const code = typeof error?.code === "string" ? error.code : undefined;
+  } catch (error: unknown) {
+    const errorObj = typeof error === "object" && error !== null ? (error as Record<string, unknown>) : null;
+    const message =
+      typeof errorObj?.message === "string" ? errorObj.message : error instanceof Error ? error.message : "";
+    const code = typeof errorObj?.code === "string" ? errorObj.code : undefined;
     console.error("Lead insert failed:", { code, message });
 
     if (message.includes("Missing DATABASE_URL")) {
@@ -157,6 +165,34 @@ export async function POST(request: NextRequest) {
           ok: false,
           error:
             "Server database is not configured. Set DATABASE_URL (and DATABASE_SSL if needed) and restart the server.",
+        },
+        { status: 500 }
+      );
+    }
+
+    const sslRequired =
+      message.includes("no pg_hba.conf entry for host") && message.toLowerCase().includes("ssl off");
+    if (sslRequired) {
+      return NextResponse.json(
+        {
+          ok: false,
+          error:
+            "Database requires SSL. Set DATABASE_SSL=true (or PGSSLMODE=require) in your deployment environment.",
+        },
+        { status: 500 }
+      );
+    }
+
+    if (
+      code === "28P01" ||
+      message.toLowerCase().includes("password authentication failed") ||
+      message.toLowerCase().includes("authentication failed")
+    ) {
+      return NextResponse.json(
+        {
+          ok: false,
+          error:
+            "Database authentication failed. Verify the username/password in DATABASE_URL for your deployment.",
         },
         { status: 500 }
       );

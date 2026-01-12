@@ -24,6 +24,12 @@ This repo includes a Postgres-backed API endpoint to store demo/sales requests:
 - Set `DATABASE_URL` in your local environment (see `env.example`)
 - Forms will POST to `POST /api/leads` and insert rows into `lead_submissions`
 
+### Troubleshooting
+
+- If the live site shows “Database connection failed”, verify the deployed environment has `DATABASE_URL` set correctly and your Postgres provider allows inbound connections from your hosting provider (some require disabling IP allowlists or whitelisting egress IPs).
+- If your provider requires SSL, set `DATABASE_SSL=true` (or set `PGSSLMODE=require` in the connection string/environment).
+- To validate DB connectivity from your machine, run `npm run test:leads:db` (adds a test row; pass `--cleanup` to delete it).
+
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
 [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
