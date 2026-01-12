@@ -31,3 +31,6 @@
  GET / 500 in 1000ms
  GET / 500 in 970ms
  GET / 500 in 949ms
+ GET / 500 in 119ms
+ ✓ Compiled in 2.2s (5393 modules)
+ ✓ Compiled in 2.2s (5393 modules)

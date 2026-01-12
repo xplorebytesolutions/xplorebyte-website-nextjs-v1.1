@@ -53,3 +53,16 @@ Browserslist: browsers data (caniuse-lite) is 6 months old. Please run:
   syscall: 'open',
   path: 'E:\\xplorebyte-website\\.next\\routes-manifest.json'
 }
+ ⨯ [Error: ENOENT: no such file or directory, open 'E:\xplorebyte-website\.next\server\app-paths-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'E:\\xplorebyte-website\\.next\\server\\app-paths-manifest.json',
+  page: '/'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'E:\xplorebyte-website\.next\server\pages-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'E:\\xplorebyte-website\\.next\\server\\pages-manifest.json'
+}
