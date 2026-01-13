@@ -390,6 +390,7 @@
 
 "use client";
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 interface Industry {
   title: string;
@@ -644,16 +645,14 @@ const IndustriesGrid: React.FC = () => {
                           />
                           {/* IMAGE */}
                           <div className="relative z-10 w-full h-full">
-                            <img
+                            <Image
                               src={ind.image}
                               alt={ind.title}
-                              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                              onError={(
-                                e: React.SyntheticEvent<HTMLImageElement, Event>
-                              ) => {
-                                e.currentTarget.src =
-                                  "/images/industry-placeholder.png";
-                              }}
+                              fill
+                              sizes="(max-width: 768px) 40vw, (max-width: 1024px) 30vw, 20vw"
+                              className="object-cover transition-transform duration-300 group-hover:scale-105"
+                              priority={idx === 0}
+                              quality={70}
                             />
                           </div>
                         </div>

@@ -44,3 +44,5 @@
  POST /api/leads 500 in 215ms
  POST /api/leads 500 in 182ms
  ✓ Compiled in 2.8s (5584 modules)
+ ✓ Compiled in 3.8s (5393 modules)
+ ✓ Compiled in 1365ms (5393 modules)
