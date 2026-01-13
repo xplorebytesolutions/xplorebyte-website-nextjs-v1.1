@@ -1,4 +1,4 @@
-create table if not exists lead_submissions (
+create table if not exists public.lead_submissions (
   id bigserial primary key,
   kind text not null,
   status text not null default 'new',
@@ -22,7 +22,6 @@ create table if not exists lead_submissions (
   created_at timestamptz not null default now()
 );
 
-create index if not exists lead_submissions_created_at_idx on lead_submissions (created_at desc);
-create index if not exists lead_submissions_status_created_at_idx on lead_submissions (status, created_at desc);
-create index if not exists lead_submissions_email_idx on lead_submissions (email);
-
+create index if not exists lead_submissions_created_at_idx on public.lead_submissions (created_at desc);
+create index if not exists lead_submissions_status_created_at_idx on public.lead_submissions (status, created_at desc);
+create index if not exists lead_submissions_email_idx on public.lead_submissions (email);
