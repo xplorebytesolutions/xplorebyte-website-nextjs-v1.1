@@ -166,9 +166,13 @@ export default function ApplyWhatsAppAPIPage() {
                 <p className="text-sm text-gray-600 mt-4">
                   You can watch our video on how to apply for WhatsApp Business
                   API for free.{" "}
-                  <Link href="#" className="text-emerald-600 hover:underline">
-                    Click here
-                  </Link>
+                  <Link
+                    href="/contact"
+                    className="text-emerald-600 hover:underline"
+                  >
+                    Contact us
+                  </Link>{" "}
+                  to get the video link.
                 </p>
               </section>
 
@@ -260,7 +264,10 @@ export default function ApplyWhatsAppAPIPage() {
                 </div>
                 <p className="text-sm text-gray-600">
                   You can also reach us on our free plan.{" "}
-                  <Link href="#" className="text-emerald-600 hover:underline">
+                  <Link
+                    href="https://xplorebyte.com/start-free-trial"
+                    className="text-emerald-600 hover:underline"
+                  >
                     Click here
                   </Link>{" "}
                   to apply for the free plan.
@@ -289,7 +296,10 @@ export default function ApplyWhatsAppAPIPage() {
                 </div>
                 <p className="text-sm text-gray-600">
                   You can also reach us on our free plan.{" "}
-                  <Link href="#" className="text-emerald-600 hover:underline">
+                  <Link
+                    href="https://xplorebyte.com/start-free-trial"
+                    className="text-emerald-600 hover:underline"
+                  >
                     Click here
                   </Link>{" "}
                   to apply for the free plan.
@@ -319,7 +329,10 @@ export default function ApplyWhatsAppAPIPage() {
                 </div>
                 <p className="text-sm text-gray-600">
                   You can also reach us on our free plan.{" "}
-                  <Link href="#" className="text-emerald-600 hover:underline">
+                  <Link
+                    href="https://xplorebyte.com/start-free-trial"
+                    className="text-emerald-600 hover:underline"
+                  >
                     Click here
                   </Link>{" "}
                   to apply for the free plan.
@@ -346,9 +359,14 @@ export default function ApplyWhatsAppAPIPage() {
                   </li>
                   <li>
                     If you don&apos;t have one, you can create one{" "}
-                    <Link href="#" className="text-emerald-600 hover:underline">
+                    <a
+                      href="https://business.facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-emerald-600 hover:underline"
+                    >
                       here
-                    </Link>
+                    </a>
                     .
                   </li>
                 </ul>
@@ -563,7 +581,7 @@ export default function ApplyWhatsAppAPIPage() {
                   ].map(article => (
                     <Link
                       key={article}
-                      href="#"
+                      href="/guides"
                       className="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors group"
                     >
                       <span className="text-gray-700 group-hover:text-emerald-600">
@@ -573,9 +591,12 @@ export default function ApplyWhatsAppAPIPage() {
                     </Link>
                   ))}
                 </div>
-                <button className="mt-6 px-6 py-2 border-2 border-gray-300 text-gray-700 font-semibold rounded-lg hover:border-gray-400 transition-colors">
+                <Link
+                  href="/guides"
+                  className="inline-flex mt-6 px-6 py-2 border-2 border-gray-300 text-gray-700 font-semibold rounded-lg hover:border-gray-400 transition-colors"
+                >
                   View All
-                </button>
+                </Link>
               </section>
 
               {/* Feedback Section */}

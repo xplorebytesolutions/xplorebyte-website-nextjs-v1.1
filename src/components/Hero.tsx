@@ -141,22 +141,36 @@ const Hero: FC = () => {
             }}
             variants={fadeUp}
           >
-            WhatsApp Business API
+            WhatsApp First CRM
           </motion.div>
 
           {/* Main Headline - MARKETING TEAM: Update this headline as needed */}
           <motion.h1
-            className="font-bold text-gray-900 mb-6"
+            className="font-bold text-gray-900 mb-6 text-3xl md:text-4xl"
             style={{
               fontFamily: "Montserrat, sans-serif",
-              fontSize: "2.5rem",
               lineHeight: "1.2",
             }}
             variants={fadeUp}
           >
-            Elevate experiences with <br />
-            <span style={{ color: "#25D366" }}>WhatsApp Business API</span>
+            XploreByte - WhatsApp First CRM <br />
+            <span style={{ color: "#25D366" }}>
+              for Sales, Support &amp; Follow-ups
+            </span>
           </motion.h1>
+
+          <motion.p
+            className="text-gray-700 mb-4"
+            style={{
+              fontFamily: "Montserrat, sans-serif",
+              fontSize: "1rem",
+              lineHeight: "1.6",
+              maxWidth: "65ch",
+            }}
+            variants={fadeUp}
+          >
+            Built for small businesses, XploreByte brings WhatsApp Business API into a WhatsApp CRM—start your free trial.
+          </motion.p>
 
           {/* Description */}
           <motion.p
@@ -169,9 +183,8 @@ const Hero: FC = () => {
             }}
             variants={fadeUp}
           >
-            Send notifications, customer service messages, and essential
-            information your customers need on WhatsApp — even through a
-            WhatsApp chatbot.
+            A faster Team Inbox + automations that turn WhatsApp chats into
+            customers - built performance-first for daily workflows.
           </motion.p>
 
           <motion.p
@@ -184,8 +197,8 @@ const Hero: FC = () => {
             }}
             variants={fadeUp}
           >
-            XploreByte APIs hide the complexity of hosting and scaling WhatsApp
-            software so that you can focus on elevating customer experiences.
+            XploreByte keeps your team aligned with shared visibility, fast
+            assignment, and automation that scales without slowing you down.
           </motion.p>
 
           {/* CTA Buttons */}

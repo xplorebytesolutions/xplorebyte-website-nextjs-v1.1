@@ -624,7 +624,7 @@ const IndustriesGrid: React.FC = () => {
                     <a
                       href={ind.ctaUrl}
                       className={`
-                        group relative shadow-lg flex flex-row items-center px-4 py-6 md:px-6 md:py-8 ${ind.bg}
+                        group relative shadow-lg flex flex-row px-4 py-6 md:px-6 md:py-8 ${ind.bg}
                         transition hover:scale-[1.02] hover:shadow-2xl hover:z-20 duration-300
               border border-white/70 hover:border-emerald-400/60
                         min-h-[196px] md:min-h-[224px]
@@ -632,8 +632,8 @@ const IndustriesGrid: React.FC = () => {
             `}
                     >
                       {/* Left Side - Image */}
-                      <div className="flex-shrink-0 w-2/5 h-full pr-4 md:pr-6">
-                        <div className="relative h-full w-full">
+                      <div className="flex-shrink-0 w-2/5 pr-4 md:pr-6">
+                        <div className="relative w-full h-full min-h-[180px] rounded-lg overflow-hidden">
                           {/* Glow/Blob Behind Image */}
                           <span
                             className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0 blur-2xl rounded-full w-40 h-24"
@@ -650,7 +650,7 @@ const IndustriesGrid: React.FC = () => {
                               alt={ind.title}
                               fill
                               sizes="(max-width: 768px) 40vw, (max-width: 1024px) 30vw, 20vw"
-                              className="object-cover transition-transform duration-300 group-hover:scale-105"
+                              className="object-contain transition-transform duration-300 group-hover:scale-105"
                               priority={idx === 0}
                               quality={70}
                             />

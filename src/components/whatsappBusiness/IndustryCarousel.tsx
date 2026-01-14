@@ -2,7 +2,7 @@
 import React from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import Image from "next/image";
+
 interface IndustryCard {
   title: string;
   description: string;
@@ -111,7 +111,6 @@ export default function IndustriesCarousel() {
 
   React.useEffect(() => {
     if (!instanceRef.current) return;
-    // This attaches the listener and does NOT need cleanup
     instanceRef.current.on("slideChanged", slider => {
       setCurrentSlide(slider.track.details.rel);
     });
@@ -142,18 +141,14 @@ export default function IndustriesCarousel() {
                     hover:border-emerald-500/80 hover:-translate-y-2
                   `}
                 >
-                  {/* --- IMAGE, STRETCHED FULL WIDTH, ASPECT RATIO --- */}
-                  <div className="w-full mb-6 px-6 pt-6">
-                    <Image
+                  <div className="w-full h-48 sm:h-56 md:h-64 px-6 pt-6 mb-6">
+                    <img
                       src={item.image}
                       alt={item.title}
-                      width={400} // set actual width/height if possible
-                      height={400}
-                      className="w-full ..."
-                      style={{ objectFit: "contain" }}
+                      className="w-full h-full object-contain"
+                      loading="lazy"
                     />
                   </div>
-                  {/* --- TEXT SECTION --- */}
                   <div className="flex flex-col flex-1 px-8 pb-8 text-center">
                     <h3 className="text-xl font-extrabold text-white mb-2">
                       {item.title}

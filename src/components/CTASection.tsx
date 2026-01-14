@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import DemoModal from "./DemoModal";
 
 const CTASection = () => {
@@ -20,12 +21,14 @@ const CTASection = () => {
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto font-sans text-emerald-900">
-            Join hundreds of companies who trust us to deliver exceptional
-            digital solutions. Lets discuss how we can help you achieve your
-            goals.
+            Switch to XploreByte - a WhatsApp First CRM with a faster Team Inbox
+            + automations that turn WhatsApp chats into customers.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="inline-flex items-center px-8 py-4 rounded-lg font-medium transition-all duration-200 shadow-lg hover:shadow-xl font-sans bg-[#25D366] text-white hover:bg-[#1ea854]">
+            <Link
+              href="https://xplorebyte.com/start-free-trial"
+              className="inline-flex items-center justify-center px-8 py-4 rounded-lg font-medium transition-all duration-200 shadow-lg hover:shadow-xl font-sans bg-[#25D366] text-white hover:bg-[#1ea854]"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -40,8 +43,8 @@ const CTASection = () => {
               >
                 <polygon points="5,3 19,12 5,21" />
               </svg>
-              Try Now
-            </button>
+              Start Free Trial
+            </Link>
             <button
               onClick={() => setIsDemoModalOpen(true)}
               className="inline-flex items-center px-8 py-4 rounded-lg font-medium transition-all duration-200 font-sans shadow-lg hover:shadow-xl bg-emerald-700 text-white hover:bg-emerald-800"

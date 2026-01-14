@@ -223,7 +223,7 @@ export default function SpaPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/start-free-trial"
+                href="https://xplorebyte.com/start-free-trial"
                 className="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block text-center"
               >
                 Start Free Trial

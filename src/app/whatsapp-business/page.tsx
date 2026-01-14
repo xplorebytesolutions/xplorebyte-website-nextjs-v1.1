@@ -1,4 +1,4 @@
-import React from "react";
+import type { Metadata } from "next";
 import HeroSection from "@/components/whatsappBusiness/HeroSection";
 import ProductFeatures from "@/components/whatsappBusiness/ProductFeatures";
 import DemoCTA from "@/components/whatsappBusiness/DemoCTA";
@@ -7,45 +7,47 @@ import Testimonials from "@/components/whatsappBusiness/Testimonials";
 import HubsSection from "@/components/whatsappBusiness/HubsSection";
 import IndustriesGrid from "@/components/whatsappBusiness/IndustriesGrid";
 import IndustriesCarousel from "@/components/whatsappBusiness/IndustryCarousel";
-// import TrustedByBrands from "@/components/whatsappBusiness/TrustedByBrands";
-export const metadata = {
-  title: "xChatByte – #1 WhatsApp Business Automation Platform",
+
+const SITE_URL = (
+  process.env.NEXT_PUBLIC_SITE_URL || "https://xplorebytesolutions.com"
+).replace(/\/+$/, "");
+const PAGE_PATH = "/whatsapp-business";
+const PAGE_URL = `${SITE_URL}${PAGE_PATH}`;
+
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: { absolute: "WhatsApp Business API | XploreByte" },
   description:
-    "Automate WhatsApp, engage customers, and grow your business with xChatByte. Book a demo, try it live, and save hours every week!",
+    "Connect WhatsApp Business API with XploreByte to run campaigns, build no-code chatbots, manage a Team Inbox, and track Advanced Campaign Analytics & Reports — built for small businesses.",
+  alternates: {
+    canonical: PAGE_PATH,
+  },
   openGraph: {
-    title: "xChatByte – WhatsApp Business Automation",
+    title: "WhatsApp Business API | XploreByte",
     description:
-      "Transform your customer engagement with the smartest WhatsApp automation platform. Book a free demo today.",
-    images: [{ url: "/images/whatsapp-chat-illustration.png" }],
+      "Connect WhatsApp Business API with XploreByte to run campaigns, build no-code chatbots, manage a Team Inbox, and track Advanced Campaign Analytics & Reports — built for small businesses.",
+    url: PAGE_URL,
+    images: [
+      {
+        url: "/whatsapp-business/whatsapp-hero-illustration.png",
+        width: 1200,
+        height: 630,
+        alt: "WhatsApp Business API - XploreByte",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "WhatsApp Business API | XploreByte",
+    description:
+      "Connect WhatsApp Business API with XploreByte to run campaigns, build no-code chatbots, manage a Team Inbox, and track Advanced Campaign Analytics & Reports — built for small businesses.",
+    images: ["/whatsapp-business/whatsapp-hero-illustration.png"],
   },
 };
 
-const schemaData = {
-  "@context": "https://schema.org/",
-  "@type": "Product",
-  name: "xChatByte",
-  image: "https://yourdomain.com/images/whatsapp-chat-illustration.png",
-  description:
-    "Automate WhatsApp, engage customers, and grow your business with xChatByte.",
-  brand: {
-    "@type": "Brand",
-    name: "XploreByte",
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "182",
-  },
-};
-
-const WhatsappBusinessPage: React.FC = () => {
+export default function WhatsappBusinessPage() {
   return (
     <>
-      {/* SEO Schema for Google */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
       <HeroSection />
       <HubsSection />
       <SocialProof />
@@ -56,6 +58,4 @@ const WhatsappBusinessPage: React.FC = () => {
       <DemoCTA />
     </>
   );
-};
-
-export default WhatsappBusinessPage;
+}

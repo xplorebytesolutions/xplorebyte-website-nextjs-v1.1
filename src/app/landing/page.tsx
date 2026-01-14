@@ -1085,7 +1085,7 @@ const LandingPage = () => {
                       <a
                         href={ind.ctaUrl}
                         className={`
-                          group relative shadow-lg flex flex-row items-center px-4 py-6 md:px-6 md:py-8 ${ind.bg}
+                          group relative shadow-lg flex flex-row px-4 py-6 md:px-6 md:py-8 ${ind.bg}
                           transition hover:scale-[1.02] hover:shadow-2xl hover:z-20 duration-300
                           border border-white/70 hover:border-emerald-400/60
                           min-h-[120px] md:min-h-[140px]
@@ -2665,7 +2665,7 @@ const LandingPage = () => {
                 <span className="ml-2">→</span>
               </a>
               <a
-                href="/start-free-trial"
+                href="https://xplorebyte.com/start-free-trial"
                 className="inline-flex items-center px-8 py-3 border-2 border-[#11A944] text-[#11A944] font-semibold rounded-lg hover:bg-[#11A944] hover:text-white transition-colors"
               >
                 Start Free Trial

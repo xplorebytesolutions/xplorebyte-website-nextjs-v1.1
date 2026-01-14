@@ -1,7 +1,6 @@
-"use client";
-
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import type { Metadata } from "next";
 import {
   MapPin,
   Phone,
@@ -10,6 +9,34 @@ import {
   MessageCircle,
   ArrowRight,
 } from "lucide-react";
+
+const SITE_URL = (
+  process.env.NEXT_PUBLIC_SITE_URL || "https://xplorebytesolutions.com"
+).replace(/\/+$/, "");
+const PAGE_PATH = "/contact";
+const PAGE_URL = `${SITE_URL}${PAGE_PATH}`;
+
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: { absolute: "Contact | XploreByte" },
+  description:
+    "Contact XploreByte to see a demo of our WhatsApp First CRM for small businesses. Ask about WhatsApp Business API setup, campaigns, chatbots, analytics reports, and free trial.",
+  alternates: {
+    canonical: PAGE_PATH,
+  },
+  openGraph: {
+    title: "Contact | XploreByte",
+    description:
+      "Contact XploreByte to see a demo of our WhatsApp First CRM for small businesses. Ask about WhatsApp Business API setup, campaigns, chatbots, analytics reports, and free trial.",
+    url: PAGE_URL,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact | XploreByte",
+    description:
+      "Contact XploreByte to see a demo of our WhatsApp First CRM for small businesses. Ask about WhatsApp Business API setup, campaigns, chatbots, analytics reports, and free trial.",
+  },
+};
 
 export default function Contact() {
   return (

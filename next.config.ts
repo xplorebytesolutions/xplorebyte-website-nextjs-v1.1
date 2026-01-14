@@ -10,6 +10,15 @@ const nextConfig: NextConfig = {
   images: {
     domains: ["images.unsplash.com", "randomuser.me"],
   },
+  async redirects() {
+    return [
+      {
+        source: "/whatsapp-crm-for-doctors",
+        destination: "/whatsapp-crm-for-clinics-and-doctors",
+        permanent: true, // 301 redirect
+      },
+    ];
+  },
 };
 
 export default nextConfig;

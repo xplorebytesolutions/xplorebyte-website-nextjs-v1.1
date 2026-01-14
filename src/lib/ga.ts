@@ -1,51 +1,48 @@
-// src/lib/ga.ts
+export const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "";
+export const GA_TRACKING_ID = GA_ID;
 
-/* --------------------------------------------------
-   GA4 helper utilities + TypeScript declaration
-   --------------------------------------------------*/
-
-// 1️⃣  Tell TypeScript about the `window.gtag` function that GA injects.
-declare global {
-  interface Window {
-    // Accepts standard GA4 calls e.g. gtag('config', 'G-XXXX');
-    gtag?: (...args: unknown[]) => void;
+function ensureGtag() {
+  if (typeof window === "undefined") return null;
+  const w = window as any;
+  w.dataLayer = w.dataLayer || [];
+  if (typeof w.gtag !== "function") {
+    w.gtag = (...args: any[]) => {
+      w.dataLayer.push(args);
+    };
   }
+  return w.gtag as (...args: any[]) => void;
 }
 
-// Mark this file as an ES module so the declaration above is applied project‑wide.
-export {};
+// Log the pageview with their URL
+export const pageview = (url: string) => {
+  if (!GA_ID) return;
+  const gtag = ensureGtag();
+  if (!gtag) return;
 
-// 2️⃣  Your GA4 Measurement ID from the environment
-export const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "";
-
-// 3️⃣  Page‑view helper – call it on every route change
-export const pageview = (url: string): void => {
-  if (typeof window !== "undefined" && window.gtag && GA_ID) {
-    window.gtag("config", GA_ID, {
-      page_path: url,
-    });
-  }
+  gtag("config", GA_ID, {
+    page_path: url,
+  });
 };
 
-// 4️⃣  Generic event helper – use for CTA clicks, form submits, etc.
-interface GAEventParams {
-  action: string;
-  category?: string;
-  label?: string;
-  value?: number;
-}
-
-export const gaEvent = ({
+// Log specific events happening.
+export const event = ({
   action,
   category,
   label,
   value,
-}: GAEventParams): void => {
-  if (typeof window !== "undefined" && window.gtag && GA_ID) {
-    window.gtag("event", action, {
-      event_category: category,
-      event_label: label,
-      value,
-    });
-  }
+}: {
+  action: string;
+  category: string;
+  label: string;
+  value?: number;
+}) => {
+  if (!GA_ID) return;
+  const gtag = ensureGtag();
+  if (!gtag) return;
+
+  gtag("event", action, {
+    event_category: category,
+    event_label: label,
+    value: value,
+  });
 };

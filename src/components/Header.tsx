@@ -31,7 +31,7 @@ const navLinks = [
   { label: "Home", href: "/" },
   { label: "About us", href: "/about-us" },
   { label: "Industries", href: "/whatsapp-business" },
-  { label: "Features", href: "/product" },
+  { label: "Features", href: "/features" },
   { label: "Pricing", href: "/pricing" },
   { label: "Contact", href: "/contact" },
 ];
@@ -62,7 +62,7 @@ const Header: FC = () => {
           <Link
             href="/"
             className="flex items-center space-x-2 group"
-            aria-label="XploreByte Solutions Home"
+            aria-label="XploreByte Home"
           >
             {/* SVG Logo */}
             {/* <img
@@ -72,7 +72,7 @@ const Header: FC = () => {
             style={{ display: "block" }}
           /> */}
             <Image
-              src="/assets/logo_7.svg"
+              src="/xplorebyte_logo.svg"
               alt="XploreByte Logo"
               width={40} // or whatever size you want (required)
               height={40} // or whatever size you want (required)
@@ -148,7 +148,7 @@ const Header: FC = () => {
                               Transform your customer communication with
                               WhatsApp Business API. Join 10,000+ businesses
                               using our platform to move from cold communication
-                              to warm conversation — and that&apos;s where
+                              to warm conversation â€” and that&apos;s where
                               revenue lives.
                             </p>
                             <button
@@ -282,7 +282,7 @@ const Header: FC = () => {
                                   lineHeight: "1.2",
                                 }}
                               >
-                                Delivering a 360° Customer Experience
+                                Delivering a 360Â° Customer Experience
                               </h3>
                               <div className="w-20 h-20 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <MessageCircle className="w-10 h-10 text-cyan-600" />
@@ -738,7 +738,7 @@ const Header: FC = () => {
 
             {/* Login Button */}
             <Link
-              href="/login"
+              href="https://xplorebyte.com/login"
               className="hidden sm:inline-flex items-center px-4 py-2 rounded-lg border-2 border-gray-300 text-gray-700 font-semibold font-sans text-sm hover:border-gray-400 hover:text-gray-900 transition duration-200 mr-3"
             >
               Login
@@ -775,7 +775,7 @@ const Header: FC = () => {
             ))}
             {/* Mobile Login */}
             <Link
-              href="/login"
+              href="https://xplorebyte.com/login"
               className="block mt-3 px-4 py-2 rounded-lg border-2 border-gray-300 text-gray-700 font-semibold text-center font-sans hover:border-gray-400 hover:text-gray-900 transition duration-200"
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -806,143 +806,3 @@ const Header: FC = () => {
 };
 
 export default Header;
-
-// "use client";
-
-// import { FC, useState, useEffect } from "react";
-
-// const navLinks = [
-//   { label: "Home", href: "#" },
-//   { label: "About", href: "#" },
-//   { label: "Services", href: "#" },
-//   { label: "Case Studies", href: "#" },
-//   { label: "Insights", href: "#" },
-//   { label: "Contact", href: "#" },
-// ];
-
-// const Header: FC = () => {
-//   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-//   // Close mobile menu on window resize > lg
-//   useEffect(() => {
-//     const handleResize = () => {
-//       if (window.innerWidth >= 1024) {
-//         setMobileMenuOpen(false);
-//       }
-//     };
-//     window.addEventListener("resize", handleResize);
-//     return () => window.removeEventListener("resize", handleResize);
-//   }, []);
-
-//   return (
-//     <header className="bg-black/80 backdrop-blur-md border-b border-gray-800 fixed top-0 w-full z-50">
-//       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 h-16">
-//         {/* Logo */}
-//         <a
-//           href="#"
-//           className="flex items-center space-x-2 group"
-//           aria-label="XploreByte Solutions Home"
-//         >
-//           {/* Add your SVG logo here or replace with text */}
-//           <span className="font-bold text-xl tracking-wide text-white font-sans">
-//             XploreByte
-//           </span>
-//         </a>
-
-//         {/* Desktop Nav */}
-//         <nav
-//           className="hidden lg:flex space-x-8"
-//           aria-label="Primary Navigation"
-//         >
-//           {navLinks.map(({ label, href }) => (
-//             <a
-//               key={label}
-//               href={href}
-//               className="relative text-gray-300 hover:text-white transition-colors duration-200 font-sans"
-//             >
-//               {label}
-//               <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
-//             </a>
-//           ))}
-//         </nav>
-
-//         {/* Actions */}
-//         <div className="flex items-center space-x-4">
-//           {/* Mobile menu button */}
-//           <button
-//             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-//             aria-controls="mobile-menu"
-//             aria-expanded={mobileMenuOpen}
-//             aria-label="Toggle mobile menu"
-//             className="lg:hidden p-2 rounded-md hover:bg-gray-100 text-gray-900 hover:text-black transition-colors duration-200"
-//           >
-//             <svg
-//               className="w-6 h-6"
-//               fill="none"
-//               stroke="currentColor"
-//               viewBox="0 0 24 24"
-//               aria-hidden="true"
-//               xmlns="http://www.w3.org/2000/svg"
-//             >
-//               {mobileMenuOpen ? (
-//                 <path
-//                   strokeLinecap="round"
-//                   strokeLinejoin="round"
-//                   strokeWidth={2}
-//                   d="M6 18L18 6M6 6l12 12"
-//                 />
-//               ) : (
-//                 <path
-//                   strokeLinecap="round"
-//                   strokeLinejoin="round"
-//                   strokeWidth={2}
-//                   d="M4 6h16M4 12h16M4 18h16"
-//                 />
-//               )}
-//             </svg>
-//           </button>
-
-//           {/* Get Started Button */}
-//           <a
-//             href="#"
-//             className="hidden sm:inline-flex items-center px-4 py-2 rounded-lg bg-emerald-500 text-black font-semibold font-sans text-sm shadow-lg hover:bg-emerald-600 transition duration-200"
-//           >
-//             Try Free
-//           </a>
-//         </div>
-//       </div>
-
-//       {/* Mobile menu */}
-//       <nav
-//         id="mobile-menu"
-//         className={`lg:hidden bg-black border-t border-gray-800 transition-max-height duration-300 ease-in-out overflow-hidden ${
-//           mobileMenuOpen ? "max-h-screen" : "max-h-0"
-//         }`}
-//         aria-label="Mobile Navigation"
-//       >
-//         <div className="px-4 pt-2 pb-4 space-y-1">
-//           {navLinks.map(({ label, href }) => (
-//             <a
-//               key={label}
-//               href={href}
-//               className="block px-3 py-2 rounded-md font-sans text-gray-900 hover:bg-gray-100 hover:text-black transition-colors duration-200"
-//               onClick={() => setMobileMenuOpen(false)}
-//             >
-//               {label}
-//             </a>
-//           ))}
-//           {/* Mobile get started */}
-//           <a
-//             href="#"
-//             className="block mt-3 px-4 py-2 rounded-lg bg-emerald-500 text-black font-semibold text-center font-sans shadow-lg hover:bg-emerald-600 transition duration-200"
-//             onClick={() => setMobileMenuOpen(false)}
-//           >
-//             Try Free
-//           </a>
-//         </div>
-//       </nav>
-//     </header>
-//   );
-// };
-
-// export default Header;

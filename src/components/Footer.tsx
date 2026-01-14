@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 
 // Social Media Icons
 const socials = [
@@ -68,9 +69,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-10">
           {/* Brand */}
           <div className="lg:col-span-2 flex flex-col gap-6">
-            <div className="flex items-center space-x-3 mb-2">
+            <Link href="/" className="flex items-center space-x-3 mb-2">
               <img
-                src="/assets/logo_7.svg"
+                src="/xplorebyte_logo.svg"
                 alt="XploreByte Logo"
                 className="h-10 w-auto"
               />
@@ -80,10 +81,10 @@ const Footer = () => {
                   Solutions
                 </span>
               </span>
-            </div>
+            </Link>
             <p className="max-w-md font-sans text-gray-300 text-sm leading-normal">
-              Your trusted partner in digital innovation—empowering your growth
-              with next-gen technology, strategy, and talent.
+              XploreByte is a WhatsApp First CRM - built to help teams move
+              faster with a Team Inbox + automation.
             </p>
           </div>
 
@@ -92,28 +93,36 @@ const Footer = () => {
             <h3 className="text-white/90 text-sm font-semibold uppercase tracking-wide mb-4">Legal</h3>
             <ul className="space-y-2 text-gray-300 text-sm">
               <li>
-                <a
+                <Link
                   href="/terms-of-service"
                   className="hover:text-emerald-400 transition-colors duration-300"
                 >
                   Terms and Conditions
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/privacy-policy"
                   className="hover:text-emerald-400 transition-colors duration-300"
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/refund-policy"
                   className="hover:text-emerald-400 transition-colors duration-300"
                 >
                   Refund Policy
-                </a>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/acceptable-use-policy"
+                  className="hover:text-emerald-400 transition-colors duration-300"
+                >
+                  Acceptable Use Policy
+                </Link>
               </li>
             </ul>
           </div>
@@ -123,36 +132,36 @@ const Footer = () => {
             <h3 className="text-white/90 text-sm font-semibold uppercase tracking-wide mb-4">Company</h3>
             <ul className="space-y-2 text-gray-300 text-sm">
               <li>
-                <a
+                <Link
                   href="/about-us"
                   className="hover:text-emerald-400 transition-colors duration-300"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/success-stories"
                   className="hover:text-emerald-400 transition-colors duration-300"
                 >
                   Success Stories
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/careers"
                   className="hover:text-emerald-400 transition-colors duration-300"
                 >
                   Careers
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/contact"
                   className="hover:text-emerald-400 transition-colors duration-300"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
