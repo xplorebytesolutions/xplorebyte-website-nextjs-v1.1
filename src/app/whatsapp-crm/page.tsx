@@ -432,7 +432,7 @@ export default function WhatsAppCrmPage() {
 // import Footer from "../../components/Footer";
 
 // export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
+//   metadataBase: new URL(SITE_URL),
 //   title: { absolute: "WhatsApp CRM for Small Businesses | XploreByte" },
 //   description:
 //     "XploreByte is a WhatsApp CRM for small businesses with WhatsApp Business API integration, Team Inbox, No-Code Chatbot Builder, Campaigning, and Advanced Analytics reports. Start a free trial.",
