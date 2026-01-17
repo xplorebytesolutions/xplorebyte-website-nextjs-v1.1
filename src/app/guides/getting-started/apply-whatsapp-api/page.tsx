@@ -265,7 +265,7 @@ export default function ApplyWhatsAppAPIPage() {
                 <p className="text-sm text-gray-600">
                   You can also reach us on our free plan.{" "}
                   <Link
-                    href="https://xplorebyte.com/start-free-trial"
+                    href="https://app.xplorebyte.com/signup-for-trial"
                     className="text-emerald-600 hover:underline"
                   >
                     Click here
@@ -297,7 +297,7 @@ export default function ApplyWhatsAppAPIPage() {
                 <p className="text-sm text-gray-600">
                   You can also reach us on our free plan.{" "}
                   <Link
-                    href="https://xplorebyte.com/start-free-trial"
+                    href="https://app.xplorebyte.com/signup-for-trial"
                     className="text-emerald-600 hover:underline"
                   >
                     Click here
@@ -330,7 +330,7 @@ export default function ApplyWhatsAppAPIPage() {
                 <p className="text-sm text-gray-600">
                   You can also reach us on our free plan.{" "}
                   <Link
-                    href="https://xplorebyte.com/start-free-trial"
+                    href="https://app.xplorebyte.com/signup-for-trial"
                     className="text-emerald-600 hover:underline"
                   >
                     Click here

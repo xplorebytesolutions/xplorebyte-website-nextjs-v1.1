@@ -6,7 +6,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://xplorebytesolutions.com"
+  process.env.NEXT_PUBLIC_SITE_URL || "https://xplorebyte.com"
 ).replace(/\/+$/, "");
 const PAGE_PATH = "/whatsapp-team-inbox";
 const PAGE_URL = `${SITE_URL}${PAGE_PATH}`;
@@ -129,7 +129,7 @@ export default function WhatsAppTeamInboxPage() {
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <Link
-                href="https://xplorebyte.com/start-free-trial"
+                href="https://app.xplorebyte.com/signup-for-trial"
                 className="inline-flex items-center justify-center rounded-lg bg-emerald-700 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-800"
               >
                 Start Free Trial
@@ -219,7 +219,7 @@ export default function WhatsAppTeamInboxPage() {
 
             <div className="mt-6 flex gap-3">
               <Link
-                href="https://xplorebyte.com/start-free-trial"
+                href="https://app.xplorebyte.com/signup-for-trial"
                 className="inline-flex flex-1 items-center justify-center rounded-lg bg-emerald-700 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-800"
               >
                 Try it
@@ -323,7 +323,7 @@ export default function WhatsAppTeamInboxPage() {
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <Link
-                href="https://xplorebyte.com/start-free-trial"
+                href="https://app.xplorebyte.com/signup-for-trial"
                 className="inline-flex items-center justify-center rounded-lg bg-emerald-700 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-800"
               >
                 Start Free Trial
@@ -448,7 +448,7 @@ export default function WhatsAppTeamInboxPage() {
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <Link
-                href="https://xplorebyte.com/start-free-trial"
+                href="https://app.xplorebyte.com/signup-for-trial"
                 className="inline-flex items-center justify-center rounded-lg bg-emerald-700 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-800"
               >
                 Start Free Trial

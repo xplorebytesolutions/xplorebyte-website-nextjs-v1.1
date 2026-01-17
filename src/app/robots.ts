@@ -1,15 +1,15 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://xplorebytesolutions.com")
-    .trim()
-    .replace(/\/+$/, "");
-  
+  const SITE_URL = (
+    process.env.NEXT_PUBLIC_SITE_URL || "https://xplorebyte.com"
+  ).replace(/\/+$/, "");
+
   return {
     rules: {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: `${siteUrl}/sitemap.xml`,
+    sitemap: `${SITE_URL}/sitemap.xml`,
   };
 }

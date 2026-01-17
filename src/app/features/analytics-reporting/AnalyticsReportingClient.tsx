@@ -42,13 +42,13 @@ export default function AnalyticsReporting() {
                   Real-time ROI & performance tracking. Get deep insights into
                   your WhatsApp campaigns and team performance.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link
-                    href="https://xplorebyte.com/start-free-trial"
-                    className="inline-flex items-center px-8 py-4 bg-[#11A944] text-white font-semibold rounded-lg shadow-lg hover:bg-[#0d8a3a] transition-colors"
-                  >
-                    View Analytics
-                    <ArrowRight className="w-5 h-5 ml-2" />
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <Link
+                      href="https://app.xplorebyte.com/signup-for-trial"
+                      className="inline-flex items-center px-8 py-4 bg-[#11A944] text-white font-semibold rounded-lg shadow-lg hover:bg-[#0d8a3a] transition-colors"
+                    >
+                      View Analytics
+                      <ArrowRight className="w-5 h-5 ml-2" />
                   </Link>
                   <Link
                     href="/contact"
@@ -226,7 +226,7 @@ export default function AnalyticsReporting() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="https://xplorebyte.com/start-free-trial"
+                href="https://app.xplorebyte.com/signup-for-trial"
                 className="inline-flex items-center px-8 py-3 bg-[#11A944] text-white font-semibold rounded-lg hover:bg-[#0d8a3a] transition-colors"
               >
                 Start Free Trial

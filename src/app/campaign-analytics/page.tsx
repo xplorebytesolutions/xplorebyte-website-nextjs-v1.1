@@ -3,18 +3,25 @@ import Link from "next/link";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
+const SITE_URL = (
+  process.env.NEXT_PUBLIC_SITE_URL || "https://xplorebyte.com"
+).replace(/\/+$/, "");
+const PAGE_PATH = "/campaign-analytics";
+const PAGE_URL = `${SITE_URL}${PAGE_PATH}`;
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: { absolute: "WhatsApp Campaign Analytics & Reports | XploreByte" },
   description:
     "Track WhatsApp campaign performance with XploreByte’s Campaign Analytics and Reports. See delivery, engagement, and ROI using WhatsApp Business API — built for small businesses. Start a free trial.",
   alternates: {
-    canonical: "/campaign-analytics",
+    canonical: PAGE_PATH,
   },
   openGraph: {
     title: "WhatsApp Campaign Analytics & Reports | XploreByte",
     description:
       "Track WhatsApp campaign performance with XploreByte’s Campaign Analytics and Reports. See delivery, engagement, and ROI using WhatsApp Business API — built for small businesses. Start a free trial.",
-    url: "/campaign-analytics",
+    url: PAGE_URL,
     images: [
       {
         url: "/herosection.png",
@@ -102,7 +109,7 @@ export default function CampaignAnalyticsPage() {
 
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/start-free-trial"
+                  href="https://app.xplorebyte.com/signup-for-trial"
                   className="inline-flex items-center justify-center rounded-lg bg-[#11A944] px-6 py-3 font-semibold text-white hover:bg-[#0d8a3a] transition-colors"
                 >
                   Start Free Trial
@@ -245,7 +252,7 @@ export default function CampaignAnalyticsPage() {
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Link
-                    href="/start-free-trial"
+                    href="https://app.xplorebyte.com/signup-for-trial"
                     className="inline-flex items-center justify-center rounded-lg bg-gray-900 px-6 py-3 font-semibold text-white hover:bg-gray-800 transition-colors"
                   >
                     Start Free Trial
@@ -287,4 +294,3 @@ export default function CampaignAnalyticsPage() {
     </>
   );
 }
-

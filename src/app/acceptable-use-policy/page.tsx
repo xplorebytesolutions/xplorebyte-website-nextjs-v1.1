@@ -2,12 +2,33 @@ import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
 
+const SITE_URL = (
+  process.env.NEXT_PUBLIC_SITE_URL || "https://xplorebyte.com"
+).replace(/\/+$/, "");
+const PAGE_PATH = "/acceptable-use-policy";
+const PAGE_URL = `${SITE_URL}${PAGE_PATH}`;
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Acceptable Use Policy",
   description:
     "Acceptable Use Policy for XploreByte services. Learn what is prohibited and how to stay compliant on WhatsApp.",
   alternates: {
-    canonical: "/acceptable-use-policy",
+    canonical: PAGE_PATH,
+  },
+  openGraph: {
+    title: "Acceptable Use Policy",
+    description:
+      "Acceptable Use Policy for XploreByte services. Learn what is prohibited and how to stay compliant on WhatsApp.",
+    url: PAGE_URL,
+    images: [
+      {
+        url: "/herosection.png",
+        width: 1200,
+        height: 630,
+        alt: "Acceptable Use Policy - XploreByte",
+      },
+    ],
   },
 };
 

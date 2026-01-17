@@ -7,23 +7,27 @@ import Footer from "../../components/Footer";
  * Resolve site base URL for absolute OpenGraph URLs.
  * Uses NEXT_PUBLIC_SITE_URL if set, otherwise falls back to production domain.
  */
-const siteUrl = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://xplorebytesolutions.com"
+const SITE_URL = (
+  process.env.NEXT_PUBLIC_SITE_URL || "https://xplorebyte.com"
 ).replace(/\/+$/, "");
 
+const PAGE_PATH = "/whatsapp-crm";
+const PAGE_URL = `${SITE_URL}${PAGE_PATH}`;
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: { absolute: "WhatsApp CRM for Small Businesses | XploreByte" },
   description:
     "XploreByte is a WhatsApp CRM for small businesses with WhatsApp Business API integration, Team Inbox, No-Code Chatbot Builder, Campaigning, and Advanced Analytics reports. Start a free trial.",
   alternates: {
-    canonical: "/whatsapp-crm",
+    canonical: PAGE_PATH,
   },
   openGraph: {
     title: "WhatsApp CRM for Small Businesses | XploreByte",
     description:
       "XploreByte is a WhatsApp CRM for small businesses with WhatsApp Business API integration, Team Inbox, No-Code Chatbot Builder, Campaigning, and Advanced Analytics reports. Start a free trial.",
     // ✅ Make URL absolute for better OG previews and tooling compatibility
-    url: `${siteUrl}/whatsapp-crm`,
+    url: PAGE_URL,
     images: [
       {
         url: "/herosection.png",
@@ -111,7 +115,7 @@ export default function WhatsAppCrmPage() {
 
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="https://xplorebyte.com/start-free-trial"
+                  href="https://app.xplorebyte.com/signup-for-trial"
                   className="inline-flex items-center justify-center rounded-lg bg-[#11A944] px-6 py-3 font-semibold text-white hover:bg-[#0d8a3a] transition-colors"
                 >
                   Start Free Trial
@@ -368,7 +372,7 @@ export default function WhatsAppCrmPage() {
                 </p>
                 <div className="mt-5 flex flex-col gap-3">
                   <Link
-                    href="https://xplorebyte.com/start-free-trial"
+                    href="https://app.xplorebyte.com/signup-for-trial"
                     className="inline-flex items-center justify-center rounded-lg bg-gray-900 px-5 py-3 font-semibold text-white hover:bg-gray-800 transition-colors"
                   >
                     Start Free Trial
@@ -428,11 +432,12 @@ export default function WhatsAppCrmPage() {
 // import Footer from "../../components/Footer";
 
 // export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
 //   title: { absolute: "WhatsApp CRM for Small Businesses | XploreByte" },
 //   description:
 //     "XploreByte is a WhatsApp CRM for small businesses with WhatsApp Business API integration, Team Inbox, No-Code Chatbot Builder, Campaigning, and Advanced Analytics reports. Start a free trial.",
 //   alternates: {
-//     canonical: "/whatsapp-crm",
+//     canonical: PAGE_PATH,
 //   },
 //   openGraph: {
 //     title: "WhatsApp CRM for Small Businesses | XploreByte",
@@ -521,7 +526,7 @@ export default function WhatsAppCrmPage() {
 
 //               <div className="mt-8 flex flex-col sm:flex-row gap-4">
 //                 <Link
-//                   href="https://xplorebyte.com/start-free-trial"
+//                   href="https://app.xplorebyte.com/signup-for-trial"
 //                   className="inline-flex items-center justify-center rounded-lg bg-[#11A944] px-6 py-3 font-semibold text-white hover:bg-[#0d8a3a] transition-colors"
 //                 >
 //                   Start Free Trial
@@ -612,7 +617,7 @@ export default function WhatsAppCrmPage() {
 //                 </p>
 //                 <div className="mt-5 flex flex-col gap-3">
 //                   <Link
-//                     href="https://xplorebyte.com/start-free-trial"
+//                     href="https://app.xplorebyte.com/signup-for-trial"
 //                     className="inline-flex items-center justify-center rounded-lg bg-gray-900 px-5 py-3 font-semibold text-white hover:bg-gray-800 transition-colors"
 //                   >
 //                     Start Free Trial

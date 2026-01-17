@@ -84,7 +84,7 @@ export default function OmniInbox() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <button className="group inline-flex items-center gap-3 px-8 py-4 bg-[#11A944] text-white font-semibold rounded-xl shadow-2xl hover:bg-[#0d8a3a] transition-all duration-300 hover:scale-105">
                     <a
-                      href="https://xplorebyte.com/start-free-trial"
+                      href="https://app.xplorebyte.com/signup-for-trial"
                       className="text-white hover:underline"
                     >
                       Start Free Trial
@@ -518,7 +518,7 @@ export default function OmniInbox() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
               <button className="group inline-flex items-center gap-3 px-10 py-5 bg-[#11A944] text-white font-bold text-lg rounded-2xl shadow-2xl hover:bg-[#0d8a3a] transition-all duration-300 hover:scale-105">
                 <a
-                  href="https://xplorebyte.com/start-free-trial"
+                  href="https://app.xplorebyte.com/signup-for-trial"
                   className="text-white hover:underline"
                 >
                   Start Free Trial

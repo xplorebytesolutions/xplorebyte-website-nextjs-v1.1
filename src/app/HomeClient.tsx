@@ -97,7 +97,7 @@ export default function Home() {
                   </p>
                   <div className="flex justify-end">
                     <span className="text-blue-600 text-sm font-medium hover:text-blue-700 transition-colors">
-                      More â†’
+                      More →
                     </span>
                   </div>
                 </div>
@@ -136,7 +136,7 @@ export default function Home() {
                   </p>
                   <div className="flex justify-end">
                     <span className="text-blue-600 text-sm font-medium hover:text-blue-700 transition-colors">
-                      More â†’
+                      More →
                     </span>
                   </div>
                 </div>
@@ -175,7 +175,7 @@ export default function Home() {
                   </p>
                   <div className="flex justify-end">
                     <span className="text-blue-600 text-sm font-medium hover:text-blue-700 transition-colors">
-                      More â†’
+                      More →
                     </span>
                   </div>
                 </div>
@@ -214,7 +214,7 @@ export default function Home() {
                   </p>
                   <div className="flex justify-end">
                     <span className="text-blue-600 text-sm font-medium hover:text-blue-700 transition-colors">
-                      More â†’
+                      More →
                     </span>
                   </div>
                 </div>
@@ -253,7 +253,7 @@ export default function Home() {
                   </p>
                   <div className="flex justify-end">
                     <span className="text-blue-600 text-sm font-medium hover:text-blue-700 transition-colors">
-                      More â†’
+                      More →
                     </span>
                   </div>
                 </div>
@@ -292,7 +292,7 @@ export default function Home() {
                   </p>
                   <div className="flex justify-end">
                     <span className="text-blue-600 text-sm font-medium hover:text-blue-700 transition-colors">
-                      More â†’
+                      More →
                     </span>
                   </div>
                 </div>
@@ -598,12 +598,12 @@ export default function Home() {
 
               <div className="text-center mt-8">
                 <p className="text-lg text-gray-700 italic">
-                  &quot;Those 110 buyers didn&apos;t appear by luck â€” they
+                  &quot;Those 110 buyers didn&apos;t appear by luck — they
                   appeared because we understood their behavior through
                   xByteChat&apos;s campaign analytics.&quot;
                 </p>
                 <p className="text-sm text-gray-500 mt-2">
-                  â€” Clothing Brand Case Study
+                  — Clothing Brand Case Study
                 </p>
               </div>
             </div>

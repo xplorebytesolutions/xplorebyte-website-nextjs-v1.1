@@ -2665,7 +2665,7 @@ const LandingPage = () => {
                 <span className="ml-2">→</span>
               </a>
               <a
-                href="https://xplorebyte.com/start-free-trial"
+                href="https://app.xplorebyte.com/signup-for-trial"
                 className="inline-flex items-center px-8 py-3 border-2 border-[#11A944] text-[#11A944] font-semibold rounded-lg hover:bg-[#11A944] hover:text-white transition-colors"
               >
                 Start Free Trial

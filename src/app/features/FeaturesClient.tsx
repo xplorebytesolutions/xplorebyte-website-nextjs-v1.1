@@ -292,7 +292,7 @@ export default function Features() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="https://xplorebyte.com/start-free-trial"
+                href="https://app.xplorebyte.com/signup-for-trial"
                 className="inline-flex items-center px-8 py-3 bg-[#11A944] text-white font-semibold rounded-lg hover:bg-[#0d8a3a] transition-colors"
               >
                 Start Free Trial

@@ -229,7 +229,7 @@ export default function SalesEcommerceTools() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="inline-flex items-center px-8 py-3 bg-[#11A944] text-white font-semibold rounded-lg hover:bg-[#0d8a3a] transition-colors">
                 <a
-                  href="https://xplorebyte.com/start-free-trial"
+                  href="https://app.xplorebyte.com/signup-for-trial"
                   className="text-white hover:underline"
                 >
                   Start Free Trial

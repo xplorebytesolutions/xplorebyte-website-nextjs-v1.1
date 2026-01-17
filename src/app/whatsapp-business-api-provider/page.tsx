@@ -6,7 +6,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://xplorebytesolutions.com"
+  process.env.NEXT_PUBLIC_SITE_URL || "https://xplorebyte.com"
 ).replace(/\/+$/, "");
 const PAGE_PATH = "/whatsapp-business-api-provider";
 const PAGE_URL = `${SITE_URL}${PAGE_PATH}`;
@@ -148,7 +148,7 @@ export default function WhatsAppBusinessApiProviderPage() {
 
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="https://xplorebyte.com/start-free-trial"
+                  href="https://app.xplorebyte.com/signup-for-trial"
                   className="inline-flex items-center justify-center rounded-lg bg-[#11A944] px-6 py-3 font-semibold text-white hover:bg-[#0d8a3a] transition-colors"
                 >
                   Start Free Trial
@@ -455,7 +455,7 @@ export default function WhatsAppBusinessApiProviderPage() {
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Link
-                    href="https://xplorebyte.com/start-free-trial"
+                    href="https://app.xplorebyte.com/signup-for-trial"
                     className="inline-flex items-center justify-center rounded-lg bg-gray-900 px-6 py-3 font-semibold text-white hover:bg-gray-800 transition-colors"
                   >
                     Start Free Trial

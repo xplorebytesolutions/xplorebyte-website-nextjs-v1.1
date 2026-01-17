@@ -45,13 +45,13 @@ const montserrat = Montserrat({
   display: "swap",
 });
 
-const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://xplorebytesolutions.com").replace(
-  /\/+$/,
-  "",
-);
+const SITE_URL = (
+  process.env.NEXT_PUBLIC_SITE_URL || "https://xplorebyte.com"
+).replace(/\/+$/, "");
+
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "XploreByte | WhatsApp First CRM + No-Code Chatbot Builder",
     template: "%s | XploreByte",
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     title: "XploreByte | WhatsApp First CRM + No-Code Chatbot Builder",
     description:
       "XploreByte is a WhatsApp First CRM built for small businesses, with Team Inbox, No-Code Chatbot Builder, WhatsApp Campaigning, WhatsApp Business API integration, and Advanced Analytics reports to turn chats into customers.",
-    url: siteUrl,
+    url: SITE_URL,
     siteName: "XploreByte",
     locale: "en_US",
     type: "website",
@@ -106,8 +106,8 @@ export default function RootLayout({
       {
         "@type": "Organization",
         name: "XploreByte",
-        url: siteUrl,
-        logo: `${siteUrl}/apple-touch-icon.png`,
+        url: SITE_URL,
+        logo: `${SITE_URL}/apple-touch-icon.png`,
         description:
           "XploreByte is a WhatsApp First CRM built for small businesses, with Team Inbox, No-Code Chatbot Builder, WhatsApp Campaigning, WhatsApp Business API integration, and Advanced Analytics reports to turn chats into customers.",
         sameAs: [] as string[],
@@ -115,14 +115,14 @@ export default function RootLayout({
       {
         "@type": "WebSite",
         name: "XploreByte",
-        url: siteUrl,
+        url: SITE_URL,
       },
       {
         "@type": "SoftwareApplication",
         name: "XploreByte",
         applicationCategory: "CRM",
         operatingSystem: "Web",
-        url: siteUrl,
+        url: SITE_URL,
         description:
           "XploreByte is a WhatsApp First CRM built for small businesses, with Team Inbox, No-Code Chatbot Builder, WhatsApp Campaigning, WhatsApp Business API integration, and Advanced Analytics reports to turn chats into customers.",
       },

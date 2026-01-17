@@ -26,7 +26,7 @@ const CTASection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="https://xplorebyte.com/start-free-trial"
+              href="https://app.xplorebyte.com/signup-for-trial"
               className="inline-flex items-center justify-center px-8 py-4 rounded-lg font-medium transition-all duration-200 shadow-lg hover:shadow-xl font-sans bg-[#25D366] text-white hover:bg-[#1ea854]"
             >
               <svg

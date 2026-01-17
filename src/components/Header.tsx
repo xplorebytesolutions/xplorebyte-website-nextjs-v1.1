@@ -148,7 +148,7 @@ const Header: FC = () => {
                               Transform your customer communication with
                               WhatsApp Business API. Join 10,000+ businesses
                               using our platform to move from cold communication
-                              to warm conversation â€” and that&apos;s where
+                              to warm conversation — and that&apos;s where
                               revenue lives.
                             </p>
                             <button
@@ -738,7 +738,7 @@ const Header: FC = () => {
 
             {/* Login Button */}
             <Link
-              href="https://xplorebyte.com/login"
+              href="https://app.xplorebyte.com/login"
               className="hidden sm:inline-flex items-center px-4 py-2 rounded-lg border-2 border-gray-300 text-gray-700 font-semibold font-sans text-sm hover:border-gray-400 hover:text-gray-900 transition duration-200 mr-3"
             >
               Login
@@ -775,7 +775,7 @@ const Header: FC = () => {
             ))}
             {/* Mobile Login */}
             <Link
-              href="https://xplorebyte.com/login"
+              href="https://app.xplorebyte.com/login"
               className="block mt-3 px-4 py-2 rounded-lg border-2 border-gray-300 text-gray-700 font-semibold text-center font-sans hover:border-gray-400 hover:text-gray-900 transition duration-200"
               onClick={() => setMobileMenuOpen(false)}
             >

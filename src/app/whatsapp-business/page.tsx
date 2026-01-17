@@ -9,7 +9,7 @@ import IndustriesGrid from "@/components/whatsappBusiness/IndustriesGrid";
 import IndustriesCarousel from "@/components/whatsappBusiness/IndustryCarousel";
 
 const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://xplorebytesolutions.com"
+  process.env.NEXT_PUBLIC_SITE_URL || "https://xplorebyte.com"
 ).replace(/\/+$/, "");
 const PAGE_PATH = "/whatsapp-business";
 const PAGE_URL = `${SITE_URL}${PAGE_PATH}`;
