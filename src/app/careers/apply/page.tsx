@@ -44,7 +44,7 @@ const jobPositions = [
 function JobApplicationForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const jobId = searchParams.get("job");
+  const jobId = searchParams ? searchParams.get("job") : null;
 
   const [formData, setFormData] = useState({
     firstName: "",
