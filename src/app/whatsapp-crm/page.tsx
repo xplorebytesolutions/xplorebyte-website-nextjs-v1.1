@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 
 /**
@@ -89,6 +91,7 @@ export default function WhatsAppCrmPage() {
 
   return (
     <>
+      <Header />
       <main className="min-h-screen bg-white">
         {/* HERO */}
         <section className="bg-gradient-to-br from-[#0A0E23] via-[#202748] to-[#11A944]/30 py-16">
@@ -417,6 +420,10 @@ export default function WhatsAppCrmPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      </main>
+      <Footer />
+    </>
   );
 }
 

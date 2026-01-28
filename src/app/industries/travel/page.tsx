@@ -372,6 +372,6 @@ export default function TravelIndustry() {
         isOpen={isDemoModalOpen}
         onClose={() => setIsDemoModalOpen(false)}
       />
-    </>
+    </main>
   );
 }
