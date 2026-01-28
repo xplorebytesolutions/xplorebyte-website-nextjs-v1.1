@@ -1,6 +1,5 @@
 "use client";
 
-
 export default function DataDeletionPage() {
   // Keep date format consistent with Terms page (dd-mm-yyyy).
   // Update this whenever you update the content.
@@ -25,9 +24,8 @@ export default function DataDeletionPage() {
               </h1>
 
               <p className="text-xl text-white/80 max-w-3xl mx-auto">
-                This page explains how you can request deletion of your data
-                from XploreByte, including WhatsApp integration data used to
-                provide WhatsApp Business Platform features.
+                Learn how to request deletion of your data from XploreByte,
+                including WhatsApp integration data.
               </p>
             </div>
           </div>
@@ -234,8 +232,6 @@ export default function DataDeletionPage() {
           </div>
         </section>
       </main>
-
-      
     </>
   );
 }

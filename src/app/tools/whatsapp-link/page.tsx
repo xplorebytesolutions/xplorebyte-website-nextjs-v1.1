@@ -6,7 +6,7 @@ import Link from "next/link";
 import { QRCodeCanvas } from "qrcode.react";
 import { toast } from "react-toastify";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+
 import {
   CheckCircle2,
   Copy,
@@ -25,10 +25,14 @@ const COUNTRY_OPTIONS = [
   { label: "UK", callingCodeDisplay: "+44", callingCodeDigits: "44" },
 ];
 
-function buildWhatsAppLink(countryCodeDigits: string, phoneDigits: string, message: string) {
+function buildWhatsAppLink(
+  countryCodeDigits: string,
+  phoneDigits: string,
+  message: string,
+) {
   const fullDigits = `${countryCodeDigits || ""}${phoneDigits || ""}`.replace(
     /\D/g,
-    ""
+    "",
   );
 
   const base = `https://wa.me/${fullDigits}`;
@@ -51,8 +55,8 @@ const FAQS = [
     a: (
       <p className="text-sm text-gray-600 leading-relaxed">
         A WhatsApp link is a shareable URL that opens a chat with your WhatsApp
-        number. You can also prefill a message, so users can start a conversation
-        in one click.
+        number. You can also prefill a message, so users can start a
+        conversation in one click.
       </p>
     ),
   },
@@ -100,9 +104,9 @@ const FAQS = [
     q: "Why is my phone number marked invalid?",
     a: (
       <p className="text-sm text-gray-600 leading-relaxed">
-        The phone number must contain digits only (no spaces, no “+”, no
-        special characters). Enter only the local number, and select the correct
-        country code from the dropdown.
+        The phone number must contain digits only (no spaces, no “+”, no special
+        characters). Enter only the local number, and select the correct country
+        code from the dropdown.
       </p>
     ),
   },
@@ -118,7 +122,7 @@ export default function WhatsAppLinkGeneratorPage() {
 
   const previewNumber = useMemo(
     () => formatE164Display(countryCodeDigits, phoneDigits),
-    [countryCodeDigits, phoneDigits]
+    [countryCodeDigits, phoneDigits],
   );
 
   const onGenerate = () => {
@@ -192,8 +196,8 @@ export default function WhatsAppLinkGeneratorPage() {
               Free WhatsApp Link Generator
             </h1>
             <p className="mt-2 text-gray-600">
-              Drive users to WhatsApp in a click. Anyone can create WhatsApp links
-              and QR codes in 3 simple steps.
+              Drive users to WhatsApp in a click. Anyone can create WhatsApp
+              links and QR codes in 3 simple steps.
             </p>
             <div className="mt-3 flex flex-col sm:flex-row gap-2 text-sm text-gray-600">
               <div className="inline-flex items-center gap-2">
@@ -230,11 +234,14 @@ export default function WhatsAppLinkGeneratorPage() {
                     </label>
                     <select
                       value={countryCodeDigits}
-                      onChange={(e) => setCountryCodeDigits(e.target.value)}
+                      onChange={e => setCountryCodeDigits(e.target.value)}
                       className="mt-2 w-full rounded-xl border-gray-300 focus:border-emerald-600 focus:ring-emerald-600 shadow-sm"
                     >
-                      {COUNTRY_OPTIONS.map((c) => (
-                        <option key={c.callingCodeDigits} value={c.callingCodeDigits}>
+                      {COUNTRY_OPTIONS.map(c => (
+                        <option
+                          key={c.callingCodeDigits}
+                          value={c.callingCodeDigits}
+                        >
                           {c.label} ({c.callingCodeDisplay})
                         </option>
                       ))}
@@ -249,7 +256,7 @@ export default function WhatsAppLinkGeneratorPage() {
                       <span className="px-3 py-2 bg-gray-50 text-gray-600 text-sm flex items-center border-r border-gray-200">
                         {
                           COUNTRY_OPTIONS.find(
-                            (c) => c.callingCodeDigits === countryCodeDigits
+                            c => c.callingCodeDigits === countryCodeDigits,
                           )?.callingCodeDisplay
                         }
                       </span>
@@ -258,7 +265,7 @@ export default function WhatsAppLinkGeneratorPage() {
                         pattern="[0-9]*"
                         placeholder="Your WhatsApp number"
                         value={phoneDigits}
-                        onChange={(e) =>
+                        onChange={e =>
                           setPhoneDigits(e.target.value.replace(/\D/g, ""))
                         }
                         className="w-full px-3 py-2 outline-none text-gray-900 placeholder:text-gray-400"
@@ -278,7 +285,7 @@ export default function WhatsAppLinkGeneratorPage() {
                     rows={4}
                     placeholder="Type your message here (emoji supported)"
                     value={message}
-                    onChange={(e) => setMessage(e.target.value)}
+                    onChange={e => setMessage(e.target.value)}
                     className="mt-2 w-full rounded-xl border-gray-300 focus:border-emerald-600 focus:ring-emerald-600 shadow-sm"
                   />
                 </div>
@@ -404,7 +411,9 @@ export default function WhatsAppLinkGeneratorPage() {
                           </div>
 
                           <div className="mt-3">
-                            <div className="text-[11px] opacity-90">Chat with</div>
+                            <div className="text-[11px] opacity-90">
+                              Chat with
+                            </div>
                             <div className="font-semibold truncate">
                               {previewNumber || "+__ ________"}
                             </div>
@@ -446,7 +455,10 @@ export default function WhatsAppLinkGeneratorPage() {
                                 xmlns="http://www.w3.org/2000/svg"
                                 aria-hidden="true"
                               >
-                                <path d="M3 20V4L22 12L3 20Z" fill="currentColor" />
+                                <path
+                                  d="M3 20V4L22 12L3 20Z"
+                                  fill="currentColor"
+                                />
                               </svg>
                             </div>
                           </div>
@@ -462,8 +474,8 @@ export default function WhatsAppLinkGeneratorPage() {
               </div>
 
               <div className="mt-6 text-xs text-gray-500">
-                Preview updates live as you type. Click "Generate Link" to create the
-                final WhatsApp link and QR.
+                Preview updates live as you type. Click &quot;Generate
+                Link&quot; to create the final WhatsApp link and QR.
               </div>
             </div>
           </div>
@@ -477,14 +489,14 @@ export default function WhatsAppLinkGeneratorPage() {
                     WhatsApp Link FAQs
                   </h2>
                   <p className="mt-1 text-sm text-gray-600">
-                    Quick answers to common questions about WhatsApp links and QR
-                    codes.
+                    Quick answers to common questions about WhatsApp links and
+                    QR codes.
                   </p>
                 </div>
               </div>
 
               <div className="mt-6 space-y-3">
-                {FAQS.map((item) => (
+                {FAQS.map(item => (
                   <details
                     key={item.q}
                     className="group rounded-xl border border-gray-200 bg-white px-4 py-3 shadow-sm"
@@ -586,7 +598,6 @@ export default function WhatsAppLinkGeneratorPage() {
           </section>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

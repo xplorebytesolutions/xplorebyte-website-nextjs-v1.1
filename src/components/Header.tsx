@@ -136,16 +136,16 @@ const Header: FC = () => {
                           {/* Left Section - Solutions Overview */}
                           <div className="col-span-1 pr-4">
                             <h2
-                              className="font-semibold text-slate-800 mb-3 leading-tight"
+                              className="font-semibold text-slate-800 mb-2 leading-tight"
                               style={{
                                 fontFamily: "Montserrat, sans-serif",
-                                fontSize: "1.25rem",
+                                fontSize: "1.125rem",
                                 lineHeight: "1.2",
                               }}
                             >
                               Solutions That Drive Business Outcomes
                             </h2>
-                            <p className="text-slate-600 mb-4 leading-normal text-sm">
+                            <p className="text-slate-600 mb-4 leading-normal text-xs">
                               Transform your customer communication with
                               WhatsApp Business API. Join 10,000+ businesses
                               using our platform to move from cold communication
@@ -154,7 +154,7 @@ const Header: FC = () => {
                             </p>
                             <button
                               onClick={() => setIsDemoModalOpen(true)}
-                              className="border-2 border-emerald-500 text-emerald-600 bg-white px-6 py-3 rounded-lg hover:bg-emerald-50 transition-colors font-medium text-sm"
+                              className="border-2 border-emerald-500 text-emerald-600 bg-white px-5 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors font-medium text-xs"
                             >
                               Request a Demo
                             </button>
@@ -163,63 +163,63 @@ const Header: FC = () => {
                           {/* Middle-Left Section - By Industry */}
                           <div>
                             <h3
-                              className="font-semibold text-slate-800 uppercase tracking-wider mb-4"
+                              className="font-bold text-slate-500 uppercase tracking-wider mb-3"
                               style={{
                                 fontFamily: "Montserrat, sans-serif",
-                                fontSize: "0.875rem",
+                                fontSize: "0.75rem",
                                 lineHeight: "1.2",
                               }}
                             >
                               BY INDUSTRY
                             </h3>
-                            <div className="space-y-3">
+                            <div className="space-y-2.5">
                               <Link
                                 href="/industries/healthcare"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <Heart className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <Heart className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 Healthcare
                               </Link>
                               <Link
                                 href="/industries/education"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <GraduationCap className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <GraduationCap className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 Education
                               </Link>
                               <Link
                                 href="/industries/retail-ecommerce"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <Building2 className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <Building2 className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 Retail & Ecommerce
                               </Link>
                               <Link
                                 href="/industries/finance"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <BarChart3 className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <BarChart3 className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 Finance
                               </Link>
                               <Link
                                 href="/industries/transportation-logistics"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <Car className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <Car className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 Transportation and Logistics
                               </Link>
                               <Link
                                 href="/industries/manufacturing"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <Settings className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <Settings className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 Manufacturing
                               </Link>
                               <Link
                                 href="/industries/public-sector"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <Building2 className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <Building2 className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 Public Sector
                               </Link>
                             </div>
@@ -228,49 +228,49 @@ const Header: FC = () => {
                           {/* Middle-Right Section - By Function */}
                           <div>
                             <h3
-                              className="font-semibold text-slate-800 uppercase tracking-wider mb-4"
+                              className="font-bold text-slate-500 uppercase tracking-wider mb-3"
                               style={{
                                 fontFamily: "Montserrat, sans-serif",
-                                fontSize: "0.875rem",
+                                fontSize: "0.75rem",
                                 lineHeight: "1.2",
                               }}
                             >
                               BY FUNCTION
                             </h3>
-                            <div className="space-y-3">
+                            <div className="space-y-2.5">
                               <Link
                                 href="/features/ai-chatbots-flows"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <Headphones className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <Headphones className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 Customer Support
                               </Link>
                               <Link
                                 href="/features/sales-ecommerce-tools"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <TrendingUp className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <TrendingUp className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 Sales & Lead Conversion
                               </Link>
                               <Link
                                 href="/features/campaigns-broadcasting"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <MessageSquare className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <MessageSquare className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 Marketing
                               </Link>
                               <Link
                                 href="/features/analytics-reporting"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <BarChart3 className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <BarChart3 className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 Analytics & Reporting
                               </Link>
                               <Link
                                 href="/tools/whatsapp-link"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <LinkIcon className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <LinkIcon className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 WhatsApp Link Generator
                               </Link>
                             </div>
@@ -369,56 +369,56 @@ const Header: FC = () => {
                           {/* Middle-Left Section - CORE FEATURES */}
                           <div>
                             <h3
-                              className="font-semibold text-slate-800 uppercase tracking-wider mb-4"
+                              className="font-bold text-slate-500 uppercase tracking-wider mb-3"
                               style={{
                                 fontFamily: "Montserrat, sans-serif",
-                                fontSize: "0.875rem",
+                                fontSize: "0.75rem",
                                 lineHeight: "1.2",
                               }}
                             >
                               CORE FEATURES
                             </h3>
-                            <div className="space-y-3">
+                            <div className="space-y-2.5">
                               <Link
                                 href="/features/ai-chatbots-flows"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <Bot className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <Bot className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 AI Chatbots & Flows
                               </Link>
                               <Link
                                 href="/features/campaigns-broadcasting"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <Megaphone className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <Megaphone className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 Campaigns & Broadcasting
                               </Link>
                               <Link
                                 href="/features/sales-ecommerce-tools"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <BarChart3 className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <BarChart3 className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 Sales & E-commerce Tools
                               </Link>
                               <Link
                                 href="/features/integrations-hub"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <Settings className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <Settings className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 Integrations Hub
                               </Link>
                               <Link
                                 href="/features/analytics-reporting"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <BarChart3 className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <BarChart3 className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 Analytics & Reporting
                               </Link>
                               <Link
                                 href="/tools/whatsapp-link"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <LinkIcon className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <LinkIcon className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 WhatsApp Link Generator
                               </Link>
                             </div>
@@ -427,42 +427,42 @@ const Header: FC = () => {
                           {/* Middle-Right Section - RESOURCES */}
                           <div>
                             <h3
-                              className="font-semibold text-slate-800 uppercase tracking-wider mb-4"
+                              className="font-bold text-slate-500 uppercase tracking-wider mb-3"
                               style={{
                                 fontFamily: "Montserrat, sans-serif",
-                                fontSize: "0.875rem",
+                                fontSize: "0.75rem",
                                 lineHeight: "1.2",
                               }}
                             >
                               RESOURCES
                             </h3>
-                            <div className="space-y-3">
+                            <div className="space-y-2.5">
                               <Link
                                 href="/api-documentation"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <Code className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <Code className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 Developer Docs
                               </Link>
                               <Link
                                 href="/support-center"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <HelpCircle className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <HelpCircle className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 Help Center
                               </Link>
                               <Link
                                 href="/product-updates"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <Megaphone className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <Megaphone className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 Product Updates
                               </Link>
                               <Link
                                 href="/user-community"
-                                className="flex items-center text-slate-800 font-medium hover:text-emerald-600 transition-colors group text-base"
+                                className="flex items-center text-slate-800 font-semibold hover:text-emerald-600 transition-colors group text-sm"
                               >
-                                <MessageCircle className="w-4 h-4 mr-2 text-slate-500 group-hover:text-emerald-600" />
+                                <MessageCircle className="w-3.5 h-3.5 mr-2 text-slate-400 group-hover:text-emerald-600" />
                                 User Community
                               </Link>
                             </div>

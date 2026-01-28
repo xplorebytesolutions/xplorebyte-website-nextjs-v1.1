@@ -98,7 +98,9 @@ const Footer = () => {
 
           {/* Legal */}
           <div>
-            <h3 className="text-white/90 text-sm font-semibold uppercase tracking-wide mb-4">Legal</h3>
+            <h3 className="text-white/90 text-sm font-semibold uppercase tracking-wide mb-4">
+              Legal
+            </h3>
             <ul className="space-y-2 text-gray-300 text-sm">
               <li>
                 <Link
@@ -128,6 +130,14 @@ const Footer = () => {
               </li>
               <li>
                 <Link
+                  href="/data-deletion"
+                  className="hover:text-emerald-400 transition-colors duration-300"
+                >
+                  Data Deletion
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/acceptable-use-policy"
                   className="hover:text-emerald-400 transition-colors duration-300"
                 >
@@ -139,7 +149,9 @@ const Footer = () => {
 
           {/* Company */}
           <div>
-            <h3 className="text-white/90 text-sm font-semibold uppercase tracking-wide mb-4">Company</h3>
+            <h3 className="text-white/90 text-sm font-semibold uppercase tracking-wide mb-4">
+              Company
+            </h3>
             <ul className="space-y-2 text-gray-300 text-sm">
               <li>
                 <Link
@@ -252,7 +264,9 @@ const Footer = () => {
 
           {/* Contact Information */}
           <div>
-            <h3 className="text-white/90 text-sm font-semibold uppercase tracking-wide mb-4">Contact</h3>
+            <h3 className="text-white/90 text-sm font-semibold uppercase tracking-wide mb-4">
+              Contact
+            </h3>
             <div className="space-y-3 text-gray-300 text-sm">
               <div className="flex items-start space-x-3">
                 <svg
