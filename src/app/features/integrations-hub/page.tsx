@@ -236,8 +236,6 @@ export default function IntegrationsHub() {
         </section>
       </main>
 
-      <Footer />
-
       {/* Demo Modal */}
       <DemoModal
         isOpen={isDemoModalOpen}

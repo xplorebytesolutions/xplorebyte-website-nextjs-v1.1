@@ -309,8 +309,6 @@ export default function Features() {
         </section>
       </main>
 
-      <Footer />
-
       {/* Demo Modal */}
       <DemoModal
         isOpen={isDemoModalOpen}

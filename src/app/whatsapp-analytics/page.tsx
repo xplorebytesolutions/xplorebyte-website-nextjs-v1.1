@@ -478,7 +478,6 @@ export default function WhatsAppAnalyticsPage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

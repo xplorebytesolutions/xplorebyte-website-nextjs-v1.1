@@ -239,8 +239,6 @@ export default function RealEstatePage() {
           </div>
         </section>
       </main>
-      <Footer />
-
       {/* Demo Modal */}
       <DemoModal
         isOpen={isDemoModalOpen}

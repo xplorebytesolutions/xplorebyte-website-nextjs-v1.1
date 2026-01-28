@@ -290,7 +290,6 @@ export default function CampaignAnalyticsPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       </main>
-      <Footer />
     </>
   );
 }

@@ -464,7 +464,6 @@ export default function WhatsAppCrmForEducationPage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

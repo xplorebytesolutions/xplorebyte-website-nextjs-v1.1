@@ -464,7 +464,6 @@ export default function WhatsAppCrmForEventPlannersPage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

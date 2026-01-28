@@ -469,7 +469,6 @@ export default function WhatsAppCrmForCoachingPage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

@@ -467,7 +467,6 @@ export default function WhatsAppCrmForAutomobileDealersPage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

@@ -469,7 +469,6 @@ export default function WhatsAppCrmForRealEstatePage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

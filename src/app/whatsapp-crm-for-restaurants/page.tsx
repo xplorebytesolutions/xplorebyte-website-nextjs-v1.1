@@ -474,7 +474,6 @@ export default function WhatsAppCrmForRestaurantsPage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

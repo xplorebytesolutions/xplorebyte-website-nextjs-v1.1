@@ -647,7 +647,6 @@ export default function ApplyWhatsAppAPIPage() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

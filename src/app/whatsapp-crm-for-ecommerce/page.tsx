@@ -477,7 +477,6 @@ export default function WhatsAppCrmForEcommercePage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

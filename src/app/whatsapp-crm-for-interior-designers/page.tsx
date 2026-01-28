@@ -466,7 +466,6 @@ export default function WhatsAppCrmForInteriorDesignersPage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

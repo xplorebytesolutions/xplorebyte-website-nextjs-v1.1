@@ -485,7 +485,6 @@ export default function WhatsAppCrmForTravelAgentsPage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

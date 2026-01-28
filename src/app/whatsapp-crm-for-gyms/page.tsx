@@ -470,7 +470,6 @@ export default function WhatsAppCrmForGymsPage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

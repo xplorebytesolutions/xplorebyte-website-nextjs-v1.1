@@ -247,8 +247,6 @@ export default function SalesEcommerceTools() {
         </section>
       </main>
 
-      <Footer />
-
       {/* Demo Modal */}
       <DemoModal
         isOpen={isDemoModalOpen}

@@ -465,7 +465,6 @@ export default function WhatsAppCrmForHRRecruitmentPage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

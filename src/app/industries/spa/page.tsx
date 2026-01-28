@@ -238,8 +238,6 @@ export default function SpaPage() {
           </div>
         </section>
       </main>
-      <Footer />
-
       {/* Demo Modal */}
       <DemoModal
         isOpen={isDemoModalOpen}

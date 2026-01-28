@@ -243,8 +243,6 @@ export default function AnalyticsReporting() {
         </section>
       </main>
 
-      <Footer />
-
       {/* Demo Modal */}
       <DemoModal
         isOpen={isDemoModalOpen}

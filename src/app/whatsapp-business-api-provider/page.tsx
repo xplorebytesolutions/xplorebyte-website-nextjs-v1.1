@@ -495,7 +495,6 @@ export default function WhatsAppBusinessApiProviderPage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

@@ -17,7 +17,6 @@ export default function WhatsAppLinkGeneratorPage() {
       <main className="bg-white">
         <WhatsAppLinkGenerator />
       </main>
-      <Footer />
     </>
   );
 }

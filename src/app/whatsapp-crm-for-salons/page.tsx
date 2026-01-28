@@ -464,7 +464,6 @@ export default function WhatsAppCrmForSalonsPage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

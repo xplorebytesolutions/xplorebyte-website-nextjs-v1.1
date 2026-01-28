@@ -77,7 +77,7 @@ const Footer = () => {
                 height={40}
                 className="h-10 w-auto"
               />
-              <span className="text-gray-200 text-xl font-bold font-[Poppins,Montserrat,sans-serif] tracking-tight">
+              <span className="text-gray-200 text-xl font-bold tracking-tight">
                 XploreByte{" "}
                 <span className="font-light text-blue-400 text-lg">
                   Solutions
@@ -115,6 +115,8 @@ const Footer = () => {
                 <Link
                   href="/terms-of-service"
                   className="hover:text-emerald-400 transition-colors duration-300"
+                  // Enforce single line display for "Terms and Conditions"
+                  style={{ whiteSpace: "nowrap" }}
                 >
                   Terms and Conditions
                 </Link>

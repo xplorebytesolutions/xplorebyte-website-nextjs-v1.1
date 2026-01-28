@@ -466,7 +466,6 @@ export default function WhatsAppCrmForLogisticsPage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

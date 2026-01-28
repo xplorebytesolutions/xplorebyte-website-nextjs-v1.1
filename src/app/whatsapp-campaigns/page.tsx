@@ -506,7 +506,6 @@ export default function WhatsAppCampaignsPage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

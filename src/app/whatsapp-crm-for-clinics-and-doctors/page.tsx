@@ -451,7 +451,6 @@ export default function WhatsAppCrmForClinicsAndDoctorsPage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

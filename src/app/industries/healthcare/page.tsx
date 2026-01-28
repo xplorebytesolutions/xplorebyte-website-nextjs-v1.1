@@ -331,8 +331,6 @@ export default function HealthcarePage() {
           </div>
         </section>
       </main>
-      <Footer />
-
       {/* Demo Modal */}
       <DemoModal
         isOpen={isDemoModalOpen}

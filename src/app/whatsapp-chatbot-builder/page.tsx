@@ -528,7 +528,6 @@ export default function WhatsAppChatbotBuilderPage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

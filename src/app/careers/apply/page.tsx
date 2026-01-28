@@ -640,7 +640,6 @@ function JobApplicationForm() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }

@@ -659,8 +659,6 @@ export default function Home() {
 
         {/* <DigitalSerenity /> */}
       </main>
-      <Footer />
-
       {/* Sales Modal */}
       <SalesModal
         isOpen={isSalesModalOpen}

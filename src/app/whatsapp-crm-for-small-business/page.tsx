@@ -294,7 +294,6 @@ export default function WhatsAppCrmForSmallBusinessPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       </main>
-      <Footer />
     </>
   );
 }

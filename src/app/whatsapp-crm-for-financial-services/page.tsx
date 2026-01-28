@@ -466,7 +466,6 @@ export default function WhatsAppCrmForFinancialServicesPage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

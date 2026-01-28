@@ -62,8 +62,8 @@ const iconMap: { [key: string]: React.ReactNode } = {
       viewBox="0 0 24 24"
     >
       <path d="M3 14v3a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z" />
-      <path d="M17 14v3a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2z" />
-      <path d="M9 14v3a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2z" />
+      <path d="M17 14v3a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 012-2h1a2 2 0 012 2z" />
+      <path d="M9 14v3a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-3a2 2 0 00-2-2h-2a2 2 0 00-2 2z" />
     </svg>
   ),
   "shopping-cart": (
@@ -125,7 +125,7 @@ const Hero: FC = () => {
               fill="currentColor"
               viewBox="0 0 20 20"
             >
-              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 00-.611 1.878l.882 5.14a.53.53 0 01-.771.56l-4.618-2.428a2.122 2.122 0 00-1.973 0L6.396 21.01a.53.53 0 01-.77-.56l.881-5.139a2.122 2.122 0 00-.611-1.879L2.16 9.795a.53.53 0 01.294-.906l5.165-.755a2.122 2.122 0 001.597-1.16z" />
             </svg>
             <span className="text-sm font-semibold text-[#11A944]">
               Trusted by 10,000+ Businesses Worldwide
@@ -136,7 +136,6 @@ const Hero: FC = () => {
           <motion.div
             className="text-xs font-medium uppercase tracking-widest text-gray-600 mb-4"
             style={{
-              fontFamily: "Montserrat, sans-serif",
               letterSpacing: "1.5px",
             }}
             variants={fadeUp}
@@ -148,7 +147,6 @@ const Hero: FC = () => {
           <motion.h1
             className="font-bold text-gray-900 mb-6 text-3xl md:text-4xl"
             style={{
-              fontFamily: "Montserrat, sans-serif",
               lineHeight: "1.2",
             }}
             variants={fadeUp}
@@ -162,7 +160,6 @@ const Hero: FC = () => {
           <motion.p
             className="text-gray-700 mb-4"
             style={{
-              fontFamily: "Montserrat, sans-serif",
               fontSize: "1rem",
               lineHeight: "1.6",
               maxWidth: "65ch",
@@ -176,7 +173,6 @@ const Hero: FC = () => {
           <motion.p
             className="text-gray-700 mb-8"
             style={{
-              fontFamily: "Montserrat, sans-serif",
               fontSize: "1.1rem",
               lineHeight: "1.6",
               maxWidth: "55ch",
@@ -190,7 +186,6 @@ const Hero: FC = () => {
           <motion.p
             className="text-gray-700 mb-8"
             style={{
-              fontFamily: "Montserrat, sans-serif",
               fontSize: "1.1rem",
               lineHeight: "1.6",
               maxWidth: "55ch",
@@ -210,7 +205,6 @@ const Hero: FC = () => {
               onClick={() => setIsDemoModalOpen(true)}
               className="inline-flex items-center px-6 py-3 rounded-md font-semibold border-2 border-emerald-700 bg-emerald-700 text-white hover:bg-emerald-800 hover:border-emerald-800 transition duration-200 group"
               style={{
-                fontFamily: "Montserrat, sans-serif",
                 fontSize: "1rem",
                 fontWeight: "600",
               }}
@@ -227,7 +221,6 @@ const Hero: FC = () => {
               onClick={() => setIsSalesModalOpen(true)}
               className="inline-flex items-center px-6 py-3 rounded-md font-semibold border-2 border-emerald-700 text-emerald-700 hover:bg-emerald-50 transition duration-200 group"
               style={{
-                fontFamily: "Montserrat, sans-serif",
                 fontSize: "1rem",
                 fontWeight: "600",
               }}

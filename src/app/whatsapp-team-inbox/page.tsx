@@ -464,7 +464,6 @@ export default function WhatsAppTeamInboxPage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

@@ -465,7 +465,6 @@ export default function WhatsAppCrmForB2BSalesPage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

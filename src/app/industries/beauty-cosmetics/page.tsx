@@ -303,8 +303,6 @@ export default function BeautyCosmeticsPage() {
           </div>
         </section>
       </main>
-      <Footer />
-
       {/* Demo Modal */}
       <DemoModal
         isOpen={isDemoModalOpen}
