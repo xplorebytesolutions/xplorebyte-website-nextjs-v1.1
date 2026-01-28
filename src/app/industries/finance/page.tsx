@@ -4,6 +4,8 @@ import { FC, useState } from "react";
 
 
 import DemoModal from "@/components/DemoModal";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import {
   Shield,
   CreditCard,
@@ -16,7 +18,9 @@ import {
 const FinancePage: FC = () => {
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <Header />
+      <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 py-20">
         <div className="container mx-auto px-4">
@@ -171,6 +175,8 @@ const FinancePage: FC = () => {
         onClose={() => setIsDemoModalOpen(false)}
       />
     </div>
+      <Footer />
+    </>
   );
 };
 

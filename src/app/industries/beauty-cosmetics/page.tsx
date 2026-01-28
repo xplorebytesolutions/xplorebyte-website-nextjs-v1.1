@@ -5,12 +5,15 @@ import { useState } from "react";
 
 import DemoModal from "../../../components/DemoModal";
 import SalesModal from "../../../components/SalesModal";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function BeautyCosmeticsPage() {
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
   const [isSalesModalOpen, setIsSalesModalOpen] = useState(false);
   return (
     <>
+      <Header />
       <main className="pt-16">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-pink-50 to-purple-100 py-20">
@@ -313,6 +316,7 @@ export default function BeautyCosmeticsPage() {
         isOpen={isSalesModalOpen}
         onClose={() => setIsSalesModalOpen(false)}
       />
+      <Footer />
     </>
   );
 }

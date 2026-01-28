@@ -2,6 +2,8 @@
 
 import { FC, useState } from "react";
 import DemoModal from "@/components/DemoModal";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import {
   ShoppingCart,
   Users,
@@ -14,7 +16,9 @@ import {
 export default function RetailEcommerce() {
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
   return (
-    <main className="min-h-screen bg-white">
+    <>
+      <Header />
+      <main className="min-h-screen bg-white">
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-20">
@@ -172,5 +176,7 @@ export default function RetailEcommerce() {
         onClose={() => setIsDemoModalOpen(false)}
       />
     </main>
+      <Footer />
+    </>
   );
 };

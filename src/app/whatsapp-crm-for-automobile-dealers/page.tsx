@@ -1,6 +1,8 @@
 // 📄 File: src/app/whatsapp-crm-for-automobile-dealers/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import Script from "next/script";
 
 

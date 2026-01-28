@@ -3,6 +3,8 @@
 import { useState } from "react";
 import SalesModal from "../../../components/SalesModal";
 import DemoModal from "../../../components/DemoModal";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import {
   Plane,
   MapPin,
@@ -20,7 +22,9 @@ export default function TravelIndustry() {
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
 
   return (
-    <main className="min-h-screen bg-white">
+    <>
+      <Header />
+      <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#0A0E23] via-[#202748] to-[#11A944]/40 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -373,5 +377,7 @@ export default function TravelIndustry() {
         onClose={() => setIsDemoModalOpen(false)}
       />
     </main>
+      <Footer />
+    </>
   );
 }

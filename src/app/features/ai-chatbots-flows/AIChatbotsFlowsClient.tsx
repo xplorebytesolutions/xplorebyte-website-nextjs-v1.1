@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 
-
 import DemoModal from "../../../components/DemoModal";
 import SalesModal from "../../../components/SalesModal";
 import {
@@ -222,9 +221,10 @@ export default function AIChatbotsFlows() {
                   Turn Conversations Into Revenue
                 </h2>
                 <p className="text-lg text-gray-600 mb-8">
-                  Don't just chat - convert. XploreByte's flows are designed to
-                  guide users to the next best action, whether it's booking a
-                  demo, making a purchase, or resolving a support ticket.
+                  Don&apos;t just chat - convert. XploreByte&apos;s flows are
+                  designed to guide users to the next best action, whether
+                  it&apos;s booking a demo, making a purchase, or resolving a
+                  support ticket.
                 </p>
 
                 <div className="space-y-6">
@@ -276,7 +276,7 @@ export default function AIChatbotsFlows() {
                     <div className="flex items-start gap-3 justify-end">
                       <div className="bg-emerald-600 text-white rounded-2xl rounded-tr-none p-4 max-w-[80%]">
                         <p className="text-sm">
-                          I'm looking to automate my customer support.
+                          I&apos;m looking to automate my customer support.
                         </p>
                       </div>
                     </div>

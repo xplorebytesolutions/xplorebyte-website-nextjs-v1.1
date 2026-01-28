@@ -5,12 +5,15 @@ import { useState } from "react";
 
 import DemoModal from "../../../components/DemoModal";
 import SalesModal from "../../../components/SalesModal";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function HealthcarePage() {
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
   const [isSalesModalOpen, setIsSalesModalOpen] = useState(false);
   return (
     <>
+      <Header />
       <main>
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
@@ -341,6 +344,7 @@ export default function HealthcarePage() {
         isOpen={isSalesModalOpen}
         onClose={() => setIsSalesModalOpen(false)}
       />
+      <Footer />
     </>
   );
 }

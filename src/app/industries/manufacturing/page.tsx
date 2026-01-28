@@ -2,6 +2,8 @@
 
 import { FC, useState } from "react";
 import SalesModal from "@/components/SalesModal";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import {
   Settings,
   Users,
@@ -15,7 +17,9 @@ const ManufacturingPage: FC = () => {
   const [isSalesModalOpen, setIsSalesModalOpen] = useState(false);
 
   return (
-    <main className="min-h-screen bg-white">
+    <>
+      <Header />
+      <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-gray-50 via-slate-50 to-zinc-50 py-20">
         <div className="container mx-auto px-4">
@@ -165,6 +169,8 @@ const ManufacturingPage: FC = () => {
         onClose={() => setIsSalesModalOpen(false)}
       />
     </main>
+      <Footer />
+    </>
   );
 };
 

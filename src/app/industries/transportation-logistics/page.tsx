@@ -2,6 +2,8 @@
 
 import { FC, useState } from "react";
 import SalesModal from "@/components/SalesModal";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import {
   Truck,
   MapPin,
@@ -15,7 +17,9 @@ const TransportationLogisticsPage: FC = () => {
   const [isSalesModalOpen, setIsSalesModalOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <Header />
+      <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-orange-50 via-red-50 to-pink-50 py-20">
         <div className="container mx-auto px-4">
@@ -168,6 +172,8 @@ const TransportationLogisticsPage: FC = () => {
         onClose={() => setIsSalesModalOpen(false)}
       />
     </div>
+      <Footer />
+    </>
   );
 };
 
