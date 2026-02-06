@@ -37,10 +37,9 @@ export default function AboutUs() {
                   Our Mission
                 </h2>
                 <p className="text-lg text-gray-600 mb-8">
-                  To democratize access to enterprise-grade technology
-                  solutions, enabling businesses of all sizes to compete and
-                  thrive in the digital economy through innovative SaaS
-                  platforms and automation tools.
+                  To revolutionize business communication through intelligent
+                  automation, enabling enterprises to build deeper, more
+                  meaningful connections with their customers at scale.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
@@ -58,7 +57,7 @@ export default function AboutUs() {
                       </svg>
                     </div>
                     <p className="text-gray-600">
-                      Simplifying complex business processes
+                      Streamlining Engagement
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
@@ -76,7 +75,7 @@ export default function AboutUs() {
                       </svg>
                     </div>
                     <p className="text-gray-600">
-                      Accelerating digital transformation
+                      Driving Digital Evolution
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
@@ -93,7 +92,7 @@ export default function AboutUs() {
                         />
                       </svg>
                     </div>
-                    <p className="text-gray-600">Enabling scalable growth</p>
+                    <p className="text-gray-600">Empowering Scalable Growth</p>
                   </div>
                 </div>
               </div>
@@ -103,24 +102,24 @@ export default function AboutUs() {
                     Our Vision
                   </h3>
                   <p className="text-gray-600 mb-6">
-                    To become the leading provider of innovative SaaS solutions
-                    that transform how businesses operate, communicate, and grow
-                    in the digital age.
+                    To be the global benchmark for customer engagement
+                    technology, fostering a future where every business
+                    interaction is seamless, personalized, and impactful.
                   </p>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="text-center">
-                      <div className="text-3xl font-bold text-[#11A944]">
-                        1 Lac+
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="text-center">
+                        <div className="text-3xl font-bold text-[#11A944]">
+                          Smart
+                        </div>
+                        <div className="text-sm text-gray-600">Automation</div>
                       </div>
-                      <div className="text-sm text-gray-600">Happy Clients</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-3xl font-bold text-[#0296FE]">
-                        99%
+                      <div className="text-center">
+                        <div className="text-3xl font-bold text-[#0296FE]">
+                          Data
+                        </div>
+                        <div className="text-sm text-gray-600">Secure</div>
                       </div>
-                      <div className="text-sm text-gray-600">Success Rate</div>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -419,37 +418,36 @@ export default function AboutUs() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Our Impact
+                Why Choose Us
               </h2>
               <p className="text-lg text-white/80 max-w-3xl mx-auto">
-                Numbers that reflect our commitment to excellence and client
-                success.
+                Discover the values that drive our commitment to your success.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-[#11A944] mb-2">
-                  1 Lac+
+                <div className="text-2xl md:text-3xl font-bold text-[#11A944] mb-2">
+                  Customer
                 </div>
-                <div className="text-white/80 text-lg">Happy Clients</div>
+                <div className="text-white/80 text-lg">Centric Approach</div>
                 <div className="text-white/60 text-sm mt-1">
-                  Across 15+ industries
+                  Dedicated to your success
                 </div>
               </div>
 
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-[#0296FE] mb-2">
-                  99%
+                <div className="text-2xl md:text-3xl font-bold text-[#0296FE] mb-2">
+                  Result
                 </div>
-                <div className="text-white/80 text-lg">Success Rate</div>
+                <div className="text-white/80 text-lg">Driven Solutions</div>
                 <div className="text-white/60 text-sm mt-1">
-                  Project completion
+                  Focused on measurable outcomes
                 </div>
               </div>
 
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-[#FFB800] mb-2">
+                <div className="text-2xl md:text-3xl font-bold text-[#FFB800] mb-2">
                   24/7
                 </div>
                 <div className="text-white/80 text-lg">Support</div>
@@ -459,12 +457,12 @@ export default function AboutUs() {
               </div>
 
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-[#EA1752] mb-2">
-                  5+
+                <div className="text-2xl md:text-3xl font-bold text-[#EA1752] mb-2">
+                  Expert
                 </div>
-                <div className="text-white/80 text-lg">Years Experience</div>
+                <div className="text-white/80 text-lg">Innovation</div>
                 <div className="text-white/60 text-sm mt-1">
-                  Industry expertise
+                  Latest technology stack
                 </div>
               </div>
             </div>

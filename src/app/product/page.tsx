@@ -62,30 +62,30 @@ export default function Product() {
                   <div className="grid grid-cols-2 gap-4">
                     <div className="text-center">
                       <div className="text-3xl font-bold text-[#11A944]">
-                        10K+
+                        Global
                       </div>
                       <div className="text-white/80 text-sm">
-                        Active Clients
+                        Reach
                       </div>
                     </div>
                     <div className="text-center">
                       <div className="text-3xl font-bold text-[#0296FE]">
-                        98%
+                        Proven
                       </div>
-                      <div className="text-white/80 text-sm">Success Rate</div>
+                      <div className="text-white/80 text-sm">Results</div>
                     </div>
                     <div className="text-center">
                       <div className="text-3xl font-bold text-[#FFB800]">
-                        24/7
+                        Always
                       </div>
-                      <div className="text-white/80 text-sm">Support</div>
+                      <div className="text-white/80 text-sm">On Support</div>
                     </div>
                     <div className="text-center">
                       <div className="text-3xl font-bold text-[#EA1752]">
-                        5+
+                        Rapid
                       </div>
                       <div className="text-white/80 text-sm">
-                        Years Experience
+                        Innovation
                       </div>
                     </div>
                   </div>
