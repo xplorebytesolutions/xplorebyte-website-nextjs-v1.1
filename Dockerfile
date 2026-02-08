@@ -22,7 +22,7 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
-ENV PORT=80
+ENV PORT=8010
 ENV HOSTNAME=0.0.0.0
 
 # Create a non-root user
@@ -38,6 +38,6 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 USER nextjs
 
-EXPOSE 80
+EXPOSE 8010
 
 CMD ["node", "server.js"]
