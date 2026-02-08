@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  output: "standalone",
   reactStrictMode: true,
   eslint: {
     // Prevent ESLint errors from failing production builds
